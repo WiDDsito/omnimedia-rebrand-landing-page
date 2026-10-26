@@ -1,0 +1,13 @@
+.git
+.vercel
+node_modules
+.astro
+dist
+docs
+evidencias
+tasks
+assets
+tests
+*.md
+.DS_Store
+._*
