@@ -1,0 +1,23 @@
+---
+import Icon from './Icon.astro';
+import { Image } from 'astro:assets';
+import room from '../assets/meeting-room.png';
+---
+<section class="hero" id="inicio" aria-labelledby="hero-title">
+ <div class="container hero-grid">
+  <div class="hero-copy">
+   <p class="hero-category"><span></span> Telecomunicaciones para empresas</p>
+   <h1 id="hero-title">Tu empresa,<br/>mejor conectada.</h1>
+   <p class="hero-description">Telefonía IP, videoconferencia y soluciones de comunicación que acercan a tu equipo y a tus clientes.</p>
+   <div class="hero-actions"><a class="button" href="#cotizar">Solicitar cotización <Icon size={19}/></a><a class="text-link" href="#soluciones">Explorar soluciones <Icon name="chevron" size={17}/></a></div>
+   <div class="hero-note"><span class="note-icon"><Icon name="check" size={16}/></span><p>Asesoría, implementación y soporte.<br/><strong>Te acompañamos en cada etapa.</strong></p></div>
+  </div>
+  <figure class="hero-visual">
+   <div class="photo-frame"><Image src={room} alt="Concepto de sala de reuniones equipada con pantalla, cámara y audio de conferencia" widths={[480,800,1200]} sizes="(max-width: 900px) 90vw, 48vw" width={1200} format="webp" quality={82} loading="eager" fetchpriority="high"/></div>
+   <div class="connection-card"><span class="connection-icon"><Icon name="video" size={25}/></span><div><strong>Más cerca, estés donde estés.</strong><span>Soluciones para trabajar conectados</span></div><span class="signal" aria-hidden="true"><i></i><i></i><i></i></span></div>
+   <figcaption>Imagen referencial de un espacio de colaboración.</figcaption>
+  </figure>
+ </div>
+ <div class="container hero-bottom"><span>Comunicación a la medida de tu operación</span><a href="#soluciones" aria-label="Descubrir soluciones"><Icon name="chevron" size={18}/></a><span>OmniMedia Perú</span></div>
+</section>
+<section class="brand-strip container" aria-label="Marcas de nuestro portafolio"><p>Tecnología de marcas<br/><strong>que conoces.</strong></p><div class="manufacturer-list"><span>Avaya</span><span>Yealink</span><span class="poly-brand">poly</span><span>Grandstream</span><span>Fanvil</span><span>Yeastar</span></div></section>

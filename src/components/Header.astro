@@ -1,0 +1,29 @@
+---
+import Icon from './Icon.astro';
+import {solutions,equipment,origin} from '../data/content';
+---
+<a class="skip-link" href="#contenido">Saltar al contenido</a>
+<header class="site-header">
+ <div class="container header-inner">
+  <a class="brand-logo" href="#inicio" aria-label="OmniMedia Perú, inicio"><img src="/images/logo.png" width="180" height="64" alt="OmniMedia Perú" /></a>
+  <button class="menu-toggle" aria-expanded="false" aria-controls="main-navigation"><span>Menú</span><Icon name="menu"/></button>
+  <nav id="main-navigation" aria-label="Navegación principal">
+   <details class="nav-dropdown">
+    <summary>Soluciones <Icon name="chevron" size={16}/></summary>
+    <div class="mega-panel">
+     <div class="mega-intro"><span class="section-kicker">Conecta lo que importa</span><p>Una solución para cada conversación.</p><a href="#soluciones">Ver todas las soluciones <Icon size={18}/></a></div>
+     <div class="mega-links">{solutions.map(s=><a href={origin+s.href}><span class="menu-icon"><Icon name={s.icon}/></span><span><strong>{s.title}</strong><small>{s.short}</small></span></a>)}</div>
+    </div>
+   </details>
+   <details class="nav-dropdown">
+    <summary>Equipos <Icon name="chevron" size={16}/></summary>
+    <div class="mega-panel">
+     <div class="mega-intro"><span class="section-kicker">Tecnología para tu equipo</span><p>Encuentra el equipo adecuado.</p><a href={origin+'/productos/'}>Ver catálogo completo <Icon size={18}/></a></div>
+     <div class="mega-links">{equipment.map(s=><a href={origin+s.href}><span class="menu-icon"><Icon name="grid"/></span><span><strong>{s.title}</strong><small>{s.desc}</small></span></a>)}<a href={origin+'/telefonia/telefonos-hoteleros/'}><span class="menu-icon"><Icon name="phone"/></span><span><strong>Telefonía hotelera</strong><small>Equipos para la atención a huéspedes.</small></span></a></div>
+    </div>
+   </details>
+   <a href="#servicios">Servicios</a><a href="#nosotros">Nosotros</a>
+   <a class="button button-small nav-cta" href="#cotizar">Solicitar cotización <Icon size={17}/></a>
+  </nav>
+ </div>
+</header>
