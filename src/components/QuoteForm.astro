@@ -1,0 +1,140 @@
+---
+import Icon from './Icon.astro';
+import { solutions } from '../data/content';
+---
+
+<section class="quote-section" id="cotizar">
+  <div class="container quote-grid">
+    <div class="quote-intro">
+      <p class="section-kicker">Hablemos de tu proyecto</p>
+      <h2>
+        El siguiente paso
+        <br />
+        es conectarnos.
+      </h2>
+      <p>Cuéntanos qué necesita tu empresa. Empecemos por encontrar la solución adecuada.</p>
+      <div class="quote-contact">
+        <span>
+          <Icon name="phone" size={20} /> Atención comercial
+        </span>
+        <a href="https://www.omnimediaperu.com/contactenos/">
+          Ver canales de contacto <Icon size={18} />
+        </a>
+      </div>
+      <div class="preview-note">
+        <strong>Vista preliminar</strong>
+        <p>
+          Puedes probar este formulario. La información permanece en esta página y no se envía a
+          OmniMedia.
+        </p>
+      </div>
+    </div>
+    <form id="quote-form" novalidate>
+      <div class="form-grid">
+        <div class="field">
+          <label for="name">
+            Tu nombre <span aria-hidden="true">*</span>
+          </label>
+          <input
+            id="name"
+            name="name"
+            autocomplete="name"
+            required
+            maxlength="100"
+            aria-describedby="name-error"
+          />
+          <span class="field-error" id="name-error"></span>
+        </div>
+        <div class="field">
+          <label for="company">
+            Empresa <span aria-hidden="true">*</span>
+          </label>
+          <input
+            id="company"
+            name="company"
+            autocomplete="organization"
+            required
+            maxlength="150"
+            aria-describedby="company-error"
+          />
+          <span class="field-error" id="company-error"></span>
+        </div>
+        <div class="field">
+          <label for="email">
+            Correo electrónico <span aria-hidden="true">*</span>
+          </label>
+          <input
+            id="email"
+            name="email"
+            type="email"
+            autocomplete="email"
+            required
+            maxlength="254"
+            aria-describedby="email-error"
+          />
+          <span class="field-error" id="email-error"></span>
+        </div>
+        <div class="field">
+          <label for="phone">
+            Teléfono <span class="optional">(opcional)</span>
+          </label>
+          <input id="phone" name="phone" type="tel" autocomplete="tel" maxlength="25" />
+        </div>
+        <div class="field field-full">
+          <label for="solution">
+            ¿Qué solución necesitas? <span aria-hidden="true">*</span>
+          </label>
+          <select id="solution" name="solution" required aria-describedby="solution-error">
+            <option value="">Selecciona una opción</option>
+            {solutions.map((s) => (
+              <option>{s.title}</option>
+            ))}
+            <option>Equipos y accesorios</option>
+            <option>Instalación y soporte</option>
+            <option>Necesito orientación</option>
+          </select>
+          <span class="field-error" id="solution-error"></span>
+        </div>
+        <div class="field field-full">
+          <label for="message">
+            Cuéntanos un poco más <span class="optional">(opcional)</span>
+          </label>
+          <textarea
+            id="message"
+            name="message"
+            rows="3"
+            maxlength="2000"
+            placeholder="Por ejemplo: queremos conectar dos oficinas con 20 anexos."
+          ></textarea>
+        </div>
+      </div>
+      <p class="form-note">
+        Los campos con * son obligatorios. En esta vista no se guardan ni se envían datos.
+      </p>
+      <button class="button" type="submit">
+        Revisar mi solicitud <Icon size={19} />
+      </button>
+      <p id="form-status" role="status" aria-live="polite"></p>
+      <noscript>
+        <p>
+          La demostración del formulario requiere JavaScript. Puedes explorar los{' '}
+          <a href="https://www.omnimediaperu.com/contactenos/">canales de contacto actuales</a>.
+        </p>
+      </noscript>
+    </form>
+  </div>
+</section>
+<dialog id="quote-dialog" aria-labelledby="dialog-title">
+  <div class="dialog-top">
+    <span class="section-kicker">Resumen de tu solicitud</span>
+    <button type="button" class="dialog-close" aria-label="Cerrar resumen">
+      <Icon name="close" />
+    </button>
+  </div>
+  <h2 id="dialog-title">Así empieza tu proyecto.</h2>
+  <p>Esta es una demostración. Tu solicitud no se ha enviado.</p>
+  <pre id="quote-summary"></pre>
+  <button type="button" class="button dialog-edit">
+    Volver y editar <Icon size={18} />
+  </button>
+</dialog>

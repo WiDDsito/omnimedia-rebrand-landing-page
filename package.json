@@ -1,1 +1,28 @@
-{"name":"omnimedia-preview","version":"0.1.0","private":true,"type":"module","scripts":{"dev":"astro dev --host 127.0.0.1","build":"astro build","preview":"astro preview --host 127.0.0.1","check":"astro check","test":"node --test tests/*.test.mjs"},"dependencies":{"@fontsource/ibm-plex-sans":"^5.3.0","astro":"^7.4.2","gsap":"^3.15.0"},"devDependencies":{"@astrojs/check":"^0.9.12","typescript":"^6.0.3"}}
+{
+  "name": "omnimedia-preview",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node node_modules/astro/bin/astro.mjs dev --host 127.0.0.1",
+    "build": "node node_modules/astro/bin/astro.mjs build",
+    "preview": "node node_modules/astro/bin/astro.mjs preview --host 127.0.0.1",
+    "check": "node node_modules/astro/bin/astro.mjs check",
+    "test": "node --test tests/*.test.mjs",
+    "format": "prettier --write src tests astro.config.mjs package.json tsconfig.json"
+  },
+  "dependencies": {
+    "@fontsource/ibm-plex-sans": "^5.3.0",
+    "astro": "^7.4.2",
+    "gsap": "^3.15.0"
+  },
+  "devDependencies": {
+    "@astrojs/check": "^0.9.12",
+    "prettier": "^3.9.10",
+    "prettier-plugin-astro": "^1.1.2",
+    "typescript": "^6.0.3"
+  },
+  "engines": {
+    "node": ">=22.12.0"
+  }
+}

@@ -1,0 +1,41 @@
+---
+import Icon from './Icon.astro';
+import { solutions, origin } from '../data/content';
+---
+
+<section id="soluciones" class="section container">
+  <div class="section-heading">
+    <div>
+      <p class="section-kicker">Soluciones que trabajan contigo</p>
+      <h2>
+        Todo empieza con
+        <br />
+        una buena conexión.
+      </h2>
+    </div>
+    <p>
+      Desde una llamada hasta una reunión entre sedes. Encuentra la tecnología que se adapta a la
+      forma de trabajar de tu empresa.
+    </p>
+  </div>
+  <div class="solutions-grid">
+    {solutions.map((s) => (
+      <article class="solution-card">
+        <span class="solution-icon">
+          <Icon name={s.icon} size={28} />
+        </span>
+        <h3>{s.title}</h3>
+        <p>{s.description}</p>
+        <ul class="solution-tags">
+          {s.tags.map((t) => (
+            <li>{t}</li>
+          ))}
+        </ul>
+        <a class="solution-link" href={origin + s.href}>
+          {s.label}
+          <Icon size={19} />
+        </a>
+      </article>
+    ))}
+  </div>
+</section>

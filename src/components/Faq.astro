@@ -1,0 +1,31 @@
+---
+import { faq } from '../data/content';
+import Icon from './Icon.astro';
+---
+
+<section class="section container faq-section">
+  <div>
+    <p class="section-kicker">Resolvamos tus dudas</p>
+    <h2>
+      Antes de dar
+      <br />
+      el siguiente paso.
+    </h2>
+    <p>
+      Una buena decisión empieza
+      <br />
+      con información clara.
+    </p>
+  </div>
+  <div class="faq-list">
+    {faq.map(([q, a]) => (
+      <details>
+        <summary>
+          {q}
+          <Icon name="plus" size={20} />
+        </summary>
+        <p>{a}</p>
+      </details>
+    ))}
+  </div>
+</section>

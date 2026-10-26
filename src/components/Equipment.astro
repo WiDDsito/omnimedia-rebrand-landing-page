@@ -1,0 +1,50 @@
+---
+import Icon from './Icon.astro';
+import { equipment, origin } from '../data/content';
+---
+
+<section class="equipment-section" id="equipos">
+  <div class="container section">
+    <div class="section-heading compact">
+      <div>
+        <p class="section-kicker">El equipo hace la diferencia</p>
+        <h2>
+          Tecnología para
+          <br />
+          cada espacio de trabajo.
+        </h2>
+      </div>
+      <a class="text-link" href={origin + '/productos/'}>
+        Explorar catálogo <Icon size={19} />
+      </a>
+    </div>
+    <div class="equipment-grid">
+      {equipment.map((e) => (
+        <a class="equipment-card" href={origin + e.href}>
+          <div class="equipment-image">
+            <img
+              src={'/images/' + e.image}
+              alt={e.title + ' del portafolio de OmniMedia Perú'}
+              width="674"
+              height="580"
+              loading="lazy"
+            />
+          </div>
+          <div class="equipment-title">
+            <h3>{e.title}</h3>
+            <Icon size={20} />
+          </div>
+          <p>{e.desc}</p>
+        </a>
+      ))}
+    </div>
+    <div class="equipment-more">
+      <span>¿Buscas algo más específico?</span>
+      <a href={origin + '/telefonia/telefonos-hoteleros/'}>Telefonía hotelera</a>
+      <a href={origin + '/telefonia/centrales-telefonicas/'}>Centrales telefónicas</a>
+      <a href={origin + '/productos/accesorios-equipos-remanufacturados/'}>
+        Equipos remanufacturados
+      </a>
+    </div>
+  </div>
+</section>

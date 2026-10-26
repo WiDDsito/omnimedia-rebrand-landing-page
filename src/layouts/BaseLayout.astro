@@ -4,4 +4,49 @@ import '@fontsource/ibm-plex-sans/latin-500.css';
 import '@fontsource/ibm-plex-sans/latin-600.css';
 import '../styles/global.css';
 ---
-<!doctype html><html lang="es-PE"><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="robots" content="noindex, nofollow"/><meta name="theme-color" content="#f4f4f4"/><title>OmniMedia Perú | Vista preliminar</title><meta name="description" content="Vista preliminar de OmniMedia Perú. Telefonía IP, videoconferencia y soluciones de comunicación para empresas."/><link rel="icon" type="image/svg+xml" href="/favicon.svg"/></head><body><slot/><script src="../scripts/main.ts"></script></body></html>
+
+<!doctype html>
+<html lang="es-PE">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="form-action 'none'; base-uri 'self'; object-src 'none'"
+    />
+    <meta name="robots" content="noindex, nofollow" />
+    <meta name="theme-color" content="#f4f4f4" />
+    <title>OmniMedia Perú | Vista preliminar</title>
+    <meta
+      name="description"
+      content="Vista preliminar de OmniMedia Perú. Telefonía IP, videoconferencia y soluciones de comunicación para empresas."
+    />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <noscript>
+      <style>
+        .menu-toggle {
+          display: none !important;
+        }
+        @media (max-width: 900px) {
+          .site-header nav {
+            display: flex !important;
+            position: static !important;
+            box-shadow: none !important;
+          }
+          .header-inner {
+            height: auto !important;
+            display: block !important;
+            padding-block: 20px;
+          }
+          .site-header {
+            position: relative !important;
+          }
+        }
+      </style>
+    </noscript>
+  </head>
+  <body>
+    <slot />
+    <script src="../scripts/main.ts"></script>
+  </body>
+</html>

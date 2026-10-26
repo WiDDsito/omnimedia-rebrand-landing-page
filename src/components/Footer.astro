@@ -1,0 +1,43 @@
+---
+import { solutions, origin } from '../data/content';
+---
+
+<footer class="footer">
+  <div class="container footer-grid">
+    <div>
+      <a href="#inicio" aria-label="OmniMedia Perú, volver al inicio">
+        <img src="/images/logo.png" width="166" height="59" alt="OmniMedia Perú" loading="lazy" />
+      </a>
+      <p>
+        Conectamos personas.
+        <br />
+        Integramos soluciones.
+      </p>
+    </div>
+    <div>
+      <h3>Soluciones</h3>
+      {solutions.map((s) => (
+        <a href={origin + s.href}>{s.title}</a>
+      ))}
+    </div>
+    <div>
+      <h3>Explora</h3>
+      <a href={origin + '/productos/'}>Catálogo de equipos</a>
+      <a href={origin + '/telefonia/'}>Telefonía</a>
+      <a href={origin + '/servicios/'}>Servicios y soporte</a>
+      <a href={origin + '/conocenos/'}>Nuestra empresa</a>
+    </div>
+    <div>
+      <h3>Conversemos</h3>
+      <a href="#cotizar">Preparar una cotización</a>
+      <a href={origin + '/contactenos/'}>Contacto comercial</a>
+      <a href={origin + '/tienda/'}>Tienda actual</a>
+      <span>Lima, Perú</span>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <span>© {new Date().getFullYear()} OmniMedia Perú.</span>
+    <span>Propuesta de diseño · Vista preliminar</span>
+    <a href="#inicio">Volver al inicio ↑</a>
+  </div>
+</footer>

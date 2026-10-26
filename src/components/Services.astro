@@ -1,0 +1,70 @@
+---
+import Icon from './Icon.astro';
+import { origin } from '../data/content';
+const steps = [
+  ['Entendemos tu operación', 'Conversamos sobre tus necesidades, equipos actuales y objetivos.'],
+  ['Definimos tu solución', 'Evaluamos alternativas y detallamos el alcance de la propuesta.'],
+  ['Conectamos tu equipo', 'Planificamos la instalación y configuración de la solución acordada.'],
+  ['Te acompañamos', 'Definimos las condiciones de soporte para tu implementación.'],
+];
+---
+
+<section class="section container services" id="servicios">
+  <div class="services-intro">
+    <p class="section-kicker">Tecnología con acompañamiento</p>
+    <h2>
+      Un equipo contigo.
+      <br />
+      De principio a fin.
+    </h2>
+    <p>
+      Elegir tecnología es solo el comienzo. Te ayudamos a integrar una solución que tenga sentido
+      para tu empresa.
+    </p>
+    <a class="text-link" href={origin + '/servicios/soporte-tecnico/'}>
+      Conocer nuestros servicios <Icon size={18} />
+    </a>
+    <div class="services-detail">
+      <Icon name="phone" size={22} />
+      <p>
+        También damos voz a tu central.
+        <br />
+        <a href={origin + '/telefonia/audios-para-centrales-telefonicas/'}>
+          Descubre nuestros audios e IVR
+        </a>
+      </p>
+    </div>
+  </div>
+  <ol class="process-list">
+    {steps.map(([title, description], i) => (
+      <li>
+        <span class="step-number">0{i + 1}</span>
+        <div>
+          <h3>{title}</h3>
+          <p>{description}</p>
+        </div>
+      </li>
+    ))}
+  </ol>
+</section>
+<section class="about-section" id="nosotros">
+  <div class="container about-grid">
+    <div>
+      <p class="section-kicker">Somos OmniMedia Perú</p>
+      <h2>
+        La experiencia de conectar.
+        <br />
+        La cercanía de acompañar.
+      </h2>
+    </div>
+    <div>
+      <p>
+        Somos una empresa integradora especializada en telefonía y telecomunicaciones. Acompañamos a
+        organizaciones en la elección e implementación de sus comunicaciones empresariales.
+      </p>
+      <a class="text-link" href={origin + '/conocenos/'}>
+        Conoce nuestra empresa <Icon size={18} />
+      </a>
+    </div>
+  </div>
+</section>
