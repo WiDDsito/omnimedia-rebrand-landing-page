@@ -1,4 +1,9 @@
 import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { createRevealTimeline } from '../lib/reveal.mjs';
+
+gsap.registerPlugin(ScrollTrigger);
+ScrollTrigger.config({ ignoreMobileResize: true });
 
 const carousel = document.querySelector<HTMLElement>('.brand-carousel');
 const motionToggle = carousel?.querySelector<HTMLButtonElement>('.brand-motion-toggle');
@@ -45,35 +50,38 @@ media.add('(prefers-reduced-motion: no-preference)', () => {
       0.48,
     );
 
-  // Start each reveal only when visible. HTML is never hidden pending JavaScript.
-  // Wrapper transforms keep scroll motion independent of a card's hover lift.
-  const revealObserver = new IntersectionObserver(
-    (entries) => {
-      const visible = entries.filter((entry) => entry.isIntersecting);
-      if (!visible.length) return;
-      gsap.from(
-        visible.map((entry) => entry.target),
-        {
-          y: mobile ? 28 : 54,
-          scale: 0.975,
-          opacity: 0.15,
-          duration: 0.95,
-          stagger: 0.1,
-          ease: 'power3.out',
-          clearProps: 'transform,opacity',
-        },
-      );
-      visible.forEach((entry) => revealObserver.unobserve(entry.target));
-    },
-    { threshold: 0.12, rootMargin: '0px 0px -24px 0px' },
+  // Persistent scrubbed timelines replace one-shot observers. There is no
+  // threshold reset, scaling, pinning, or inline-style clearing during scroll.
+  const revealTargets = document.querySelectorAll<HTMLElement>(
+    '[data-reveal], .section-heading, .equipment-card, .equipment-more, .services-intro, ' +
+      '.about-grid > div, .faq-section > div:first-child, .faq-list, ' +
+      '.quote-intro, .footer-grid > div, .footer-bottom',
   );
-  document
-    .querySelectorAll(
-      '[data-reveal], .section-heading, .equipment-card, .equipment-more, .services-intro, ' +
-        '.about-grid > div, .faq-section > div:first-child, .faq-list details, ' +
-        '.quote-intro, #quote-form, .footer-grid > div, .footer-bottom',
-    )
-    .forEach((element) => revealObserver.observe(element));
+  revealTargets.forEach((element) => {
+    const timeline = createRevealTimeline(element, mobile ? 18 : 28);
+    ScrollTrigger.create({
+      trigger: element,
+      animation: timeline,
+      start: 'top bottom-=12',
+      end: 'bottom top+=92',
+      scrub: 0.25,
+      invalidateOnRefresh: true,
+    });
+  });
+
+  // Re-measure real layout changes, not every frame or mobile toolbar movement.
+  let active = true;
+  const refreshLayout = () => ScrollTrigger.refresh(true);
+  const refreshFaq = (event: Event) => {
+    if (event.target instanceof HTMLDetailsElement && event.target.closest('.faq-list')) {
+      refreshLayout();
+    }
+  };
+  document.fonts.ready.then(() => {
+    if (active) refreshLayout();
+  });
+  window.addEventListener('load', refreshLayout, { once: true });
+  document.addEventListener('toggle', refreshFaq, true);
 
   carousel?.setAttribute('data-motion-ready', '');
   if (motionToggle) motionToggle.hidden = false;
@@ -87,7 +95,9 @@ media.add('(prefers-reduced-motion: no-preference)', () => {
   if (carousel) carouselObserver.observe(carousel);
 
   return () => {
-    revealObserver.disconnect();
+    active = false;
+    window.removeEventListener('load', refreshLayout);
+    document.removeEventListener('toggle', refreshFaq, true);
     carouselObserver.disconnect();
     carousel?.removeAttribute('data-motion-ready');
     carousel?.classList.remove('is-offscreen');

@@ -1,0 +1,53 @@
+[
+  {
+    "direction": "start",
+    "card": {
+      "height": 330,
+      "layoutTop": 1461,
+      "opacity": "1",
+      "transform": "matrix(1, 0, 0, 1, 0, 0)"
+    },
+    "documentHeight": 8340,
+    "heading": {
+      "height": 203,
+      "layoutTop": 1226,
+      "opacity": "1",
+      "transform": "matrix(1, 0, 0, 1, 0, 0)"
+    },
+    "scrollY": 1067
+  },
+  {
+    "direction": "down",
+    "card": {
+      "height": 330,
+      "layoutTop": 1461,
+      "opacity": "1",
+      "transform": "matrix(1, 0, 0, 1, 0, 0)"
+    },
+    "documentHeight": 8340,
+    "heading": {
+      "height": 203,
+      "layoutTop": 1226,
+      "opacity": "0.45",
+      "transform": "matrix(1, 0, 0, 1, 0, -11.7)"
+    },
+    "scrollY": 1489
+  },
+  {
+    "direction": "up",
+    "card": {
+      "height": 330,
+      "layoutTop": 1461,
+      "opacity": "1",
+      "transform": "matrix(1, 0, 0, 1, 0, 0)"
+    },
+    "documentHeight": 8340,
+    "heading": {
+      "height": 203,
+      "layoutTop": 1226,
+      "opacity": "1",
+      "transform": "matrix(1, 0, 0, 1, 0, 0)"
+    },
+    "scrollY": 1067
+  }
+]

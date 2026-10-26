@@ -49,3 +49,24 @@ No se han medido Core Web Vitals de campo ni conversión. No se ha realizado una
 - Seis pruebas de lógica aprobadas: las tres de formulario y tres del estado de desplazamiento/progreso, incluidos sobrepaso del límite y páginas cortas. Astro check y build aprobados.
 - Sin nuevas dependencias. La configuración de movimiento reducido omite las entradas y el desplazamiento suave. No se modificó la preferencia del sistema durante las pruebas.
 - Capturas: return-to-top-desktop.png y return-to-top-mobile.png.
+
+
+## Corrección vigente: scroll bidireccional sin reinicios
+
+Esta corrección sustituye las entradas de una sola ejecución descritas en las versiones anteriores.
+
+**Causa identificada:** el observador lanzaba gsap.from al cruzar un umbral, cambiando inmediatamente el estado visual de contenido que ya comenzaba a verse. Después dejaba de observarlo. La escala y la limpieza posterior de transformaciones acentuaban el cambio.
+
+**Solución:** timelines persistentes controlados por ScrollTrigger y scrub de 0,25 s. Entrada y salida reversibles con zona central de lectura completamente visible y sin desplazamiento. Se eliminan la escala, los reinicios y clearProps del movimiento de scroll; se conservan las interacciones de selección independientes. No se utilizan pin, snap ni sustitución del desplazamiento nativo. El formulario permanece fijo en su layout.
+
+**Estabilidad:** fuentes locales precargadas; posiciones recalculadas cuando terminan de cargar las fuentes o cambia una pregunta frecuente. Las pequeñas variaciones de altura de la barra del navegador móvil no provocan refrescos de ScrollTrigger.
+
+**Pruebas automáticas:** nueve pruebas aprobadas. Las nuevas comprueban igualdad del estado al recorrer la timeline en ambos sentidos, zona de lectura a tamaño natural y continuidad en los límites de entrada/salida. Astro check: 0 errores, 0 advertencias. Build aprobado. ScrollTrigger forma parte de la dependencia GSAP ya instalada; no se agregaron paquetes.
+
+**Navegador, escritorio:** scrollY 450 → 900 → 1350 → 900 → 450. Se recuperó exactamente la transformación y opacidad originales en 900 y 450. La altura del documento permaneció en 5096 px; los offsets de layout de la cabecera de Soluciones y su primera tarjeta permanecieron en 1085 y 1271 px. Evidencia: scroll-trace-desktop.json.
+
+**Navegador, móvil de 390 px:** scrollY 1067 → 1489 → 1067 con el mismo estado inicial/final. Altura del documento constante de 8340 px y sin desbordamiento horizontal. El formulario conserva transform none. Evidencia: scroll-trace-mobile.json. El botón de regreso continúa llegando a scrollY 0 y devuelve el foco a hero-title. Consola sin errores o advertencias.
+
+Estas mediciones comprueban estabilidad en el recorrido probado; no constituyen una medición completa de CLS o rendimiento de todos los dispositivos.
+
+Fuentes técnicas: [ScrollTrigger](https://gsap.com/docs/v3/Plugins/ScrollTrigger/) y [configuración de refrescos móviles](https://gsap.com/docs/v3/Plugins/ScrollTrigger/static.config()/).

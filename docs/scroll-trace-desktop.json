@@ -1,0 +1,104 @@
+[
+  {
+    "direction": "initial",
+    "card": {
+      "height": 415,
+      "layoutTop": 1271,
+      "opacity": "0.45",
+      "transform": "matrix(1, 0, 0, 1, 0, 28)"
+    },
+    "documentHeight": 5096,
+    "heading": {
+      "height": 138,
+      "layoutTop": 1085,
+      "opacity": "0.45",
+      "transform": "matrix(1, 0, 0, 1, 0, 28)"
+    },
+    "scrollY": 0
+  },
+  {
+    "direction": "down-1",
+    "card": {
+      "height": 415,
+      "layoutTop": 1271,
+      "opacity": "0.5385",
+      "transform": "matrix(1, 0, 0, 1, 0, 23.4951)"
+    },
+    "documentHeight": 5096,
+    "heading": {
+      "height": 138,
+      "layoutTop": 1085,
+      "opacity": "1",
+      "transform": "matrix(1, 0, 0, 1, 0, 0)"
+    },
+    "scrollY": 450
+  },
+  {
+    "direction": "down-2",
+    "card": {
+      "height": 415,
+      "layoutTop": 1271,
+      "opacity": "1",
+      "transform": "matrix(1, 0, 0, 1, 0, 0)"
+    },
+    "documentHeight": 5096,
+    "heading": {
+      "height": 138,
+      "layoutTop": 1085,
+      "opacity": "1",
+      "transform": "matrix(1, 0, 0, 1, 0, 0)"
+    },
+    "scrollY": 900
+  },
+  {
+    "direction": "down-3",
+    "card": {
+      "height": 415,
+      "layoutTop": 1271,
+      "opacity": "1",
+      "transform": "matrix(1, 0, 0, 1, 0, 0)"
+    },
+    "documentHeight": 5096,
+    "heading": {
+      "height": 138,
+      "layoutTop": 1085,
+      "opacity": "0.45",
+      "transform": "matrix(1, 0, 0, 1, 0, -18.2)"
+    },
+    "scrollY": 1350
+  },
+  {
+    "direction": "up-1",
+    "card": {
+      "height": 415,
+      "layoutTop": 1271,
+      "opacity": "1",
+      "transform": "matrix(1, 0, 0, 1, 0, 0)"
+    },
+    "documentHeight": 5096,
+    "heading": {
+      "height": 138,
+      "layoutTop": 1085,
+      "opacity": "1",
+      "transform": "matrix(1, 0, 0, 1, 0, 0)"
+    },
+    "scrollY": 900
+  },
+  {
+    "direction": "up-2",
+    "card": {
+      "height": 415,
+      "layoutTop": 1271,
+      "opacity": "0.5385",
+      "transform": "matrix(1, 0, 0, 1, 0, 23.4951)"
+    },
+    "documentHeight": 5096,
+    "heading": {
+      "height": 138,
+      "layoutTop": 1085,
+      "opacity": "1",
+      "transform": "matrix(1, 0, 0, 1, 0, 0)"
+    },
+    "scrollY": 450
+  }
+]
