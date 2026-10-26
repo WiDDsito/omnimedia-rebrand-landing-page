@@ -1,4 +1,4 @@
-import { gsap } from 'gsap';
+import './motion';
 const menuButton = document.querySelector<HTMLButtonElement>('.menu-toggle');
 const navigation = document.querySelector<HTMLElement>('#main-navigation');
 const dropdowns = [...document.querySelectorAll<HTMLDetailsElement>('.nav-dropdown')];
@@ -40,18 +40,6 @@ navigation?.addEventListener('focusout', (event) => {
     dropdowns.forEach((d) => (d.open = false));
 });
 matchMedia('(min-width: 901px)').addEventListener('change', () => closeNavigation());
-const mm = gsap.matchMedia();
-mm.add('(prefers-reduced-motion: no-preference)', () => {
-  gsap.from('.hero-copy > *', {
-    y: 14,
-    duration: 0.65,
-    stagger: 0.07,
-    ease: 'power2.out',
-    clearProps: 'transform',
-  });
-  gsap.from('.hero-visual', { y: 18, duration: 0.9, ease: 'power2.out', clearProps: 'transform' });
-});
-
 import { validateQuote, createQuoteSummary } from '../lib/quote.mjs';
 const form = document.querySelector<HTMLFormElement>('#quote-form');
 const dialog = document.querySelector<HTMLDialogElement>('#quote-dialog');
@@ -82,25 +70,3 @@ dialog
 dialog?.addEventListener('close', () =>
   form?.querySelector<HTMLButtonElement>('button[type="submit"]')?.focus(),
 );
-// Content remains readable if animation fails, is disabled, or JS is unavailable.
-mm.add('(min-width: 901px) and (prefers-reduced-motion: no-preference)', () => {
-  const observer = new IntersectionObserver(
-    (entries) =>
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          gsap.from(entry.target, {
-            y: 16,
-            duration: 0.6,
-            ease: 'power2.out',
-            clearProps: 'transform',
-          });
-          observer.unobserve(entry.target);
-        }
-      }),
-    { threshold: 0.15 },
-  );
-  document
-    .querySelectorAll('.section-heading, .services-intro, .about-grid')
-    .forEach((e) => observer.observe(e));
-  return () => observer.disconnect();
-});

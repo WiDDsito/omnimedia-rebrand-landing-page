@@ -1,0 +1,202 @@
+---
+const brands = ['Avaya', 'Yealink', 'poly', 'Grandstream', 'Fanvil', 'Yeastar'];
+---
+
+<section class="brand-carousel container" aria-label="Marcas de nuestro portafolio">
+  <p class="carousel-heading">
+    Tecnología de marcas
+    <br />
+    <strong>que conoces.</strong>
+  </p>
+  <div class="brand-window">
+    <div class="brand-track">
+      {[false, true].map((duplicate) => (
+        <ul class="brand-group" aria-hidden={duplicate ? 'true' : undefined}>
+          {brands.map((brand) => (
+            <li class:list={{ 'poly-brand': brand === 'poly' }}>{brand}</li>
+          ))}
+        </ul>
+      ))}
+    </div>
+  </div>
+  <button
+    type="button"
+    class="brand-motion-toggle"
+    aria-label="Pausar movimiento de marcas"
+    aria-pressed="false"
+    hidden
+  >
+    <svg class="pause-icon" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true">
+      <path d="M5 3v10M11 3v10" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+    </svg>
+    <svg class="play-icon" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true">
+      <path d="m5 3 8 5-8 5Z" fill="currentColor" />
+    </svg>
+  </button>
+</section>
+<style>
+  .brand-carousel {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding-block: 36px;
+    border-bottom: 1px solid var(--line);
+  }
+  .carousel-heading {
+    font-size: 13px;
+    line-height: 1.5;
+    color: var(--muted);
+    flex-shrink: 0;
+  }
+  .carousel-heading strong {
+    font-weight: 500;
+    color: var(--ink);
+  }
+  .brand-window {
+    overflow: hidden;
+    min-width: 0;
+    flex: 1;
+    mask-image: linear-gradient(90deg, transparent, #000 5%, #000 95%, transparent);
+  }
+  .brand-track {
+    display: flex;
+    width: max-content;
+  }
+  .brand-group {
+    display: flex;
+    align-items: center;
+    gap: 65px;
+    padding: 0 65px 0 0;
+    margin: 0;
+    list-style: none;
+    flex-shrink: 0;
+  }
+  .brand-group li {
+    font-size: 25px;
+    font-weight: 600;
+    letter-spacing: -1px;
+    color: #626262;
+    white-space: nowrap;
+  }
+  .brand-group .poly-brand {
+    font-size: 35px;
+    letter-spacing: -2px;
+  }
+  .brand-carousel[data-motion-ready] .brand-track {
+    animation: brand-travel 28s linear infinite;
+  }
+  .brand-carousel:is(:hover, :focus-within, .is-paused, .is-offscreen) .brand-track {
+    animation-play-state: paused;
+  }
+  .brand-motion-toggle {
+    display: grid;
+    place-items: center;
+    width: 36px;
+    height: 36px;
+    flex-shrink: 0;
+    border: 1px solid var(--line);
+    border-radius: 50%;
+    background: white;
+    color: var(--muted);
+  }
+  .brand-motion-toggle[hidden] {
+    display: none;
+  }
+  .brand-motion-toggle:hover {
+    color: var(--brand);
+    border-color: var(--brand);
+  }
+  .play-icon {
+    display: none;
+  }
+  .is-paused .play-icon {
+    display: block;
+  }
+  .is-paused .pause-icon {
+    display: none;
+  }
+  .brand-carousel:not([data-motion-ready]) .brand-track {
+    width: 100%;
+  }
+  .brand-carousel:not([data-motion-ready]) .brand-group {
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 18px 32px;
+    padding: 0;
+  }
+  .brand-carousel:not([data-motion-ready]) .brand-group[aria-hidden='true'] {
+    display: none;
+  }
+  @keyframes brand-travel {
+    to {
+      transform: translateX(-50%);
+    }
+  }
+  @media (max-width: 900px) {
+    .brand-carousel {
+      gap: 22px;
+    }
+    .brand-group {
+      gap: 45px;
+      padding-right: 45px;
+    }
+    .brand-group li {
+      font-size: 22px;
+    }
+  }
+  @media (max-width: 540px) {
+    .brand-carousel {
+      flex-wrap: wrap;
+      gap: 16px;
+      padding-block: 25px;
+    }
+    .carousel-heading {
+      width: calc(100% - 52px);
+    }
+    .carousel-heading br {
+      display: none;
+    }
+    .carousel-heading strong {
+      margin-left: 4px;
+    }
+    .brand-window {
+      flex-basis: 100%;
+      order: 3;
+    }
+    .brand-motion-toggle {
+      margin-left: auto;
+    }
+    .brand-group {
+      gap: 36px;
+      padding-right: 36px;
+    }
+    .brand-group li {
+      font-size: 22px;
+    }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .brand-carousel {
+      flex-wrap: wrap;
+    }
+    .brand-motion-toggle {
+      display: none;
+    }
+    .brand-window {
+      mask-image: none;
+      flex-basis: 100%;
+    }
+    .brand-track {
+      width: 100%;
+      animation: none !important;
+    }
+    .brand-group {
+      width: 100%;
+      flex-wrap: wrap;
+      gap: 18px 32px;
+      padding: 0;
+    }
+    .brand-group[aria-hidden='true'] {
+      display: none;
+    }
+  }
+</style>

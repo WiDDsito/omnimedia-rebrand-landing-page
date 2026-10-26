@@ -19,10 +19,22 @@
 
 ## Revisión de código
 
-Separación entre contenido, componentes y comportamiento; renderizado del resumen con textContent; ningún secreto o integración externa de captación. Fuentes locales y una sola biblioteca de animación. Contenido visible incluso cuando las animaciones se desactivan. En móvil se omiten las entradas por desplazamiento; en movimiento reducido se omiten las animaciones programadas.
+Separación entre contenido, componentes y comportamiento; renderizado del resumen con textContent; ningún secreto o integración externa de captación. Fuentes locales y una sola biblioteca de animación. Contenido visible incluso cuando las animaciones se desactivan. En móvil se reducen los desplazamientos de las entradas; en movimiento reducido se omiten las animaciones programadas.
 
 ## Pendiente para una web publicable
 
 Integración con Tu Web Activa, sitemap completo, configuración de canonical/metadatos de producción, Search Console, cobertura editorial, recepción real de solicitudes, privacidad, analítica y prueba de restauración. Las imágenes de catálogo conservan por ahora el tratamiento promocional de los archivos actuales; el cliente puede sustituirlas por originales limpios.
 
 No se han medido Core Web Vitals de campo ni conversión. No se ha realizado una prueba con lector de pantalla o una auditoría WCAG completa. Los enlaces profundos se preservan como destinos del sitio actual, sin afirmar que cada uno haya sido rastreado y validado individualmente en esta fase.
+
+
+## Actualización de movimiento y bento
+
+- Carrusel: desplazamiento continuo de 28 s por ciclo, duplicado visual oculto a tecnologías de asistencia. Comprobado el cambio de transformación entre lecturas, estado `running`, pausa manual y reanudación. Se pausa también con hover/foco y fuera de pantalla.
+- Soluciones: cuatro fondos cargados. Comprobados foco del enlace, z-index 3 de tarjeta y contenedor, y animación del borde. Elevación de 8 px con puntero preciso y 7 px con foco; borde con un recorrido de 850 ms, sin bucle persistente.
+- Servicios: bento de cuatro pasos en dos filas desiguales en escritorio; una columna en móvil, manteniendo el orden 01 a 04 y el bloque izquierdo original.
+- Scroll: IntersectionObserver activa GSAP una vez por bloque en todas las secciones. Los contenedores de entrada son independientes de la transformación de selección de las tarjetas.
+- Revisión responsive repetida a 320, 360, 390, 768, 1024 y 1440 px: anchura del documento igual a la ventana. Imágenes de fondo cargadas y sin errores/advertencias en consola.
+- Astro check y build aprobados; pruebas de formulario existentes aprobadas. No se añadieron dependencias.
+- La preferencia de movimiento reducido se atiende en CSS y GSAP; no se cambió la configuración del sistema del usuario para simularla. Sin JavaScript, el carrusel presenta una lista estática y el contenido sigue visible.
+- Nuevas capturas: `soluciones-motion.png`, `servicios-bento.png` y `mobile-motion.png`. Las anteriores se mantienen como referencia de la primera versión.

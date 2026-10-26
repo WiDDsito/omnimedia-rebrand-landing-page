@@ -27,7 +27,10 @@ npm run preview
 - Hero gris tenue, logo actual e imagen conceptual de sala de reuniones.
 - Desplegables Soluciones y Equipos; grupos expandibles en móvil.
 - Secciones de soluciones, catálogo, servicios, empresa, preguntas y contacto.
-- GSAP para entradas breves; CSS para interacciones; movimiento reducido respetado.
+- Carrusel continuo de marcas con pausa/reanudación y suspensión al pasar el cursor, usar teclado o salir de pantalla.
+- Soluciones con imágenes referenciales tenues, elevación, profundidad y un borde que recorre el contorno en 850 ms. Selección accesible al enfocar los enlaces.
+- Servicios en bento de cuatro pasos, conservando el contenido introductorio.
+- GSAP para entradas al recorrer todas las secciones, con desplazamientos menores en móvil. Movimiento reducido respetado.
 - Formulario de demostración con validación y resumen local. No hay API, correo, almacenamiento ni analítica conectados.
 - Enlaces de categorías hacia las URLs actuales de OmniMedia.
 - Contenido HTML generado y fuentes locales.
@@ -37,7 +40,8 @@ npm run preview
 - `src/data/content.ts`: soluciones, equipos, enlaces y preguntas.
 - `src/components/`: secciones de la landing.
 - `src/styles/global.css`: paleta, tipografía, responsive y estados.
-- `src/scripts/main.ts`: navegación, movimiento y formulario.
+- `src/scripts/main.ts`: navegación y formulario.
+- `src/scripts/motion.ts`: GSAP, entradas por scroll y control del carrusel.
 - `src/lib/quote.mjs`: validación y resumen.
 - `src/layouts/BaseLayout.astro`: metadatos de vista preliminar.
 - `docs/VERIFICACION-PREVIEW.md`: comprobaciones y límites.

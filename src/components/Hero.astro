@@ -1,5 +1,6 @@
 ---
 import Icon from './Icon.astro';
+import BrandCarousel from './BrandCarousel.astro';
 import { Image } from 'astro:assets';
 import room from '../assets/meeting-room.png';
 ---
@@ -77,18 +78,4 @@ import room from '../assets/meeting-room.png';
     <span>OmniMedia Perú</span>
   </div>
 </section>
-<section class="brand-strip container" aria-label="Marcas de nuestro portafolio">
-  <p>
-    Tecnología de marcas
-    <br />
-    <strong>que conoces.</strong>
-  </p>
-  <div class="manufacturer-list">
-    <span>Avaya</span>
-    <span>Yealink</span>
-    <span class="poly-brand">poly</span>
-    <span>Grandstream</span>
-    <span>Fanvil</span>
-    <span>Yeastar</span>
-  </div>
-</section>
+<BrandCarousel />
