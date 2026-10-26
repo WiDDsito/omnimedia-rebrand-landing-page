@@ -30,7 +30,8 @@ npm run preview
 - Carrusel continuo de marcas con pausa/reanudación y suspensión al pasar el cursor, usar teclado o salir de pantalla.
 - Soluciones con imágenes referenciales tenues, elevación, profundidad y un borde que recorre el contorno en 850 ms. Selección accesible al enfocar los enlaces.
 - Servicios en bento de cuatro pasos, conservando el contenido introductorio.
-- GSAP para entradas al recorrer todas las secciones, con desplazamientos menores en móvil. Movimiento reducido respetado.
+- GSAP con entradas más visibles, secuencias escalonadas y apertura de imagen en el hero; desplazamientos menores en móvil. Movimiento reducido respetado.
+- Botón fijo inferior derecho para volver al inicio, visible tras 320 px de desplazamiento, con aro de progreso y devolución de foco al título.
 - Formulario de demostración con validación y resumen local. No hay API, correo, almacenamiento ni analítica conectados.
 - Enlaces de categorías hacia las URLs actuales de OmniMedia.
 - Contenido HTML generado y fuentes locales.

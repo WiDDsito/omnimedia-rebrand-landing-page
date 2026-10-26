@@ -1,0 +1,134 @@
+<a class="back-to-top" href="#inicio" aria-label="Volver al inicio">
+  <svg class="return-progress" width="56" height="56" viewBox="0 0 56 56" aria-hidden="true">
+    <circle class="progress-track" cx="28" cy="28" r="25" />
+    <circle class="progress-value" cx="28" cy="28" r="25" pathLength="100" />
+  </svg>
+  <svg
+    class="return-arrow"
+    width="22"
+    height="22"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.7"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    aria-hidden="true"
+  >
+    <path d="M12 19V5m-6 6 6-6 6 6" />
+  </svg>
+  <span class="return-label">Volver al inicio</span>
+</a>
+<style>
+  .back-to-top {
+    position: fixed;
+    right: max(28px, env(safe-area-inset-right));
+    bottom: calc(24px + env(safe-area-inset-bottom));
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    background: var(--ink);
+    color: white;
+    z-index: 25;
+    box-shadow: 0 8px 26px #0003;
+    transition:
+      opacity 0.3s,
+      visibility 0.3s,
+      transform 0.3s,
+      background 0.25s;
+    --scroll-progress: 0;
+  }
+  .back-to-top[data-enhanced]:not(.is-visible) {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(16px);
+    pointer-events: none;
+  }
+  .return-progress {
+    position: absolute;
+    inset: 0;
+    transform: rotate(-90deg);
+    pointer-events: none;
+  }
+  .return-progress circle {
+    fill: none;
+    stroke-width: 1.5;
+  }
+  .progress-track {
+    stroke: #ffffff30;
+  }
+  .progress-value {
+    stroke: #f1abab;
+    stroke-dasharray: 100;
+    stroke-dashoffset: calc(100 - var(--scroll-progress));
+  }
+  .return-arrow {
+    transition: transform 0.25s;
+  }
+  .return-label {
+    position: absolute;
+    right: calc(100% + 12px);
+    white-space: nowrap;
+    background: var(--ink);
+    color: white;
+    font-size: 12px;
+    padding: 7px 12px;
+    border-radius: 6px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(5px);
+    transition:
+      opacity 0.2s,
+      visibility 0.2s,
+      transform 0.2s;
+    pointer-events: none;
+  }
+  .back-to-top:focus-visible .return-label {
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+  }
+  .back-to-top:focus-visible {
+    outline-color: var(--brand);
+    outline-offset: 5px;
+  }
+  @media (hover: hover) {
+    .back-to-top:hover {
+      background: var(--brand);
+      transform: translateY(-3px);
+    }
+    .back-to-top:hover .return-arrow {
+      transform: translateY(-2px);
+    }
+    .back-to-top:hover .return-label {
+      opacity: 1;
+      visibility: visible;
+      transform: none;
+    }
+  }
+  @media (max-width: 600px) {
+    .back-to-top {
+      right: 18px;
+      bottom: calc(18px + env(safe-area-inset-bottom));
+      width: 52px;
+      height: 52px;
+    }
+    .return-progress {
+      width: 52px;
+      height: 52px;
+    }
+    .return-label {
+      display: none;
+    }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .back-to-top,
+    .return-arrow,
+    .return-label {
+      transition: none !important;
+      transform: none !important;
+    }
+  }
+</style>

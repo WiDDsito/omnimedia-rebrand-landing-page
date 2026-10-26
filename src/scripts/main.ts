@@ -1,4 +1,5 @@
 import './motion';
+import './back-to-top';
 const menuButton = document.querySelector<HTMLButtonElement>('.menu-toggle');
 const navigation = document.querySelector<HTMLElement>('#main-navigation');
 const dropdowns = [...document.querySelectorAll<HTMLDetailsElement>('.nav-dropdown')];

@@ -38,3 +38,14 @@ No se han medido Core Web Vitals de campo ni conversión. No se ha realizado una
 - Astro check y build aprobados; pruebas de formulario existentes aprobadas. No se añadieron dependencias.
 - La preferencia de movimiento reducido se atiende en CSS y GSAP; no se cambió la configuración del sistema del usuario para simularla. Sin JavaScript, el carrusel presenta una lista estática y el contenido sigue visible.
 - Nuevas capturas: `soluciones-motion.png`, `servicios-bento.png` y `mobile-motion.png`. Las anteriores se mantienen como referencia de la primera versión.
+
+
+## Transiciones reforzadas y regreso al inicio
+
+- Entradas de secciones con 54 px de recorrido en escritorio y 28 px en móvil, opacidad inicial 0,15, escala inicial 0,975 y secuencia escalonada de 0,1 s. Duración 0,95 s. El contenido solo se anima cuando entra en pantalla.
+- Hero: apertura mediante recorte, zoom suave de la imagen y aparición escalonada del texto y la tarjeta de conexión.
+- Botón fijo: 56 px en escritorio, 52 px en móvil y separación de 18 px en móvil con respeto al área segura. Aparece después de 320 px; muestra progreso y funciona sin JavaScript como ancla.
+- Navegador: comprobados aparición al desplazarse, posición fija, progreso y regreso a scrollY 0. Tras activar en móvil, foco en hero-title y hash #inicio; el botón se oculta al llegar arriba. Sin errores o advertencias de consola.
+- Seis pruebas de lógica aprobadas: las tres de formulario y tres del estado de desplazamiento/progreso, incluidos sobrepaso del límite y páginas cortas. Astro check y build aprobados.
+- Sin nuevas dependencias. La configuración de movimiento reducido omite las entradas y el desplazamiento suave. No se modificó la preferencia del sistema durante las pruebas.
+- Capturas: return-to-top-desktop.png y return-to-top-mobile.png.

@@ -3,6 +3,7 @@ import '@fontsource/ibm-plex-sans/latin-400.css';
 import '@fontsource/ibm-plex-sans/latin-500.css';
 import '@fontsource/ibm-plex-sans/latin-600.css';
 import '../styles/global.css';
+import BackToTop from '../components/BackToTop.astro';
 ---
 
 <!doctype html>
@@ -47,6 +48,7 @@ import '../styles/global.css';
   </head>
   <body>
     <slot />
+    <BackToTop />
     <script src="../scripts/main.ts"></script>
   </body>
 </html>

@@ -1409,3 +1409,29 @@ dialog .button {
     width: 100%;
   }
 }
+
+/* More deliberate feedback for the commercial preview. */
+@media (hover: hover) and (pointer: fine) {
+  .button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 9px 22px #b8323225;
+  }
+  .equipment-card:hover .equipment-image img {
+    transform: scale(1.075);
+  }
+  .equipment-card .equipment-image img {
+    transition: transform 0.65s cubic-bezier(0.22, 1, 0.36, 1);
+  }
+  .equipment-title svg {
+    transition: transform 0.3s;
+  }
+  .equipment-card:hover .equipment-title svg {
+    transform: translateX(4px);
+  }
+}
+.nav-dropdown[open] .mega-panel {
+  animation-duration: 0.32s;
+}
+#hero-title:focus {
+  outline: none;
+}

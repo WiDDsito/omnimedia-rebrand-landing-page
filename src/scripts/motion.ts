@@ -15,19 +15,35 @@ motionToggle?.addEventListener('click', () => {
 const media = gsap.matchMedia();
 media.add('(prefers-reduced-motion: no-preference)', () => {
   const mobile = matchMedia('(max-width: 600px)').matches;
-  gsap.from('.hero-copy > *', {
-    y: mobile ? 10 : 16,
-    duration: 0.7,
-    stagger: 0.06,
-    ease: 'power2.out',
-    clearProps: 'transform',
-  });
-  gsap.from('.hero-visual', {
-    y: 18,
-    duration: 0.85,
-    ease: 'power2.out',
-    clearProps: 'transform',
-  });
+  const intro = gsap.timeline({ defaults: { ease: 'power3.out' } });
+  intro
+    .from(
+      '.hero-copy > *',
+      {
+        y: mobile ? 25 : 38,
+        opacity: 0.12,
+        duration: 0.95,
+        stagger: 0.1,
+        clearProps: 'transform,opacity',
+      },
+      0,
+    )
+    .from('.hero-visual', { y: mobile ? 24 : 42, duration: 1.15, clearProps: 'transform' }, 0.08)
+    .from(
+      '.photo-frame',
+      {
+        clipPath: 'inset(8% 0% 8% 0% round 24px)',
+        duration: 1.25,
+        clearProps: 'clipPath',
+      },
+      0.08,
+    )
+    .from('.photo-frame img', { scale: 1.12, duration: 1.4, clearProps: 'transform' }, 0.08)
+    .from(
+      '.connection-card',
+      { y: 24, opacity: 0, duration: 0.85, clearProps: 'transform,opacity' },
+      0.48,
+    );
 
   // Start each reveal only when visible. HTML is never hidden pending JavaScript.
   // Wrapper transforms keep scroll motion independent of a card's hover lift.
@@ -38,11 +54,12 @@ media.add('(prefers-reduced-motion: no-preference)', () => {
       gsap.from(
         visible.map((entry) => entry.target),
         {
-          y: mobile ? 12 : 22,
-          opacity: 0.55,
-          duration: 0.65,
-          stagger: 0.045,
-          ease: 'power2.out',
+          y: mobile ? 28 : 54,
+          scale: 0.975,
+          opacity: 0.15,
+          duration: 0.95,
+          stagger: 0.1,
+          ease: 'power3.out',
           clearProps: 'transform,opacity',
         },
       );
