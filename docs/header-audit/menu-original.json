@@ -1,0 +1,549 @@
+{
+  "captured": "2026-10-27",
+  "source": "https://www.omnimediaperu.com/",
+  "scope": "menu-classic-main-menu",
+  "total": 103,
+  "menu": [
+    {
+      "label": "INICIO",
+      "url": "https://www.omnimediaperu.com/",
+      "children": []
+    },
+    {
+      "label": "CONOCENOS",
+      "url": "https://www.omnimediaperu.com/conocenos/",
+      "children": []
+    },
+    {
+      "label": "VIDEOCONFERENCIA",
+      "url": "#",
+      "children": [
+        {
+          "label": "BARRAS Y SISTEMAS DE VIDEOCONFERENCIA YEALINK",
+          "url": "https://www.omnimediaperu.com/productos/equipos-y-camaras-de-videoconferencia-poly-yealink-logitech/barras-y-sistemas-de-videoconferencia-yealink/",
+          "children": [
+            {
+              "label": "BARRAS DE VIDEOCONFERENCIA YEALINK",
+              "url": "https://www.omnimediaperu.com/productos/equipos-y-camaras-de-videoconferencia-poly-yealink-logitech/barras-y-sistemas-de-videoconferencia-yealink/barras-de-videoconferencia-yealink/",
+              "children": [
+                {
+                  "label": "MEETINGBAR A10 – YEALINK",
+                  "url": "https://www.omnimediaperu.com/barra-de-videoconferencia-yealink-meetingbar-a10/",
+                  "children": []
+                },
+                {
+                  "label": "MEETINGBAR A25 – YEALINK",
+                  "url": "https://www.omnimediaperu.com/barra-de-videoconferencia-yealink-meetingbar-a25/",
+                  "children": []
+                },
+                {
+                  "label": "MEETINGBAR A40 – YEALINK",
+                  "url": "https://www.omnimediaperu.com/barra-de-videoconferencia-yealink-meetingbar-a40/",
+                  "children": []
+                },
+                {
+                  "label": "MEETINGBAR A30 – YEALINK",
+                  "url": "https://www.omnimediaperu.com/barra-de-videoconferencia-yealink-meetingbar-a30/",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "label": "SISTEMA DE VIDEOCONFERENCIA YEALINK",
+              "url": "https://www.omnimediaperu.com/productos/equipos-y-camaras-de-videoconferencia-poly-yealink-logitech/barras-y-sistemas-de-videoconferencia-yealink/sistema-de-videoconferencia-yealink/",
+              "children": [
+                {
+                  "label": "MVC860 – YEALINK",
+                  "url": "https://www.omnimediaperu.com/sistema-de-videoconferencia-mvc860-yealink/",
+                  "children": []
+                },
+                {
+                  "label": "MVCS60 – YEALINK",
+                  "url": "https://www.omnimediaperu.com/sistema-de-videoconferencia-mvc-s60-yealink/",
+                  "children": []
+                },
+                {
+                  "label": "MVC S90 – YEALINK",
+                  "url": "https://www.omnimediaperu.com/sistema-de-videoconferencia-mvc-s90-yealink/",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "label": "MEETINGBOARD PRO YEALINK",
+              "url": "https://www.omnimediaperu.com/pantalla-interactiva-meetingboard-pro-yealink-2/",
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "PERIFONEO Y MEGAFONIA",
+      "url": "https://www.omnimediaperu.com/telefonia/equipos-de-perifoneo/",
+      "children": [
+        {
+          "label": "TELEFONOS CONSOLA SIP",
+          "url": "https://www.omnimediaperu.com/telefonia/equipos-de-perifoneo/telefonos-consola-sip/",
+          "children": []
+        },
+        {
+          "label": "GATEWAY SIP AUDIO Y VIDEO",
+          "url": "https://www.omnimediaperu.com/telefonia/equipos-de-perifoneo/gateway-sip-de-audio-y-video/",
+          "children": []
+        },
+        {
+          "label": "ALTAVOCES SIP",
+          "url": "https://www.omnimediaperu.com/telefonia/equipos-de-perifoneo/altavoces-sip/",
+          "children": []
+        },
+        {
+          "label": "CONTROLADOR Y MICROFONOS PARA DEBATE",
+          "url": "https://www.omnimediaperu.com/telefonia/equipos-de-perifoneo/controlador-y-microfonos-para-debate/",
+          "children": []
+        }
+      ]
+    },
+    {
+      "label": "TELEFONIA",
+      "url": "https://www.omnimediaperu.com/telefonia/",
+      "children": [
+        {
+          "label": "CENTRAL TELEFONICA VIRTUAL",
+          "url": "https://www.omnimediaperu.com/telefonia/central-telefonica-virtual/",
+          "children": []
+        },
+        {
+          "label": "LINEAS SIP TRUNK",
+          "url": "https://www.lineassiptrunk.com/",
+          "children": []
+        },
+        {
+          "label": "CENTRALES TELEFONICAS",
+          "url": "https://www.omnimediaperu.com/telefonia/centrales-telefonicas/",
+          "children": [
+            {
+              "label": "CENTRAL TELEFONICA AVAYA",
+              "url": "https://www.omnimediaperu.com/telefonia/centrales-telefonicas/central-telefonica-avaya/",
+              "children": []
+            },
+            {
+              "label": "CENTRALES TELEFONICAS YEASTAR",
+              "url": "https://www.omnimediaperu.com/telefonia/centrales-telefonicas/centrales-telefonicas-yeastar/",
+              "children": []
+            },
+            {
+              "label": "CENTRALES TELEFONICAS GRANDSTREAM",
+              "url": "https://www.omnimediaperu.com/telefonia/centrales-telefonicas/centrales-telefonicas-grandstream/",
+              "children": []
+            }
+          ]
+        },
+        {
+          "label": "TELEFONOS ANALOGICOS SIP E IP",
+          "url": "https://www.omnimediaperu.com/telefonia/telefonos-analogicos-digitales-ip/",
+          "children": [
+            {
+              "label": "TELEFONOS SIP E IP AVAYA",
+              "url": "https://www.omnimediaperu.com/telefonia/telefonos-analogicos-digitales-ip/telefonos-digitales-ip-avaya/",
+              "children": []
+            },
+            {
+              "label": "TELEFONOS SIP FANVIL",
+              "url": "https://www.omnimediaperu.com/telefonia/telefonos-analogicos-digitales-ip/telefonos-sip-fanvil/",
+              "children": []
+            },
+            {
+              "label": "TELEFONOS SIP POLY",
+              "url": "https://www.omnimediaperu.com/telefonia/telefonos-analogicos-digitales-ip/telefonos-sip-poly/",
+              "children": []
+            },
+            {
+              "label": "TELEFONOS SIP YEALINK",
+              "url": "https://www.omnimediaperu.com/telefonia/telefonos-analogicos-digitales-ip/telefonos-sip-yealink/",
+              "children": []
+            },
+            {
+              "label": "TELEFONOS SIP GRANDSTREAM",
+              "url": "https://www.omnimediaperu.com/telefonia/telefonos-analogicos-digitales-ip/telefonos-sip-grandstream/",
+              "children": []
+            },
+            {
+              "label": "TELEFONOS ANALOGICOS PANASONIC",
+              "url": "https://www.omnimediaperu.com/telefonia/telefonos-analogicos-digitales-ip/telefonos-analogicos-digitales-ip-panasonic/",
+              "children": []
+            }
+          ]
+        },
+        {
+          "label": "TELEFONOS HOTELEROS",
+          "url": "https://www.omnimediaperu.com/telefonia/telefonos-hoteleros/",
+          "children": [
+            {
+              "label": "TELEFONOS HOTELEROS CETIS",
+              "url": "https://www.omnimediaperu.com/telefonia/telefonos-hoteleros/telefonos-hoteleros-cetis/",
+              "children": [
+                {
+                  "label": "TELEMATRIX",
+                  "url": "https://www.omnimediaperu.com/telefonia/telefonos-hoteleros/telefonos-hoteleros-cetis/telematrix/",
+                  "children": []
+                },
+                {
+                  "label": "TELEDEX",
+                  "url": "https://www.omnimediaperu.com/telefonia/telefonos-hoteleros/telefonos-hoteleros-cetis/teledex/",
+                  "children": []
+                },
+                {
+                  "label": "SCITEC",
+                  "url": "https://www.omnimediaperu.com/telefonia/telefonos-hoteleros/telefonos-hoteleros-cetis/scitec/",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "label": "TELEFONOS HOTELEROS FANVIL",
+              "url": "https://www.omnimediaperu.com/telefonia/telefonos-hoteleros/telefonos-hoteleros-fanvil/",
+              "children": []
+            }
+          ]
+        },
+        {
+          "label": "HEADSET – AURICULARES",
+          "url": "https://www.omnimediaperu.com/telefonia/headset-auriculares/",
+          "children": [
+            {
+              "label": "AURICULARES POLY",
+              "url": "https://www.omnimediaperu.com/telefonia/headset-auriculares/headset-auriculares-plantronics-poly/",
+              "children": [
+                {
+                  "label": "SERIE VOYAGER",
+                  "url": "https://www.omnimediaperu.com/telefonia/headset-auriculares/headset-auriculares-plantronics-poly/auriculares-poly-hp-serie-voyager/",
+                  "children": [
+                    {
+                      "label": "FOCUS 2",
+                      "url": "https://www.omnimediaperu.com/auriculares-voyager-focus-2-poly-hp/",
+                      "children": []
+                    },
+                    {
+                      "label": "4300 UC",
+                      "url": "https://www.omnimediaperu.com/auriculares-voyager-4300-uc-poly-hp/",
+                      "children": []
+                    },
+                    {
+                      "label": "VOYAGER LEGEND 50",
+                      "url": "https://www.omnimediaperu.com/auriculares-voyager-legend-50-poly-hp/",
+                      "children": []
+                    },
+                    {
+                      "label": "5200",
+                      "url": "https://www.omnimediaperu.com/auriculares-voyager-5200-poly-hp/",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "label": "SERIE BLACKWIRE",
+                  "url": "https://www.omnimediaperu.com/telefonia/headset-auriculares/headset-auriculares-plantronics-poly/auriculares-poly-hp-serie-blackwire/",
+                  "children": [
+                    {
+                      "label": "3200",
+                      "url": "https://www.omnimediaperu.com/auriculares-blackwire-3200-poly-hp/",
+                      "children": []
+                    },
+                    {
+                      "label": "3300",
+                      "url": "https://www.omnimediaperu.com/auriculares-blackwire-3300-poly-hp/",
+                      "children": []
+                    },
+                    {
+                      "label": "5200",
+                      "url": "https://www.omnimediaperu.com/auriculares-blackwire-5200-poly-hp/",
+                      "children": []
+                    },
+                    {
+                      "label": "8225",
+                      "url": "https://www.omnimediaperu.com/auriculares-blackwire-8225-poly-hp/",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "label": "SERIE ENCOREPRO",
+                  "url": "https://www.omnimediaperu.com/telefonia/headset-auriculares/headset-auriculares-plantronics-poly/auriculares-poly-hp-serie-encorepro/",
+                  "children": [
+                    {
+                      "label": "300",
+                      "url": "https://www.omnimediaperu.com/auriculares-encorepro-300-poly-hp/",
+                      "children": []
+                    },
+                    {
+                      "label": "500",
+                      "url": "https://www.omnimediaperu.com/auriculares-encorepro-500-poly-hp/",
+                      "children": []
+                    },
+                    {
+                      "label": "700",
+                      "url": "https://www.omnimediaperu.com/auriculares-encorepro-700-poly-hp/",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "label": "SERIE SAVI",
+                  "url": "https://www.omnimediaperu.com/telefonia/headset-auriculares/headset-auriculares-plantronics-poly/auriculares-poly-hp-serie-savi/",
+                  "children": [
+                    {
+                      "label": "7200 Office",
+                      "url": "https://www.omnimediaperu.com/auriculares-poly-hp-savi-7200-office/",
+                      "children": []
+                    },
+                    {
+                      "label": "7300 OFFICE",
+                      "url": "https://www.omnimediaperu.com/auriculares-poly-hp-savi-7300-office/",
+                      "children": []
+                    },
+                    {
+                      "label": "7300 UC",
+                      "url": "https://www.omnimediaperu.com/auriculares-poly-hp-savi-7300-uc/",
+                      "children": []
+                    },
+                    {
+                      "label": "7400 OFFICE",
+                      "url": "https://www.omnimediaperu.com/auriculares-poly-hp-savi-7400-office/",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "label": "ALTAVOCES POLY SYNC",
+                  "url": "https://www.omnimediaperu.com/telefonia/headset-auriculares/headset-auriculares-plantronics-poly/altavoces-poly-sync/",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "label": "AURICULARES YEALINK",
+              "url": "https://www.omnimediaperu.com/telefonia/headset-auriculares/audifonos-auriculares-yealink/",
+              "children": []
+            },
+            {
+              "label": "AURICULARES VT",
+              "url": "https://www.omnimediaperu.com/telefonia/headset-auriculares/headset-auriculares-vt/",
+              "children": []
+            }
+          ]
+        },
+        {
+          "label": "PLATAFORMAS PARA CONTACTO MASIVO",
+          "url": "https://www.omnimediaperu.com/telefonia/plataformas-para-contacto-masivo/",
+          "children": [
+            {
+              "label": "PLATAFORMA MULTIAGENTE DE WHATSAPP",
+              "url": "https://www.omnimediaperu.com/plataforma-multiagente-de-whatsapp/",
+              "children": []
+            },
+            {
+              "label": "ATENCION TELEFONICA AUTOMATICA",
+              "url": "https://www.omnimediaperu.com/telefonia/plataformas-para-contacto-masivo/atencion-telefonica-automatica/",
+              "children": []
+            },
+            {
+              "label": "PLATAFORMA PARA GRABACIÓN DE LLAMADAS",
+              "url": "https://www.omnimediaperu.com/telefonia/plataformas-para-contacto-masivo/plataforma-para-grabacion-de-llamadas/",
+              "children": []
+            },
+            {
+              "label": "SOFTWARE PARA TARIFICACION DE LLAMADAS",
+              "url": "https://www.omnimediaperu.com/telefonia/plataformas-para-contacto-masivo/software-para-tarificacion-de-llamadas/",
+              "children": []
+            },
+            {
+              "label": "SOFTWARE PARA CONTACT CENTER",
+              "url": "https://www.omnimediaperu.com/telefonia/plataformas-para-contacto-masivo/software-para-contact-center/",
+              "children": []
+            },
+            {
+              "label": "PLATAFORMA DE IVR MASIVOS",
+              "url": "https://www.omnimediaperu.com/telefonia/plataformas-para-contacto-masivo/plataforma-para-ivr-masivos/",
+              "children": []
+            },
+            {
+              "label": "PLATAFORMA PARA SMS MASIVOS",
+              "url": "https://www.omnimediaperu.com/telefonia/plataformas-para-contacto-masivo/plataforma-para-sms-masivos/",
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "PRODUCTOS",
+      "url": "https://www.omnimediaperu.com/productos/",
+      "children": [
+        {
+          "label": "EQUIPOS Y CAMARAS DE VIDEOCONFERENCIA POLY-YEALINK",
+          "url": "https://www.omnimediaperu.com/productos/equipos-y-camaras-de-videoconferencia-poly-yealink-logitech/",
+          "children": [
+            {
+              "label": "EQUIPOS Y CAMARAS DE VIDEOCONFERENCIA POLY HP",
+              "url": "https://www.omnimediaperu.com/productos/equipos-y-camaras-de-videoconferencia-poly-yealink-logitech/equipos-y-camaras-de-videoconferencia-poly-hp/",
+              "children": [
+                {
+                  "label": "SISTEMA CAMARA POLY STUDIO",
+                  "url": "https://www.omnimediaperu.com/productos/equipos-y-camaras-de-videoconferencia-poly-yealink-logitech/equipos-y-camaras-de-videoconferencia-poly-hp/sistema-de-videoconferencia-poly-studio/",
+                  "children": [
+                    {
+                      "label": "POLY STUDIO G62",
+                      "url": "https://www.omnimediaperu.com/sistema-de-videoconferencia-poly-studio-g62/",
+                      "children": []
+                    },
+                    {
+                      "label": "POLY STUDIO E60",
+                      "url": "https://www.omnimediaperu.com/sistema-de-videoconferencia-poly-studio-e60/",
+                      "children": []
+                    },
+                    {
+                      "label": "POLY STUDIO E70",
+                      "url": "https://www.omnimediaperu.com/sistema-de-videoconferencia-poly-studio-e70/",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "label": "POLY STUDIO",
+                  "url": "https://www.omnimediaperu.com/productos/equipos-y-camaras-de-videoconferencia-poly-yealink-logitech/equipos-y-camaras-de-videoconferencia-poly-hp/poly-studio/",
+                  "children": [
+                    {
+                      "label": "POLY STUDIO USB",
+                      "url": "https://www.omnimediaperu.com/barra-de-videoconferencia-poly-studio/",
+                      "children": []
+                    },
+                    {
+                      "label": "POLY STUDIO R30",
+                      "url": "https://www.omnimediaperu.com/barra-de-videoconferencia-poly-studio-r30/",
+                      "children": []
+                    },
+                    {
+                      "label": "POLY STUDIO V12",
+                      "url": "https://www.omnimediaperu.com/barra-de-videoconferencia-poly-studio-v12/",
+                      "children": []
+                    },
+                    {
+                      "label": "POLY STUDIO V52",
+                      "url": "https://www.omnimediaperu.com/barra-de-videoconferencia-poly-studio-v52/",
+                      "children": []
+                    },
+                    {
+                      "label": "POLY STUDIO V72",
+                      "url": "https://www.omnimediaperu.com/barra-de-videoconferencia-poly-studio-v72/",
+                      "children": []
+                    },
+                    {
+                      "label": "POLY STUDIO X32",
+                      "url": "https://www.omnimediaperu.com/barra-de-videoconferencia-poly-studio-x32-tc10/",
+                      "children": []
+                    },
+                    {
+                      "label": "POLY STUDIO X52",
+                      "url": "https://www.omnimediaperu.com/barra-de-videoconferencia-poly-studio-x52-tc10/",
+                      "children": []
+                    },
+                    {
+                      "label": "POLY STUDIO X72",
+                      "url": "https://www.omnimediaperu.com/barra-de-videoconferencia-poly-studio-x72/",
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "label": "SWITCHES DE RED",
+          "url": "https://www.omnimediaperu.com/productos/switches-de-red/",
+          "children": [
+            {
+              "label": "SWITCH HP ARUBA – OFFICECONNECT",
+              "url": "https://www.omnimediaperu.com/productos/switches-de-red/switch-hp-aruba-officeconnect/",
+              "children": []
+            },
+            {
+              "label": "SWITCH UBIQUITI UNIFI",
+              "url": "https://www.omnimediaperu.com/productos/switches-de-red/switch-ubiquiti-unifi/",
+              "children": []
+            }
+          ]
+        },
+        {
+          "label": "UPS – UNIDAD DE ALIMENTACION ININTERRUMPIDA",
+          "url": "https://www.omnimediaperu.com/productos/ups-unidad-de-alimentacion-ininterrumpida/",
+          "children": []
+        },
+        {
+          "label": "ACCESS POINT",
+          "url": "https://www.omnimediaperu.com/productos/access-point/",
+          "children": [
+            {
+              "label": "ACCESS POINT HP ARUBA",
+              "url": "https://www.omnimediaperu.com/productos/access-point/access-point-hp-aruba/",
+              "children": []
+            },
+            {
+              "label": "ACCESS POINT UBIQUITI UNIFI",
+              "url": "https://www.omnimediaperu.com/productos/access-point/access-point-ubiquiti-unifi/",
+              "children": []
+            }
+          ]
+        },
+        {
+          "label": "ACCESORIOS  Y EQUIPOS REMANUFACTURADOS",
+          "url": "https://www.omnimediaperu.com/productos/accesorios-equipos-remanufacturados/",
+          "children": []
+        }
+      ]
+    },
+    {
+      "label": "SERVICIOS",
+      "url": "https://www.omnimediaperu.com/servicios/",
+      "children": [
+        {
+          "label": "SOPORTE TECNICO",
+          "url": "https://www.omnimediaperu.com/servicios/soporte-tecnico/",
+          "children": []
+        },
+        {
+          "label": "AUDIOS PARA CENTRALES TELEFONICAS",
+          "url": "https://www.omnimediaperu.com/telefonia/audios-para-centrales-telefonicas/",
+          "children": []
+        }
+      ]
+    },
+    {
+      "label": "TIENDA",
+      "url": "#",
+      "children": [
+        {
+          "label": "COMPRA WEB DIRECTA",
+          "url": "https://www.omnimediaperu.com/tienda-web/",
+          "children": []
+        },
+        {
+          "label": "POR CATEGORIA",
+          "url": "https://www.omnimediaperu.com/tienda/",
+          "children": []
+        },
+        {
+          "label": "POR MARCA",
+          "url": "https://www.omnimediaperu.com/tienda-online/",
+          "children": []
+        }
+      ]
+    },
+    {
+      "label": "CONTACTENOS",
+      "url": "https://www.omnimediaperu.com/contactenos/",
+      "children": []
+    }
+  ]
+}

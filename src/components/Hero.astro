@@ -1,81 +1,130 @@
 ---
 import Icon from './Icon.astro';
 import BrandCarousel from './BrandCarousel.astro';
+import VoiceVisual from './VoiceVisual.astro';
+import { campaigns } from '../data/campaigns';
 import { Image } from 'astro:assets';
 import room from '../assets/meeting-room.png';
 ---
 
-<section class="hero" id="inicio" aria-labelledby="hero-title">
-  <div class="container hero-grid">
-    <div class="hero-copy">
-      <p class="hero-category">
-        <span></span> Telecomunicaciones para empresas
-      </p>
+<section class="commercial-hero" id="inicio" aria-labelledby="hero-title">
+  <div class="container">
+    <div class="banner-heading">
+      <p>Telecomunicaciones para empresas</p>
       <h1 id="hero-title" tabindex="-1">
-        Tu empresa,
-        <br />
-        mejor conectada.
+        Tu empresa, mejor conectada.
       </h1>
-      <p class="hero-description">
-        Telefonía IP, videoconferencia y soluciones de comunicación que acercan a tu equipo y a tus
-        clientes.
-      </p>
-      <div class="hero-actions">
-        <a class="button" href="#cotizar">
-          Solicitar cotización <Icon size={19} />
-        </a>
-        <a class="text-link" href="#soluciones">
-          Explorar soluciones <Icon name="chevron" size={17} />
-        </a>
+      <span>Telefonía IP, videoconferencia y soluciones que acercan a las personas.</span>
+    </div>
+    <div
+      class="campaign-stage"
+      role="region"
+      aria-label="Soluciones y equipos destacados"
+      aria-roledescription="carrusel"
+    >
+      {campaigns.map((campaign, index) => (
+        <article
+          class:list={['campaign', { 'is-active': index === 0 }]}
+          id={`campaign-${campaign.id}`}
+          aria-labelledby={`title-${campaign.id}`}
+          data-campaign
+        >
+          <div class="campaign-copy">
+            <div class="campaign-tags">
+              {campaign.tags.map((tag) => (
+                <span>{tag}</span>
+              ))}
+            </div>
+            <h2 id={`title-${campaign.id}`}>{campaign.title}</h2>
+            <p>{campaign.description}</p>
+            <div class="campaign-actions">
+              <a class="button" href={campaign.href} target="_blank" rel="noopener noreferrer">
+                {campaign.action}
+                <Icon size={18} />
+              </a>
+              <a class="text-link" href={campaign.category}>
+                Conocer más
+                <Icon size={16} />
+              </a>
+            </div>
+          </div>
+          <div
+            class:list={[
+              'campaign-visual',
+              {
+                'campaign-room': campaign.id === 'virtual',
+                'campaign-voice': campaign.id === 'audios',
+              },
+            ]}
+          >
+            {campaign.id === 'virtual' ? (
+              <Image
+                src={room}
+                alt="Imagen conceptual de una sala de reuniones empresarial"
+                widths={[480, 800, 1200]}
+                sizes="(max-width: 800px) 90vw, 46vw"
+                width={1200}
+                format="webp"
+                quality={82}
+                loading="eager"
+                fetchpriority="high"
+              />
+            ) : campaign.id === 'audios' ? (
+              <VoiceVisual />
+            ) : (
+              <img
+                src={`/images/${campaign.image}`}
+                width="600"
+                height="480"
+                alt={campaign.alt}
+                loading="lazy"
+                decoding="async"
+              />
+            )}
+            <div class="campaign-caption">
+              <Icon name={campaign.icon} size={20} />
+              <span>{campaign.note}</span>
+            </div>
+          </div>
+        </article>
+      ))}
+    </div>
+    <div class="campaign-toolbar" hidden>
+      <div class="campaign-selector" role="group" aria-label="Elegir solución destacada">
+        {campaigns.map((campaign, index) => (
+          <button
+            type="button"
+            data-campaign-select={index}
+            aria-controls={`campaign-${campaign.id}`}
+            aria-pressed={index === 0}
+          >
+            {campaign.label}
+          </button>
+        ))}
       </div>
-      <div class="hero-note">
-        <span class="note-icon">
-          <Icon name="check" size={16} />
+      <div class="campaign-pagination">
+        <span data-campaign-position aria-live="polite" aria-atomic="true">
+          01 / 08
         </span>
-        <p>
-          Asesoría, implementación y soporte.
-          <br />
-          <strong>Te acompañamos en cada etapa.</strong>
-        </p>
+        <button type="button" data-campaign-prev aria-label="Vista anterior">
+          <Icon size={18} />
+        </button>
+        <button type="button" data-campaign-next aria-label="Vista siguiente">
+          <Icon size={18} />
+        </button>
       </div>
     </div>
-    <figure class="hero-visual">
-      <div class="photo-frame">
-        <Image
-          src={room}
-          alt="Concepto de sala de reuniones equipada con pantalla, cámara y audio de conferencia"
-          widths={[480, 800, 1200]}
-          sizes="(max-width: 900px) 90vw, 48vw"
-          width={1200}
-          format="webp"
-          quality={82}
-          loading="eager"
-          fetchpriority="high"
-        />
-      </div>
-      <div class="connection-card">
-        <span class="connection-icon">
-          <Icon name="video" size={25} />
-        </span>
-        <div>
-          <strong>Más cerca, estés donde estés.</strong>
-          <span>Soluciones para trabajar conectados</span>
-        </div>
-        <span class="signal" aria-hidden="true">
-          <i></i>
-          <i></i>
-          <i></i>
-        </span>
-      </div>
-      <figcaption>Imagen referencial de un espacio de colaboración.</figcaption>
-    </figure>
-  </div>
-  <div class="container hero-bottom">
-    <span>Comunicación a la medida de tu operación</span>
-    <a href="#soluciones" aria-label="Descubrir soluciones">
-      <Icon name="chevron" size={18} />
-    </a>
-    <span>OmniMedia Perú</span>
+    <noscript>
+      <style>
+        .campaign {
+          visibility: visible !important;
+          opacity: 1 !important;
+          pointer-events: auto !important;
+          grid-area: auto !important;
+          margin-bottom: 40px;
+        }
+      </style>
+    </noscript>
   </div>
 </section>
 <BrandCarousel />

@@ -22,32 +22,17 @@ media.add('(prefers-reduced-motion: no-preference)', () => {
   const mobile = matchMedia('(max-width: 600px)').matches;
   const intro = gsap.timeline({ defaults: { ease: 'power3.out' } });
   intro
+    .from('.banner-heading > *', {
+      y: 16,
+      opacity: 0.2,
+      duration: 0.7,
+      stagger: 0.08,
+      clearProps: 'transform,opacity',
+    })
     .from(
-      '.hero-copy > *',
-      {
-        y: mobile ? 25 : 38,
-        opacity: 0.12,
-        duration: 0.95,
-        stagger: 0.1,
-        clearProps: 'transform,opacity',
-      },
-      0,
-    )
-    .from('.hero-visual', { y: mobile ? 24 : 42, duration: 1.15, clearProps: 'transform' }, 0.08)
-    .from(
-      '.photo-frame',
-      {
-        clipPath: 'inset(8% 0% 8% 0% round 24px)',
-        duration: 1.25,
-        clearProps: 'clipPath',
-      },
-      0.08,
-    )
-    .from('.photo-frame img', { scale: 1.12, duration: 1.4, clearProps: 'transform' }, 0.08)
-    .from(
-      '.connection-card',
-      { y: 24, opacity: 0, duration: 0.85, clearProps: 'transform,opacity' },
-      0.48,
+      '.campaign-stage',
+      { y: 20, opacity: 0.3, duration: 0.85, clearProps: 'transform,opacity' },
+      0.1,
     );
 
   // Persistent scrubbed timelines replace one-shot observers. There is no
