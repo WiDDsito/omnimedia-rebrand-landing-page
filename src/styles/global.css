@@ -902,6 +902,7 @@ h3 {
   margin-top: 10px;
 }
 .footer {
+  overflow: clip;
   padding-top: 60px;
 }
 .footer-grid {
