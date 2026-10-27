@@ -24,10 +24,10 @@ Se descargó y siguió https://vercel.com/get-started.md. CLI instalada: 54.1.0.
 
 La sesión local de la CLI no es válida y sigue pendiente de autenticación. El despliegue se completó con el conector autorizado; no se guardaron tokens en el proyecto ni se duplicó la conexión del plugin.
 
-## GitHub pendiente
+## GitHub publicado
 
-Destino solicitado: https://github.com/WiDDsito/omnimedia-rebrand-landing-page
+Repositorio: https://github.com/WiDDsito/omnimedia-rebrand-landing-page
 
-El repositorio se verificó vacío y el remoto local origin está configurado. La escritura por el conector fue rechazada con HTTP 403, «Resource not accessible by integration». La subida directa por Git tampoco se completó por un tiempo de espera de red hacia github.com. No se ha confirmado ningún commit remoto ni se ha conectado el repositorio como origen automático de Vercel.
+El código fuente y su historial se publicaron por Git en la rama `main`. La primera subida se verificó comparando el SHA local y remoto: `46ee8fb23d42281adcebd295967836939003be4f`.
 
-El usuario debe habilitar el acceso de escritura de la integración al repositorio. Después se puede subir el código y conectar la fuente Git sin crear otro proyecto Vercel.
+El despliegue de Vercel existente se realizó mediante archivos fuente. La conexión automática del repositorio con Vercel todavía no se ha configurado.
