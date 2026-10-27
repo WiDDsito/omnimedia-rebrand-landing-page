@@ -2,6 +2,7 @@ import './motion';
 import './back-to-top';
 import './navigation';
 import './banner';
+import './accordions';
 import { validateQuote, createQuoteSummary } from '../lib/quote.mjs';
 const form = document.querySelector<HTMLFormElement>('#quote-form');
 const dialog = document.querySelector<HTMLDialogElement>('#quote-dialog');

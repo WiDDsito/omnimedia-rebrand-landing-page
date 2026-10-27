@@ -5,7 +5,7 @@
   <div class="voice-wave">
     {Array.from({ length: 35 }, (_, index) => (
       <span
-        style={`--bar-height:${20 + Math.round(Math.abs(Math.sin(index * 0.7)) * 78)}px`}
+        style={`--bar-height:${20 + Math.round(Math.abs(Math.sin(index * 0.7)) * 78)}px;--bar-delay:${index * 12}ms`}
       ></span>
     ))}
   </div>

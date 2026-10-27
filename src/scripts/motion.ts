@@ -47,7 +47,13 @@ media.add('(prefers-reduced-motion: no-preference)', () => {
     ScrollTrigger.create({
       trigger: element,
       animation: timeline,
-      start: 'top bottom-=12',
+      start: () => {
+        const siblings = element.parentElement?.matches(
+          '.solutions-grid, .equipment-grid, .process-bento',
+        );
+        const order = siblings ? [...element.parentElement!.children].indexOf(element) : 0;
+        return `top bottom-=${12 + (order % (mobile ? 2 : 4)) * (mobile ? 12 : 24)}`;
+      },
       end: 'bottom top+=92',
       scrub: 0.25,
       invalidateOnRefresh: true,
@@ -58,7 +64,11 @@ media.add('(prefers-reduced-motion: no-preference)', () => {
   let active = true;
   const refreshLayout = () => ScrollTrigger.refresh(true);
   const refreshFaq = (event: Event) => {
-    if (event.target instanceof HTMLDetailsElement && event.target.closest('.faq-list')) {
+    if (
+      event.target instanceof HTMLDetailsElement &&
+      event.target.closest('.faq-list') &&
+      !event.target.hasAttribute('data-animating')
+    ) {
       refreshLayout();
     }
   };
@@ -67,6 +77,7 @@ media.add('(prefers-reduced-motion: no-preference)', () => {
   });
   window.addEventListener('load', refreshLayout, { once: true });
   document.addEventListener('toggle', refreshFaq, true);
+  document.addEventListener('disclosure-settled', refreshLayout);
 
   carousel?.setAttribute('data-motion-ready', '');
   if (motionToggle) motionToggle.hidden = false;
@@ -83,6 +94,7 @@ media.add('(prefers-reduced-motion: no-preference)', () => {
     active = false;
     window.removeEventListener('load', refreshLayout);
     document.removeEventListener('toggle', refreshFaq, true);
+    document.removeEventListener('disclosure-settled', refreshLayout);
     carouselObserver.disconnect();
     carousel?.removeAttribute('data-motion-ready');
     carousel?.classList.remove('is-offscreen');
