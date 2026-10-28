@@ -4,12 +4,18 @@ import NavigationTree from './NavigationTree.astro';
 import SolutionMenu from './SolutionMenu.astro';
 import { navigation } from '../data/navigation';
 import { productPaths } from '../data/product-pages.mjs';
+import { servicePaths } from '../data/service-pages.mjs';
 const isHome = Astro.url.pathname === '/';
 const startLink = isHome ? '#inicio' : '/';
 const quoteLink = isHome ? '#cotizar' : '/#cotizar';
 const overviewPaths: Record<string, string> = {
   solutions: '/#soluciones',
   products: '/productos/',
+  services: '/servicios/',
+};
+const familyPaths: Record<string, Record<string, string>> = {
+  products: productPaths,
+  services: servicePaths,
 };
 ---
 
@@ -59,11 +65,7 @@ const overviewPaths: Record<string, string> = {
                       <section class="nav-family" aria-labelledby={`${item.id}-${family.id}`}>
                         <a
                           class="family-title"
-                          href={
-                            item.id === 'products'
-                              ? (productPaths[family.id ?? ''] ?? family.url)
-                              : family.url
-                          }
+                          href={familyPaths[item.id ?? '']?.[family.id ?? ''] ?? family.url}
                           id={`${item.id}-${family.id}`}
                         >
                           <Icon name={family.icon} size={20} />
@@ -73,11 +75,12 @@ const overviewPaths: Record<string, string> = {
                           </span>
                         </a>
                         <p>{family.description}</p>
-                        {item.id === 'products' && (
-                          <a class="solution-menu-overview" href={family.url}>
-                            Ver categoría completa <span aria-hidden="true">↗</span>
-                          </a>
-                        )}
+                        <a class="solution-menu-overview" href={family.url}>
+                          {item.id === 'services'
+                            ? 'Ver servicio original'
+                            : 'Ver categoría completa'}{' '}
+                          <span aria-hidden="true">↗</span>
+                        </a>
                         <NavigationTree items={family.children} context={family.label} />
                       </section>
                     ))}

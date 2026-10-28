@@ -1,6 +1,7 @@
 ---
 import Icon from './Icon.astro';
 import { origin } from '../data/content';
+import { servicePaths } from '../data/service-pages.mjs';
 const steps = [
   ['Entendemos tu operación', 'Conversamos sobre tus necesidades, equipos actuales y objetivos.'],
   ['Definimos tu solución', 'Evaluamos alternativas y detallamos el alcance de la propuesta.'],
@@ -21,7 +22,7 @@ const steps = [
       Elegir tecnología es solo el comienzo. Te ayudamos a integrar una solución que tenga sentido
       para tu empresa.
     </p>
-    <a class="text-link" href={origin + '/servicios/soporte-tecnico/'}>
+    <a class="text-link" href="/servicios/">
       Conocer nuestros servicios <Icon size={18} />
     </a>
     <div class="services-detail">
@@ -29,9 +30,7 @@ const steps = [
       <p>
         También damos voz a tu central.
         <br />
-        <a href={origin + '/telefonia/audios-para-centrales-telefonicas/'}>
-          Descubre nuestros audios e IVR
-        </a>
+        <a href={servicePaths.ivr}>Descubre nuestros audios e IVR</a>
       </p>
     </div>
   </div>
