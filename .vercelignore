@@ -6,7 +6,7 @@ dist
 docs
 evidencias
 tasks
-assets
+/assets
 tests
 *.md
 .DS_Store
