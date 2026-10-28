@@ -34,7 +34,12 @@ const quoteLink = isHome ? '#cotizar' : '/#cotizar';
               <Icon name="chevron" size={14} />
             </summary>
             <div class="mega-panel" id={`panel-${item.id}`}>
-              <div class="container mega-layout">
+              <div
+                class:list={[
+                  'container mega-layout',
+                  { 'mega-layout-solutions': item.id === 'solutions' },
+                ]}
+              >
                 <div class="mega-intro">
                   <p>{item.intro}</p>
                   <span>{item.description}</span>
