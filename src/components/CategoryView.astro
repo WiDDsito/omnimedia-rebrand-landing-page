@@ -7,8 +7,16 @@ interface Props {
   section: { label: string; href: string };
   exploreLabel: string;
   relatedLabel: string;
+  exploreDescription?: string;
 }
-const { entry, related, section, exploreLabel, relatedLabel } = Astro.props;
+const {
+  entry,
+  related,
+  section,
+  exploreLabel,
+  relatedLabel,
+  exploreDescription = 'Encuentra información de cada categoría y cuéntanos qué necesita tu empresa.',
+} = Astro.props;
 ---
 
 <section class="solution-hero" id="inicio" aria-labelledby="hero-title">
@@ -83,7 +91,7 @@ const { entry, related, section, exploreLabel, relatedLabel } = Astro.props;
     <div class="solution-explore-intro" data-reveal>
       <p class="section-kicker">Conoce las opciones</p>
       <h2 id="explore-title">{entry.linksTitle}</h2>
-      <p>Encuentra información de cada categoría y cuéntanos qué necesita tu empresa.</p>
+      <p>{exploreDescription}</p>
     </div>
     <ul class="solution-large-links">
       {entry.links.map((link) => (
@@ -93,7 +101,10 @@ const { entry, related, section, exploreLabel, relatedLabel } = Astro.props;
               <strong>{link.title}</strong>
               <small>{link.description}</small>
             </span>
-            <span class="large-link-arrow" aria-label="Visitar sitio de la categoría">
+            <span
+              class="large-link-arrow"
+              aria-label={link.actionLabel ?? 'Visitar sitio de la categoría'}
+            >
               ↗
             </span>
           </a>

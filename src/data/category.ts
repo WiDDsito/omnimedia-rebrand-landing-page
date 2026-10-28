@@ -12,5 +12,5 @@ export interface CategoryPage {
   introduction: string[];
   points: string[][];
   linksTitle: string;
-  links: { title: string; description: string; href: string }[];
+  links: { title: string; description: string; href: string; actionLabel?: string }[];
 }
