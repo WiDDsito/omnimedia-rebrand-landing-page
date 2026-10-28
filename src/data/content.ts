@@ -1,5 +1,6 @@
+import { solutionPaths } from './solution-pages.mjs';
 export const origin = 'https://www.omnimediaperu.com';
-export const solutions = [
+const solutionContent = [
   {
     id: 'telefonia',
     icon: 'phone',
@@ -45,6 +46,10 @@ export const solutions = [
     label: 'Explorar perifoneo',
   },
 ];
+export const solutions = solutionContent.map((solution) => ({
+  ...solution,
+  localHref: solutionPaths[solution.id],
+}));
 export const equipment = [
   {
     title: 'Teléfonos IP',

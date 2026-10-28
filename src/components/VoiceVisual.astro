@@ -1,0 +1,29 @@
+<div class="voice-visual" aria-hidden="true">
+  <div class="voice-call">
+    <span class="voice-dot"></span>Bienvenido a tu empresa
+  </div>
+  <div class="voice-wave">
+    {Array.from({ length: 35 }, (_, index) => (
+      <span
+        style={`--bar-height:${20 + Math.round(Math.abs(Math.sin(index * 0.7)) * 78)}px;--bar-delay:${index * 12}ms`}
+      ></span>
+    ))}
+  </div>
+  <div class="voice-options">
+    <span>
+      01
+      <br />
+      <strong>Bienvenida</strong>
+    </span>
+    <span>
+      02
+      <br />
+      <strong>Menú IVR</strong>
+    </span>
+    <span>
+      03
+      <br />
+      <strong>Atención</strong>
+    </span>
+  </div>
+</div>

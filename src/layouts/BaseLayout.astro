@@ -3,17 +3,27 @@ import '@fontsource/ibm-plex-sans/latin-400.css';
 import '@fontsource/ibm-plex-sans/latin-500.css';
 import '@fontsource/ibm-plex-sans/latin-600.css';
 import '../styles/global.css';
+import '../styles/header.css';
+import '../styles/typography.css';
+import '../styles/banner.css';
+import '../styles/interactions.css';
 import BackToTop from '../components/BackToTop.astro';
+interface Props {
+  title?: string;
+  description?: string;
+}
+const {
+  title = 'OmniMedia Perú | Vista preliminar',
+  description = 'Vista preliminar de OmniMedia Perú. Telefonía IP, videoconferencia y soluciones de comunicación para empresas.',
+} = Astro.props;
 import bodyFont from '@fontsource/ibm-plex-sans/files/ibm-plex-sans-latin-400-normal.woff2?url';
-import headingFont from '@fontsource/ibm-plex-sans/files/ibm-plex-sans-latin-500-normal.woff2?url';
-import strongFont from '@fontsource/ibm-plex-sans/files/ibm-plex-sans-latin-600-normal.woff2?url';
 ---
 
 <!doctype html>
 <html lang="es-PE">
   <head>
     <meta charset="UTF-8" />
-    {[bodyFont, headingFont, strongFont].map((font) => (
+    {[bodyFont, '/fonts/satoshi-900.woff2'].map((font) => (
       <link rel="preload" href={font} as="font" type="font/woff2" crossorigin="anonymous" />
     ))}
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -23,22 +33,20 @@ import strongFont from '@fontsource/ibm-plex-sans/files/ibm-plex-sans-latin-600-
     />
     <meta name="robots" content="noindex, nofollow" />
     <meta name="theme-color" content="#f4f4f4" />
-    <title>OmniMedia Perú | Vista preliminar</title>
-    <meta
-      name="description"
-      content="Vista preliminar de OmniMedia Perú. Telefonía IP, videoconferencia y soluciones de comunicación para empresas."
-    />
+    <title>{title}</title>
+    <meta name="description" content={description} />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <noscript>
       <style>
-        .menu-toggle {
+        .menu-toggle,
+        .navigation-backdrop {
           display: none !important;
         }
-        @media (max-width: 900px) {
+        @media (max-width: 1100px) {
           .site-header nav {
-            display: flex !important;
+            display: block !important;
             position: static !important;
-            box-shadow: none !important;
+            max-height: none !important;
           }
           .header-inner {
             height: auto !important;
@@ -47,6 +55,9 @@ import strongFont from '@fontsource/ibm-plex-sans/files/ibm-plex-sans-latin-600-
           }
           .site-header {
             position: relative !important;
+          }
+          .header-cta {
+            margin-top: 12px;
           }
         }
       </style>

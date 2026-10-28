@@ -1,0 +1,23 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import SolutionView from '../../components/SolutionView.astro';
+import { solutionPages } from '../../data/solution-pages.mjs';
+import '../../styles/solution-pages.css';
+export function getStaticPaths() {
+  return solutionPages.map((solution) => ({
+    params: { slug: solution.slug },
+    props: { solution },
+  }));
+}
+const { solution } = Astro.props;
+---
+
+<BaseLayout title={`${solution.title} | OmniMedia Perú`} description={solution.description}>
+  <Header />
+  <main id="contenido">
+    <SolutionView solution={solution} />
+  </main>
+  <Footer />
+</BaseLayout>
