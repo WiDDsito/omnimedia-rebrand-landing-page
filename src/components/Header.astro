@@ -3,9 +3,14 @@ import Icon from './Icon.astro';
 import NavigationTree from './NavigationTree.astro';
 import SolutionMenu from './SolutionMenu.astro';
 import { navigation } from '../data/navigation';
+import { productPaths } from '../data/product-pages.mjs';
 const isHome = Astro.url.pathname === '/';
 const startLink = isHome ? '#inicio' : '/';
 const quoteLink = isHome ? '#cotizar' : '/#cotizar';
+const overviewPaths: Record<string, string> = {
+  solutions: '/#soluciones',
+  products: '/productos/',
+};
 ---
 
 <a class="skip-link" href="#contenido">
@@ -38,7 +43,7 @@ const quoteLink = isHome ? '#cotizar' : '/#cotizar';
                 <div class="mega-intro">
                   <p>{item.intro}</p>
                   <span>{item.description}</span>
-                  <a href={item.id === 'solutions' ? '/#soluciones' : item.url}>
+                  <a href={overviewPaths[item.id ?? ''] ?? item.url}>
                     Explorar {item.label.toLowerCase()}
                     <Icon size={16} />
                   </a>
@@ -52,7 +57,15 @@ const quoteLink = isHome ? '#cotizar' : '/#cotizar';
                   <div class:list={['mega-families', { 'mega-services': item.id === 'services' }]}>
                     {item.children.map((family) => (
                       <section class="nav-family" aria-labelledby={`${item.id}-${family.id}`}>
-                        <a class="family-title" href={family.url} id={`${item.id}-${family.id}`}>
+                        <a
+                          class="family-title"
+                          href={
+                            item.id === 'products'
+                              ? (productPaths[family.id ?? ''] ?? family.url)
+                              : family.url
+                          }
+                          id={`${item.id}-${family.id}`}
+                        >
                           <Icon name={family.icon} size={20} />
                           <span>{family.label}</span>
                           <span class="family-arrow" aria-hidden="true">
@@ -60,6 +73,11 @@ const quoteLink = isHome ? '#cotizar' : '/#cotizar';
                           </span>
                         </a>
                         <p>{family.description}</p>
+                        {item.id === 'products' && (
+                          <a class="solution-menu-overview" href={family.url}>
+                            Ver categoría completa <span aria-hidden="true">↗</span>
+                          </a>
+                        )}
                         <NavigationTree items={family.children} context={family.label} />
                       </section>
                     ))}

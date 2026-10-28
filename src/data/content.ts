@@ -52,24 +52,28 @@ export const solutions = solutionContent.map((solution) => ({
 }));
 export const equipment = [
   {
+    id: 'phones',
     title: 'Teléfonos IP',
     desc: 'Comunicación en cada escritorio.',
     image: 'phone.jpg',
     href: '/telefonia/telefonos-analogicos-digitales-ip/',
   },
   {
+    id: 'rooms',
     title: 'Videoconferencia',
     desc: 'Equipos para reunir a tu equipo.',
     image: 'video.jpg',
     href: '/productos/equipos-y-camaras-de-videoconferencia-poly-yealink-logitech/',
   },
   {
+    id: 'headsets',
     title: 'Auriculares',
     desc: 'Más foco en cada conversación.',
     image: 'headset.jpg',
     href: '/telefonia/headset-auriculares/',
   },
   {
+    id: 'network',
     title: 'Networking',
     desc: 'La base de tus conexiones.',
     image: 'switch.jpg',
