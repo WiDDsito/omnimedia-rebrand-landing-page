@@ -6,21 +6,17 @@ import NavigationTree from './NavigationTree.astro';
 const families = navigation.find((item) => item.id === 'solutions')?.children ?? [];
 ---
 
-<div class="solution-menu-grid">
+<div class="mega-families">
   {families.map((family) => (
-    <section class="solution-menu-family" aria-labelledby={`solution-menu-${family.id}`}>
+    <section class="nav-family solution-menu-family" aria-labelledby={`solution-menu-${family.id}`}>
       <a
-        class="solution-menu-link"
+        class="family-title"
         href={solutionPages.find((solution) => solution.familyId === family.id)?.path ?? family.url}
         id={`solution-menu-${family.id}`}
       >
-        <span class="solution-menu-icon">
-          <Icon name={family.icon} size={22} />
-        </span>
-        <span>
-          <strong>{family.label}</strong>
-        </span>
-        <span class="solution-menu-arrow" aria-hidden="true">
+        <Icon name={family.icon} size={20} />
+        <span>{family.label}</span>
+        <span class="family-arrow" aria-hidden="true">
           ↗
         </span>
       </a>
