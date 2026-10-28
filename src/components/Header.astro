@@ -1,7 +1,11 @@
 ---
 import Icon from './Icon.astro';
 import NavigationTree from './NavigationTree.astro';
+import SolutionMenu from './SolutionMenu.astro';
 import { navigation } from '../data/navigation';
+const isHome = Astro.url.pathname === '/';
+const startLink = isHome ? '#inicio' : '/';
+const quoteLink = isHome ? '#cotizar' : '/#cotizar';
 ---
 
 <a class="skip-link" href="#contenido">
@@ -9,7 +13,7 @@ import { navigation } from '../data/navigation';
 </a>
 <header class="site-header">
   <div class="container header-inner">
-    <a class="brand-logo" href="#inicio" aria-label="OmniMedia Perú, inicio">
+    <a class="brand-logo" href={startLink} aria-label="OmniMedia Perú, inicio">
       <img src="/images/logo.png" width="180" height="64" alt="OmniMedia Perú" />
     </a>
     <button
@@ -34,29 +38,33 @@ import { navigation } from '../data/navigation';
                 <div class="mega-intro">
                   <p>{item.intro}</p>
                   <span>{item.description}</span>
-                  <a href={item.url}>
+                  <a href={item.id === 'solutions' ? '/#soluciones' : item.url}>
                     Explorar {item.label.toLowerCase()}
                     <Icon size={16} />
                   </a>
-                  <a class="mega-contact" href="#cotizar">
+                  <a class="mega-contact" href={quoteLink}>
                     Hablemos de tu proyecto
                   </a>
                 </div>
-                <div class:list={['mega-families', { 'mega-services': item.id === 'services' }]}>
-                  {item.children.map((family) => (
-                    <section class="nav-family" aria-labelledby={`${item.id}-${family.id}`}>
-                      <a class="family-title" href={family.url} id={`${item.id}-${family.id}`}>
-                        <Icon name={family.icon} size={20} />
-                        <span>{family.label}</span>
-                        <span class="family-arrow" aria-hidden="true">
-                          ↗
-                        </span>
-                      </a>
-                      <p>{family.description}</p>
-                      <NavigationTree items={family.children} context={family.label} />
-                    </section>
-                  ))}
-                </div>
+                {item.id === 'solutions' ? (
+                  <SolutionMenu />
+                ) : (
+                  <div class:list={['mega-families', { 'mega-services': item.id === 'services' }]}>
+                    {item.children.map((family) => (
+                      <section class="nav-family" aria-labelledby={`${item.id}-${family.id}`}>
+                        <a class="family-title" href={family.url} id={`${item.id}-${family.id}`}>
+                          <Icon name={family.icon} size={20} />
+                          <span>{family.label}</span>
+                          <span class="family-arrow" aria-hidden="true">
+                            ↗
+                          </span>
+                        </a>
+                        <p>{family.description}</p>
+                        <NavigationTree items={family.children} context={family.label} />
+                      </section>
+                    ))}
+                  </div>
+                )}
               </div>
             </div>
           </details>
@@ -72,7 +80,7 @@ import { navigation } from '../data/navigation';
         <a href="mailto:cotizaciones@omnimediaperu.com">cotizaciones@omnimediaperu.com</a>
       </div>
     </nav>
-    <a class="button button-small header-cta" href="#cotizar" aria-label="Solicitar cotización">
+    <a class="button button-small header-cta" href={quoteLink} aria-label="Solicitar cotización">
       <span class="cta-full">Solicitar cotización</span>
       <span class="cta-short" aria-hidden="true">
         Cotizar

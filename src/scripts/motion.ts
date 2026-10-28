@@ -28,7 +28,7 @@ media.add(
       introPlayed = true;
       const intro = gsap.timeline({ defaults: { ease: 'power3.out' } });
       intro
-        .from('.banner-heading > *', {
+        .from('.banner-heading > *, .solution-hero-copy > *', {
           y: 16,
           opacity: 0.2,
           duration: 0.7,
@@ -36,7 +36,7 @@ media.add(
           clearProps: 'transform,opacity',
         })
         .from(
-          '.campaign-stage',
+          '.campaign-stage, .solution-hero-visual',
           { y: 20, opacity: 0.3, duration: 0.85, clearProps: 'transform,opacity' },
           0.1,
         );
@@ -52,7 +52,7 @@ media.add(
     revealTargets.forEach((element) => {
       const parent = element.parentElement;
       const grouped = parent?.matches(
-        '.solutions-grid, .equipment-grid, .process-bento, .faq-list',
+        '.solutions-grid, .equipment-grid, .process-bento, .faq-list, .solution-large-links, .solution-principles',
       );
       const order = grouped && parent ? [...parent.children].indexOf(element) : 0;
       const lateral =

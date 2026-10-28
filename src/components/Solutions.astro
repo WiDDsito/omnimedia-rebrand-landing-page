@@ -7,7 +7,7 @@ const backgrounds: Record<string, string> = {
   atencion: 'headset.jpg',
   perifoneo: 'perifoneo.jpg',
 };
-import { solutions, origin } from '../data/content';
+import { solutions } from '../data/content';
 ---
 
 <section id="soluciones" class="section container">
@@ -55,7 +55,7 @@ import { solutions, origin } from '../data/content';
               <li>{t}</li>
             ))}
           </ul>
-          <a class="solution-link" href={origin + s.href}>
+          <a class="solution-link" href={s.localHref}>
             {s.label}
             <Icon size={19} />
           </a>

@@ -1,0 +1,21 @@
+---
+import { solutionPages } from '../data/solution-pages.mjs';
+import Icon from './Icon.astro';
+---
+
+<div class="solution-menu-grid">
+  {solutionPages.map((solution) => (
+    <a class="solution-menu-link" href={solution.path}>
+      <span class="solution-menu-icon">
+        <Icon name={solution.icon} size={22} />
+      </span>
+      <span>
+        <strong>{solution.title}</strong>
+        <small>{solution.description}</small>
+      </span>
+      <span class="solution-menu-arrow" aria-hidden="true">
+        ↗
+      </span>
+    </a>
+  ))}
+</div>

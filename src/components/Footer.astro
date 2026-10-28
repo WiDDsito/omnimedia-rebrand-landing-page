@@ -5,7 +5,7 @@ import { solutions, origin } from '../data/content';
 <footer class="footer">
   <div class="container footer-grid">
     <div>
-      <a href="#inicio" aria-label="OmniMedia Perú, volver al inicio">
+      <a href="/#inicio" aria-label="OmniMedia Perú, volver al inicio">
         <img src="/images/logo.png" width="166" height="59" alt="OmniMedia Perú" loading="lazy" />
       </a>
       <p>
@@ -17,7 +17,7 @@ import { solutions, origin } from '../data/content';
     <div>
       <h3>Soluciones</h3>
       {solutions.map((s) => (
-        <a href={origin + s.href}>{s.title}</a>
+        <a href={s.localHref}>{s.title}</a>
       ))}
     </div>
     <div>
@@ -29,7 +29,7 @@ import { solutions, origin } from '../data/content';
     </div>
     <div>
       <h3>Conversemos</h3>
-      <a href="#cotizar">Preparar una cotización</a>
+      <a href="/#cotizar">Preparar una cotización</a>
       <a href={origin + '/contactenos/'}>Contacto comercial</a>
       <a href="tel:+5117152145">01 715 2145</a>
       <a href="tel:+51916945556">916 945 556</a>
@@ -39,6 +39,6 @@ import { solutions, origin } from '../data/content';
   <div class="container footer-bottom">
     <span>© {new Date().getFullYear()} OmniMedia Perú.</span>
     <span>Propuesta de diseño · Vista preliminar</span>
-    <a href="#inicio">Volver al inicio ↑</a>
+    <a href="/#inicio">Volver al inicio ↑</a>
   </div>
 </footer>
