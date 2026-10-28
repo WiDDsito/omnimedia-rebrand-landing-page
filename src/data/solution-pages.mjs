@@ -19,7 +19,7 @@ export const solutionPages = [
     headline: 'Telefonía que conecta a tu empresa.',
     description:
       'Centrales físicas y virtuales, conectividad SIP y equipos para acompañar las llamadas de tu operación.',
-    image: 'phone.jpg',
+    image: 'phone.webp',
     imageAlt: 'Teléfonos IP del portafolio de OmniMedia Perú',
     imageNote: 'Centrales, conectividad y equipos.',
     icon: 'phone',
@@ -85,7 +85,7 @@ export const solutionPages = [
     headline: 'Tu equipo, en la misma conversación.',
     description:
       'Cámaras, barras y sistemas de videoconferencia para reunir a quienes están en la sala y a quienes participan a distancia.',
-    image: 'video.jpg',
+    image: 'video.webp',
     imageAlt: 'Barra y equipos de videoconferencia del portafolio de OmniMedia',
     imageNote: 'Poly HP y Yealink para tus reuniones.',
     icon: 'video',
@@ -135,7 +135,7 @@ export const solutionPages = [
     headline: 'Tu mensaje, en cada espacio.',
     description:
       'Soluciones de audio y perifoneo para comunicar avisos y coordinar a las personas dentro de tus instalaciones.',
-    image: 'perifoneo.jpg',
+    image: 'perifoneo.webp',
     imageAlt: 'Equipos para perifoneo y megafonía del portafolio de OmniMedia',
     imageNote: 'Consolas, altavoces y equipos SIP.',
     icon: 'speaker',
@@ -183,7 +183,7 @@ export const solutionPages = [
     headline: 'Cada conversación merece atención.',
     description:
       'Organiza las conversaciones, llamadas y campañas de tu empresa con herramientas para acompañar a tus clientes.',
-    image: 'headset.jpg',
+    image: 'headset.webp',
     imageAlt: 'Auriculares profesionales para equipos de atención al cliente',
     imageNote: 'Conversaciones, llamadas y seguimiento.',
     icon: 'chat',
