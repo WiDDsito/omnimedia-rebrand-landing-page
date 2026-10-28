@@ -1,0 +1,128 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import PageIntro from '../components/PageIntro.astro';
+import Icon from '../components/Icon.astro';
+import { company } from '../data/company.mjs';
+import '../styles/solution-pages.css';
+import '../styles/company-pages.css';
+---
+
+<BaseLayout
+  title="Contacto | OmniMedia Perú"
+  description="Comunícate con OmniMedia Perú por WhatsApp, teléfono o correo. Encuentra sus redes sociales y ubicación en Lima, Perú."
+>
+  <Header />
+  <main id="contenido">
+    <PageIntro
+      label="Contacto"
+      icon="chat"
+      title="Conversemos sobre tu proyecto."
+      description="Elige cómo prefieres comunicarte. Aquí encontrarás nuestros canales comerciales, redes sociales y ubicación."
+    >
+      <Fragment slot="actions">
+        <a class="button" href="#redes-sociales">
+          Ver nuestras redes <Icon size={18} />
+        </a>
+        <a class="text-link" href="#ubicacion">
+          Ubicación y atención <Icon name="pin" size={18} />
+        </a>
+      </Fragment>
+      <aside
+        slot="visual"
+        class="solution-hero-visual contact-channels"
+        id="canales"
+        aria-label="Canales de contacto directo"
+      >
+        {company.channels.map((channel) => (
+          <a
+            class="contact-channel"
+            href={channel.href}
+            aria-label={`${channel.action}: ${channel.value}`}
+          >
+            <Icon name={channel.icon} size={24} />
+            <span>
+              <small>{channel.label}</small>
+              <strong>
+                {channel.id === 'email' ? (
+                  <>
+                    {channel.value.split('@')[0]}@<wbr />
+                    {channel.value.split('@')[1]}
+                  </>
+                ) : (
+                  channel.value
+                )}
+              </strong>
+              <span>{channel.description}</span>
+            </span>
+            <Icon size={18} />
+          </a>
+        ))}
+      </aside>
+    </PageIntro>
+    <section
+      class="container contact-social-section"
+      id="redes-sociales"
+      aria-labelledby="social-title"
+    >
+      <div data-reveal>
+        <p class="section-kicker">Sigamos en contacto</p>
+        <h2 id="social-title">Encuéntranos también aquí.</h2>
+        <p>Conoce las publicaciones y contenidos de OmniMedia Perú en nuestras redes.</p>
+      </div>
+      <div class="contact-social-grid">
+        {company.socials.map((social) => (
+          <a
+            class="contact-social-card"
+            href={social.href}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label={`${social.name} de OmniMedia Perú (se abre en otra pestaña)`}
+            data-reveal
+          >
+            <span class="social-monogram" aria-hidden="true">
+              {social.monogram}
+            </span>
+            <h3>{social.name}</h3>
+            <p>{social.handle}</p>
+            <span>
+              Ver perfil <Icon size={18} />
+            </span>
+          </a>
+        ))}
+      </div>
+    </section>
+    <section class="company-location" id="ubicacion" aria-labelledby="location-title">
+      <div class="container company-location-grid">
+        <div data-reveal>
+          <p class="section-kicker">Ubicación y atención</p>
+          <h2 id="location-title">{company.location}</h2>
+          <p>
+            Consulta nuestro punto de ubicación en el mapa y coordina tu visita por teléfono o
+            WhatsApp.
+          </p>
+          <a class="button" href={company.mapsUrl} target="_blank" rel="noopener noreferrer">
+            Ver en Google Maps <Icon name="pin" size={18} />
+            <span class="sr-only"> (se abre en otra pestaña)</span>
+          </a>
+        </div>
+        <div class="contact-practical" data-reveal>
+          <h3>Antes de conversar</h3>
+          <p>
+            Comparte la solución que buscas, la cantidad de usuarios o equipos y la ubicación de tu
+            instalación.
+          </p>
+          <h3>Para una visita</h3>
+          <p>Coordina previamente el horario y el punto de atención con nuestro equipo.</p>
+          <h3>¿Buscas asistencia?</h3>
+          <p>
+            Conoce las opciones de <a href="/servicios/soporte-tecnico/">soporte técnico</a> para tu
+            instalación.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <Footer />
+</BaseLayout>
