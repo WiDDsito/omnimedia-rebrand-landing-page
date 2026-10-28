@@ -5,6 +5,7 @@ import SolutionMenu from './SolutionMenu.astro';
 import { navigation } from '../data/navigation';
 import { productPaths } from '../data/product-pages.mjs';
 import { servicePaths } from '../data/service-pages.mjs';
+import { company } from '../data/company.mjs';
 const isHome = Astro.url.pathname === '/';
 const startLink = isHome ? '#inicio' : '/';
 const quoteLink = isHome ? '#cotizar' : '/#cotizar';
@@ -16,6 +17,10 @@ const overviewPaths: Record<string, string> = {
 const familyPaths: Record<string, Record<string, string>> = {
   products: productPaths,
   services: servicePaths,
+};
+const directPaths: Record<string, string> = {
+  [company.aboutSource]: '/conocenos/',
+  [company.contactSource]: '/contactenos/',
 };
 ---
 
@@ -90,7 +95,7 @@ const familyPaths: Record<string, Record<string, string>> = {
             </div>
           </details>
         ) : (
-          <a class="nav-direct" href={item.url}>
+          <a class="nav-direct" href={directPaths[item.url] ?? item.url}>
             {item.label}
           </a>
         ),
