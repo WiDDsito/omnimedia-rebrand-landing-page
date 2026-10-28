@@ -1,0 +1,36 @@
+---
+import Icon from './Icon.astro';
+interface Props {
+  label: string;
+  title: string;
+  description: string;
+  icon: string;
+}
+const { label, title, description, icon } = Astro.props;
+---
+
+<section class="solution-hero" id="inicio" aria-labelledby="hero-title">
+  <div class="container">
+    <nav class="solution-breadcrumb" aria-label="Ruta de navegación">
+      <a href="/">Inicio</a>
+      <span aria-hidden="true">/</span>
+      <span aria-current="page">{label}</span>
+    </nav>
+    <div class="solution-hero-grid">
+      <div class="solution-hero-copy">
+        <p class="solution-category">
+          <Icon name={icon} size={28} />
+          {label}
+        </p>
+        <h1 id="hero-title" tabindex="-1">
+          {title}
+        </h1>
+        <p class="solution-lead">{description}</p>
+        <div class="solution-hero-actions">
+          <slot name="actions" />
+        </div>
+      </div>
+      <slot name="visual" />
+    </div>
+  </div>
+</section>

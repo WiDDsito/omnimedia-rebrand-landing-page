@@ -1,6 +1,7 @@
 ---
 import Icon from './Icon.astro';
 import { equipment, origin } from '../data/content';
+import { productPaths } from '../data/product-pages.mjs';
 ---
 
 <section class="equipment-section" id="equipos">
@@ -14,13 +15,13 @@ import { equipment, origin } from '../data/content';
           cada espacio de trabajo.
         </h2>
       </div>
-      <a class="text-link" href={origin + '/productos/'}>
+      <a class="text-link" href="/productos/">
         Explorar catálogo <Icon size={19} />
       </a>
     </div>
     <div class="equipment-grid">
       {equipment.map((e) => (
-        <a class="equipment-card" href={origin + e.href}>
+        <a class="equipment-card" href={productPaths[e.id]}>
           <div class="equipment-image">
             <img
               src={'/images/' + e.image}
@@ -40,11 +41,9 @@ import { equipment, origin } from '../data/content';
     </div>
     <div class="equipment-more">
       <span>¿Buscas algo más específico?</span>
-      <a href={origin + '/telefonia/telefonos-hoteleros/'}>Telefonía hotelera</a>
+      <a href={productPaths.hotels}>Telefonía hotelera</a>
       <a href={origin + '/telefonia/centrales-telefonicas/'}>Centrales telefónicas</a>
-      <a href={origin + '/productos/accesorios-equipos-remanufacturados/'}>
-        Equipos remanufacturados
-      </a>
+      <a href={productPaths.refurbished}>Equipos remanufacturados</a>
     </div>
   </div>
 </section>

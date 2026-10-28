@@ -1,13 +1,13 @@
 ---
 import Icon from './Icon.astro';
 import { Image } from 'astro:assets';
-import room from '../assets/meeting-room.png';
+import room from '../assets/meeting-room.webp';
 const backgrounds: Record<string, string> = {
-  telefonia: 'phone.jpg',
-  atencion: 'headset.jpg',
-  perifoneo: 'perifoneo.jpg',
+  telefonia: 'phone.webp',
+  atencion: 'headset.webp',
+  perifoneo: 'perifoneo.webp',
 };
-import { solutions, origin } from '../data/content';
+import { solutions } from '../data/content';
 ---
 
 <section id="soluciones" class="section container">
@@ -28,7 +28,11 @@ import { solutions, origin } from '../data/content';
   <div class="solutions-grid">
     {solutions.map((s) => (
       <div class="solution-reveal" data-reveal>
-        <article class="solution-card solution-interactive">
+        <a
+          class="solution-card solution-interactive"
+          href={s.localHref}
+          aria-labelledby={`solution-card-${s.id}`}
+        >
           <div class="solution-background" aria-hidden="true">
             {s.id === 'video' ? (
               <Image src={room} alt="" width={600} format="webp" loading="lazy" />
@@ -48,18 +52,18 @@ import { solutions, origin } from '../data/content';
           <span class="solution-icon">
             <Icon name={s.icon} size={28} />
           </span>
-          <h3>{s.title}</h3>
+          <h3 id={`solution-card-${s.id}`}>{s.title}</h3>
           <p>{s.description}</p>
           <ul class="solution-tags">
             {s.tags.map((t) => (
               <li>{t}</li>
             ))}
           </ul>
-          <a class="solution-link" href={origin + s.href}>
+          <span class="solution-link">
             {s.label}
             <Icon size={19} />
-          </a>
-        </article>
+          </span>
+        </a>
       </div>
     ))}
   </div>

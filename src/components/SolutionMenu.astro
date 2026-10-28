@@ -1,0 +1,30 @@
+---
+import { solutionPages } from '../data/solution-pages.mjs';
+import { navigation } from '../data/navigation';
+import Icon from './Icon.astro';
+import NavigationTree from './NavigationTree.astro';
+const families = navigation.find((item) => item.id === 'solutions')?.children ?? [];
+---
+
+<div class="mega-families">
+  {families.map((family) => (
+    <section class="nav-family solution-menu-family" aria-labelledby={`solution-menu-${family.id}`}>
+      <a
+        class="family-title"
+        href={solutionPages.find((solution) => solution.familyId === family.id)?.path ?? family.url}
+        id={`solution-menu-${family.id}`}
+      >
+        <Icon name={family.icon} size={20} />
+        <span>{family.label}</span>
+        <span class="family-arrow" aria-hidden="true">
+          ↗
+        </span>
+      </a>
+      <p>{family.description}</p>
+      <a class="solution-menu-overview" href={family.url}>
+        Ver categoría completa <span aria-hidden="true">↗</span>
+      </a>
+      <NavigationTree items={family.children} context={family.label} />
+    </section>
+  ))}
+</div>
