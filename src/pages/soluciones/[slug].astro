@@ -2,7 +2,7 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import Header from '../../components/Header.astro';
 import Footer from '../../components/Footer.astro';
-import SolutionView from '../../components/SolutionView.astro';
+import CategoryView from '../../components/CategoryView.astro';
 import { solutionPages } from '../../data/solution-pages.mjs';
 import '../../styles/solution-pages.css';
 export function getStaticPaths() {
@@ -17,7 +17,13 @@ const { solution } = Astro.props;
 <BaseLayout title={`${solution.title} | OmniMedia Perú`} description={solution.description}>
   <Header />
   <main id="contenido">
-    <SolutionView solution={solution} />
+    <CategoryView
+      entry={solution}
+      related={solutionPages.filter((item) => item.id !== solution.id)}
+      section={{ label: 'Soluciones', href: '/#soluciones' }}
+      exploreLabel="Explorar la solución"
+      relatedLabel="Otras soluciones"
+    />
   </main>
   <Footer />
 </BaseLayout>
