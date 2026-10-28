@@ -31,7 +31,7 @@
   font-size: clamp(24px, 2.4vw, 34px);
   font-weight: 700;
   line-height: 1.25;
-  color: var(--ink);
+  color: var(--brand);
   margin-bottom: 20px;
 }
 .solution-category svg {
