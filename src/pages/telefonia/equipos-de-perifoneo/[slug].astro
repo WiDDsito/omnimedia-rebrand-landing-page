@@ -1,0 +1,27 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import Header from '../../../components/Header.astro';
+import Footer from '../../../components/Footer.astro';
+import CategoryView from '../../../components/CategoryView.astro';
+import { pagingPages } from '../../../data/paging-pages.mjs';
+import '../../../styles/solution-pages.css';
+export function getStaticPaths() {
+  return pagingPages.map((entry) => ({ params: { slug: entry.slug }, props: { entry } }));
+}
+const { entry } = Astro.props;
+---
+
+<BaseLayout title={`${entry.title} | OmniMedia Perú`} description={entry.description}>
+  <Header />
+  <main id="contenido">
+    <CategoryView
+      entry={entry}
+      related={pagingPages.filter((page) => page.id !== entry.id)}
+      section={{ label: 'Perifoneo y megafonía', href: '/soluciones/perifoneo-y-megafonia/' }}
+      exploreLabel="Explorar equipos"
+      relatedLabel="Más familias de perifoneo"
+      exploreDescription="Consulta las fichas técnicas en PDF y evalúa con nuestro equipo qué configuración necesita tu instalación."
+    />
+  </main>
+  <Footer />
+</BaseLayout>
