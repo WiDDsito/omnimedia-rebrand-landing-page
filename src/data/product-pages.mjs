@@ -1,4 +1,5 @@
 import { localPhoneHref } from './phone-catalog.mjs';
+import { localHotelHref } from './hotel-pages.mjs';
 import navigation from './navigation.json' with { type: 'json' };
 
 const content = {
@@ -131,7 +132,7 @@ export const productPages = families.map((family) => {
   const links = categories.map((category) => ({
     title: category.label,
     description: 'Conoce las opciones de esta familia del portafolio.',
-    href: localPhoneHref(category.url),
+    href: localHotelHref(localPhoneHref(category.url)),
   }));
   if (!links.length)
     links.push(

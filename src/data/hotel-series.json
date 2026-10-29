@@ -1,0 +1,168 @@
+{
+  "fanvil": [
+    {
+      "id": "h5",
+      "title": "Fanvil H5",
+      "label": "IP para la habitación",
+      "description": "Un equipo de escritorio para comunicar al huésped con los servicios del hotel.",
+      "features": [
+        "Pantalla a color de 3,5 pulgadas",
+        "Una línea SIP y alimentación PoE",
+        "Teclas de marcación rápida"
+      ],
+      "pdf": "https://www.omnimediaperu.com/wp-content/uploads/2020/04/HOJA-DE-DATOS-TELEFONO-FANVIL-H5.pdf",
+      "image": "hotels/fanvil-1.webp",
+      "note": ""
+    },
+    {
+      "id": "h2u",
+      "title": "Fanvil H2U",
+      "label": "Formato compacto",
+      "description": "Una alternativa IP para habitaciones y espacios donde importa el tamaño del equipo.",
+      "features": [
+        "Dos líneas SIP y voz HD",
+        "Instalación en escritorio o pared",
+        "PoE y marcación rápida"
+      ],
+      "pdf": "https://www.omnimediaperu.com/wp-content/uploads/2022/05/FICHA-TECNICA-TELEFONO-HOTELERO-H2U-FANVIL-OMNIMEDIA-PERU.pdf",
+      "image": "hotels/fanvil-2.webp",
+      "note": ""
+    }
+  ],
+  "telematrix": [
+    {
+      "id": "9600",
+      "title": "Serie 9600",
+      "label": "Libertad de movimiento",
+      "description": "Familia inalámbrica para habitaciones con opciones de conexión analógica o VoIP.",
+      "features": ["Una o dos líneas según versión", "AutoSync y mensajes OneTouch"],
+      "pdf": "https://www.omnimediaperu.com/wp-content/uploads/2020/04/HOJA-DE-DATOS-TELEFONOS-CETIS-TELEMATRIX-SERIE-9600-OMNIMEDIA-PERU.pdf",
+      "image": "hotels/telematrix-1.webp",
+      "note": ""
+    },
+    {
+      "id": "3300",
+      "title": "Serie 3300",
+      "label": "Diseño con cable",
+      "description": "Alternativas de escritorio con detalles de color para integrarse al entorno del hotel.",
+      "features": ["Configuraciones analógicas o VoIP", "Recuperación de mensajes OneTouch"],
+      "pdf": "https://www.omnimediaperu.com/wp-content/uploads/2020/04/HOJA-DE-DATOS-TELEFONOS-CETIS-TELEMATRIX-SERIE-3300-OMNIMEDIA-PERU.pdf",
+      "image": "hotels/telematrix-2.webp",
+      "note": ""
+    },
+    {
+      "id": "3100",
+      "title": "Serie 3100",
+      "label": "Líneas curvas",
+      "description": "Teléfonos analógicos para escritorios y vestíbulos.",
+      "features": ["Una o dos líneas según versión", "Opciones de 5 o 10 teclas de servicio"],
+      "pdf": "https://www.omnimediaperu.com/wp-content/uploads/2020/04/HOJA-DE-DATOS-TELEFONOS-CETIS-TELEMATRIX-SERIE-3100-OMNIMEDIA-PERU.pdf",
+      "image": "hotels/telematrix-3.webp",
+      "note": ""
+    },
+    {
+      "id": "trimline",
+      "title": "Trimline",
+      "label": "Espacios pequeños",
+      "description": "Formato estrecho de la familia 3300 para baños y áreas comunes.",
+      "features": ["Alternativas 3300TRM y 3300IP-TRM", "Conexión según modelo"],
+      "pdf": "https://www.omnimediaperu.com/wp-content/uploads/2020/04/HOJA-DE-DATOS-TELEFONOS-CETIS-TELEMATRIX-SERIE-3300-OMNIMEDIA-PERU.pdf",
+      "image": "hotels/telematrix-4.webp",
+      "note": "La ficha de la serie 3300 incluye las variantes Trimline. Confirma el modelo y la conexión para tu instalación."
+    }
+  ],
+  "teledex": [
+    {
+      "id": "opal",
+      "title": "Serie Opal",
+      "label": "Servicios al alcance",
+      "description": "Diseño hotelero con indicador de mensajes y accesos programables.",
+      "features": ["Opciones analógicas", "Con cable o inalámbrico"],
+      "pdf": "https://www.omnimediaperu.com/wp-content/uploads/2020/04/HOJA-DE-DATOS-TELEFONOS-CETIS-TELEDEX-SERIE-OPAL-OMNIMEDIA-PERU.pdf",
+      "image": "hotels/teledex-1.webp",
+      "note": ""
+    },
+    {
+      "id": "diamond",
+      "title": "Serie Diamond",
+      "label": "Atención cotidiana",
+      "description": "Telefonía analógica para habitaciones, también presentada como Diamante.",
+      "features": ["Una o dos líneas", "Mensajes OneTouch"],
+      "pdf": "https://www.omnimediaperu.com/wp-content/uploads/2020/03/HOJA-DE-DATOS-TELEFONOS-CETIS-TELEDEX-SERIE-DIAMANTE-OMNIMEDIA-PERU.pdf",
+      "image": "hotels/teledex-2.webp",
+      "note": ""
+    },
+    {
+      "id": "nugget",
+      "title": "Serie Nugget",
+      "label": "Lo esencial",
+      "description": "Alternativa para espacios reducidos y necesidades de comunicación básicas.",
+      "features": ["Diseño compacto", "Funciones de uso hotelero"],
+      "pdf": "https://www.omnimediaperu.com/wp-content/uploads/2020/04/HOJA-DE-DATOS-TELEFONOS-CETIS-TELEDEX-SERIE-NUGGETS-OMNIMEDIA-PERU.pdf",
+      "image": "hotels/teledex-3.webp",
+      "note": ""
+    },
+    {
+      "id": "d",
+      "title": "Serie D",
+      "label": "Diseño contemporáneo",
+      "description": "Renueva el equipo conservando el formato de placa frontal Diamond.",
+      "features": ["Puertos de carga USB", "Diseño ergonómico"],
+      "pdf": "https://www.omnimediaperu.com/wp-content/uploads/2020/03/HOJA-DE-DATOS-TELEFONOS-CETIS-TELEDEX-SERIE-D-OMNIMEDIA-PERU.pdf",
+      "image": "hotels/teledex-4.webp",
+      "note": ""
+    },
+    {
+      "id": "i",
+      "title": "Serie I",
+      "label": "Menos espacio",
+      "description": "Familia de tamaño reducido con distintas configuraciones para habitaciones.",
+      "features": ["Opciones analógicas y VoIP", "Una o dos líneas"],
+      "pdf": "https://www.omnimediaperu.com/wp-content/uploads/2020/04/HOJA-DE-DATOS-TELEFONOS-CETIS-TELEDEX-SERIE-I-OMNIMEDIA-PERU.pdf",
+      "image": "hotels/teledex-5.webp",
+      "note": ""
+    },
+    {
+      "id": "e",
+      "title": "Serie E",
+      "label": "Formato reducido",
+      "description": "Teléfonos pensados para escritorios y mesas de noche pequeños.",
+      "features": ["Con cable o inalámbrico", "Opciones analógicas y VoIP"],
+      "pdf": "https://www.omnimediaperu.com/wp-content/uploads/2020/04/HOJA-DE-DATOS-TELEFONOS-CETIS-TELEDEX-SERIE-E-OMNIMEDIA-PERU.pdf",
+      "image": "hotels/teledex-6.webp",
+      "note": ""
+    },
+    {
+      "id": "m",
+      "title": "Serie M",
+      "label": "Conexión y carga",
+      "description": "Familia con carga para dispositivos del huésped.",
+      "features": ["Opciones analógicas y VoIP", "Carga USB según configuración"],
+      "pdf": "https://www.omnimediaperu.com/wp-content/uploads/2020/04/HOJA-DE-DATOS-TELEFONOS-CETIS-TELEDEX-SERIE-M-OMNIMEDIA-PERU.pdf",
+      "image": "hotels/teledex-7.webp",
+      "note": ""
+    }
+  ],
+  "scitec": [
+    {
+      "id": "aegis-08",
+      "title": "Serie Aegis 08",
+      "label": "Uso cotidiano",
+      "description": "Equipos para comunicación en habitaciones y áreas de atención.",
+      "features": ["Aplicaciones hoteleras e institucionales", "Diseño para uso profesional"],
+      "pdf": "https://www.omnimediaperu.com/wp-content/uploads/2020/04/HOJA-DE-DATOS-TELEFONOS-CETIS-SCITEC-SERIE-AEGIS-08-OMNIMEDIA-PERU.pdf",
+      "image": "hotels/scitec-1.webp",
+      "note": ""
+    },
+    {
+      "id": "emergency",
+      "title": "Serie Emergency",
+      "label": "Comunicación directa",
+      "description": "Alternativas para puntos de comunicación en situaciones de emergencia.",
+      "features": ["Aplicaciones en hoteles y espacios públicos", "Integración según instalación"],
+      "pdf": "https://www.omnimediaperu.com/wp-content/uploads/2020/04/HOJA-DE-DATOS-TELEFONOS-CETIS-SCITEC-SERIE-EMERGENCY-OMNIMEDIA-PERU.pdf",
+      "image": null,
+      "note": ""
+    }
+  ]
+}
