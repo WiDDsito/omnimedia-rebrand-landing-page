@@ -6,6 +6,7 @@ interface Props {
   related: CategoryPage[];
   section: { label: string; href: string };
   exploreLabel: string;
+  exploreHref?: string;
   relatedLabel: string;
   exploreDescription?: string;
 }
@@ -14,6 +15,7 @@ const {
   related,
   section,
   exploreLabel,
+  exploreHref = '#explorar',
   relatedLabel,
   exploreDescription = 'Encuentra información de cada categoría y cuéntanos qué necesita tu empresa.',
 } = Astro.props;
@@ -39,7 +41,7 @@ const {
         </h1>
         <p class="solution-lead">{entry.description}</p>
         <div class="solution-hero-actions">
-          <a class="button" href="#explorar">
+          <a class="button" href={exploreHref}>
             {exploreLabel}
             <Icon size={18} />
           </a>
@@ -88,6 +90,7 @@ const {
     </div>
   ))}
 </section>
+<slot name="details" />
 <section class="solution-explore" id="explorar" aria-labelledby="explore-title">
   <div class="container solution-explore-grid">
     <div class="solution-explore-intro" data-reveal>

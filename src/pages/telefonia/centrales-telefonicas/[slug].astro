@@ -1,0 +1,64 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import Header from '../../../components/Header.astro';
+import Footer from '../../../components/Footer.astro';
+import CategoryView from '../../../components/CategoryView.astro';
+import Icon from '../../../components/Icon.astro';
+import { pbxBrandPages } from '../../../data/pbx-brand-pages.mjs';
+import '../../../styles/solution-pages.css';
+import '../../../styles/pbx-brands.css';
+export function getStaticPaths() {
+  return pbxBrandPages.map((entry) => ({ params: { slug: entry.slug }, props: { entry } }));
+}
+const { entry } = Astro.props;
+---
+
+<BaseLayout title={`${entry.title} | OmniMedia Perú`} description={entry.description}>
+  <Header />
+  <main id="contenido">
+    <CategoryView
+      entry={entry}
+      related={pbxBrandPages.filter((page) => page.id !== entry.id)}
+      section={{ label: 'Centrales telefónicas', href: '/telefonia/centrales-telefonicas/' }}
+      exploreLabel="Explorar modelos"
+      exploreHref="#modelos"
+      relatedLabel="Otras marcas de centrales"
+      exploreDescription="Completa tu proyecto con conectividad, configuración y atención telefónica."
+    >
+      <section
+        slot="details"
+        class="container pbx-models"
+        id="modelos"
+        aria-labelledby="models-title"
+      >
+        <div data-reveal>
+          <p class="section-kicker">Equipos y opciones</p>
+          <h2 id="models-title">{entry.modelsTitle}</h2>
+          <p>{entry.modelsDescription}</p>
+        </div>
+        <ul class="pbx-model-grid">
+          {entry.models.map((model) => (
+            <li data-reveal>
+              <article class="pbx-model-card">
+                <span>{model.label}</span>
+                <h3>{model.name}</h3>
+                <p>{model.description}</p>
+                <a
+                  href={model.href}
+                  aria-label={`${'Ver ficha técnica PDF de la familia'}: ${model.name}`}
+                >
+                  Ver ficha de la familia (PDF) <Icon size={18} />
+                </a>
+              </article>
+            </li>
+          ))}
+        </ul>
+        <p class="pbx-model-note">
+          Disponibilidad, funciones, licencias y capacidad sujetas a evaluación del modelo y la
+          configuración.
+        </p>
+      </section>
+    </CategoryView>
+  </main>
+  <Footer />
+</BaseLayout>

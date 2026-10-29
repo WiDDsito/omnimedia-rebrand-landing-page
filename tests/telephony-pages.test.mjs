@@ -5,6 +5,7 @@ import {
   telephonyPaths,
   localTelephonyHref,
 } from '../src/data/telephony-pages.mjs';
+import { pbxBrandPaths } from '../src/data/pbx-brand-pages.mjs';
 import { solutionPages } from '../src/data/solution-pages.mjs';
 import navigation from '../src/data/navigation.json' with { type: 'json' };
 
@@ -39,9 +40,12 @@ test('menu routing uses local views while preserving brand destinations and exte
   );
   const brands = phone.children[2].children;
   assert.equal(brands.length, 3);
+  assert.deepEqual(
+    brands.map((brand) => localTelephonyHref(brand.url)),
+    Object.values(pbxBrandPaths),
+  );
   for (const brand of brands) {
-    assert.equal(localTelephonyHref(brand.url), brand.url);
-    assert.ok(telephonyPages[2].links.some((link) => link.href === brand.url));
+    assert.ok(telephonyPages[2].links.some((link) => link.href === localTelephonyHref(brand.url)));
   }
   assert.equal(localTelephonyHref('/contactenos/'), '/contactenos/');
   assert.equal(localTelephonyHref('https://example.com/'), 'https://example.com/');

@@ -1,3 +1,4 @@
+import { pbxBrandPages, pbxBrandPaths } from './pbx-brand-pages.mjs';
 const origin = 'https://www.omnimediaperu.com';
 export const telephonyPaths = {
   virtual: '/telefonia/central-telefonica-virtual/',
@@ -146,20 +147,16 @@ export const telephonyPages = [
     ],
     linksTitle: 'Explora las centrales por marca.',
     links: [
-      link(
-        'Centrales Avaya',
-        'Consulta las opciones de telefonía Avaya.',
-        origin + '/telefonia/centrales-telefonicas/central-telefonica-avaya/',
-      ),
+      link('Centrales Avaya', 'Consulta las opciones de telefonía Avaya.', pbxBrandPaths.avaya),
       link(
         'Centrales Yeastar',
         'Conoce las alternativas de centrales Yeastar.',
-        origin + '/telefonia/centrales-telefonicas/centrales-telefonicas-yeastar/',
+        pbxBrandPaths.yeastar,
       ),
       link(
         'Centrales Grandstream',
         'Explora las centrales de la familia Grandstream.',
-        origin + '/telefonia/centrales-telefonicas/centrales-telefonicas-grandstream/',
+        pbxBrandPaths.grandstream,
       ),
       link(
         'Soporte técnico',
@@ -169,5 +166,7 @@ export const telephonyPages = [
     ],
   },
 ];
-const localBySource = Object.fromEntries(telephonyPages.map((page) => [page.source, page.path]));
+const localBySource = Object.fromEntries(
+  [...telephonyPages, ...pbxBrandPages].map((page) => [page.source, page.path]),
+);
 export const localTelephonyHref = (href) => localBySource[href] ?? href;
