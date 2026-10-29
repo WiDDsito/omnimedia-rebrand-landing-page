@@ -6,3 +6,6 @@ dist/
 ._*
 
 .vercel/
+
+# Python catalog import helpers
+__pycache__/
