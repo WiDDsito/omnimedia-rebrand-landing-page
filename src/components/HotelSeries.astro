@@ -1,0 +1,72 @@
+---
+import Icon from './Icon.astro';
+import type { hotelPages } from '../data/hotel-pages.mjs';
+import '../styles/hotel-pages.css';
+interface Props {
+  entry: (typeof hotelPages)[number];
+}
+const { entry } = Astro.props;
+---
+
+{entry.series.length > 0 && (
+  <section class="container hotel-series" id="series" aria-labelledby="hotel-series-title">
+    <div class="hotel-series-heading" data-reveal>
+      <p class="section-kicker">Series y equipos</p>
+      <h2 id="hotel-series-title">
+        Conoce las opciones {entry.id === 'fanvil' ? 'Fanvil' : entry.title.split(' · ')[1]}.
+      </h2>
+      <p>
+        Explora sus características y abre la ficha técnica desde cualquier parte de la tarjeta. Las
+        prestaciones varían según la versión del equipo.
+      </p>
+    </div>
+    <ul class="hotel-series-grid">
+      {entry.series.map((item) => (
+        <li data-reveal>
+          <a
+            class="hotel-series-card"
+            href={item.pdf}
+            aria-labelledby={`series-${item.id} pdf-${item.id}`}
+          >
+            <div class="hotel-series-image">
+              {item.image ? (
+                <img
+                  src={`/images/${item.image}`}
+                  alt={`Familia ${item.title} del catálogo de OmniMedia Perú`}
+                  width="640"
+                  height="400"
+                  loading="lazy"
+                />
+              ) : (
+                <div class="hotel-series-placeholder">
+                  <Icon name="phone" size={48} />
+                  <span>Familia {item.title}</span>
+                </div>
+              )}
+            </div>
+            <div class="hotel-series-copy">
+              <p class="section-kicker">{item.label}</p>
+              <h3 id={`series-${item.id}`}>{item.title}</h3>
+              <p>{item.description}</p>
+              <ul>
+                {item.features.map((feature) => (
+                  <li>
+                    <Icon name="check" size={16} />
+                    <span>{feature}</span>
+                  </li>
+                ))}
+              </ul>
+              {item.note && <p class="hotel-series-note">{item.note}</p>}
+              <span class="hotel-series-action" id={`pdf-${item.id}`}>
+                {item.id === 'trimline'
+                  ? 'Ficha de la serie 3300 (PDF)'
+                  : 'Ver ficha técnica (PDF)'}
+                <Icon size={20} />
+              </span>
+            </div>
+          </a>
+        </li>
+      ))}
+    </ul>
+  </section>
+)}

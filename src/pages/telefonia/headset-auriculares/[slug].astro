@@ -1,0 +1,34 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import Header from '../../../components/Header.astro';
+import Footer from '../../../components/Footer.astro';
+import CategoryView from '../../../components/CategoryView.astro';
+import HeadsetCatalog from '../../../components/HeadsetCatalog.astro';
+import { headsetPages, headsetCatalogPath } from '../../../data/headset-pages.mjs';
+import '../../../styles/solution-pages.css';
+export function getStaticPaths() {
+  return headsetPages.map((entry) => ({
+    params: { slug: entry.path.split('/').filter(Boolean).at(-1) },
+    props: { entry },
+  }));
+}
+const { entry } = Astro.props;
+---
+
+<BaseLayout title={`${entry.title} | OmniMedia Perú`} description={entry.description}>
+  <Header />
+  <main id="contenido">
+    <CategoryView
+      entry={entry}
+      related={headsetPages.filter((page) => page.id !== entry.id)}
+      section={{ label: 'Auriculares', href: headsetCatalogPath }}
+      exploreLabel="Explorar equipos de audio"
+      exploreHref="#auriculares"
+      relatedLabel="Otras marcas de audio"
+      exploreDescription="Explora la otra marca o comparte con nuestro equipo las necesidades de tu puesto de trabajo."
+    >
+      <HeadsetCatalog slot="details" entry={entry} />
+    </CategoryView>
+  </main>
+  <Footer />
+</BaseLayout>

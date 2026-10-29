@@ -3,7 +3,7 @@ import Icon from './Icon.astro';
 import NavigationTree from './NavigationTree.astro';
 import SolutionMenu from './SolutionMenu.astro';
 import { navigation } from '../data/navigation';
-import { localPhoneHref } from '../data/phone-catalog.mjs';
+import { localSolutionHref } from '../data/solution-links.mjs';
 import { productPaths } from '../data/product-pages.mjs';
 import { servicePaths } from '../data/service-pages.mjs';
 import { company } from '../data/company.mjs';
@@ -81,7 +81,14 @@ const directPaths: Record<string, string> = {
                           </span>
                         </a>
                         <p>{family.description}</p>
-                        <a class="solution-menu-overview" href={localPhoneHref(family.url)}>
+                        <a
+                          class="solution-menu-overview"
+                          href={
+                            family.id === 'network'
+                              ? productPaths.network
+                              : localSolutionHref(family.url)
+                          }
+                        >
                           {item.id === 'services'
                             ? 'Ver servicio original'
                             : 'Ver categoría completa'}{' '}

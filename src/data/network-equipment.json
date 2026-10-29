@@ -1,0 +1,508 @@
+{
+  "switch-aruba": [
+    {
+      "id": "instant-on-1830-8",
+      "title": "Instant On 1830 · 8 puertos",
+      "group": "Instant On",
+      "description": "Conectividad para pequeñas empresas.",
+      "features": ["8 puertos", "Serie 1830"],
+      "image": "network/switch-aruba-1.webp",
+      "pdf": "https://www.omnimediaperu.com/wp-content/uploads/2026/07/FICHA-TECNICA-SWITCH-HPE-ARUBA-INSTANT-ON-1830-OMNIMEDIA-PERU.pdf"
+    },
+    {
+      "id": "cx6000-24",
+      "title": "CX 6000 · 24 puertos",
+      "group": "CX 6000",
+      "description": "Acceso cableado para tu instalación.",
+      "features": ["24 puertos", "Serie CX 6000"],
+      "image": "network/switch-aruba-2.webp",
+      "pdf": "https://www.omnimediaperu.com/wp-content/uploads/2026/07/FICHA-TECNICA-SWITCH-HPE-ARUBA-CX-6000-OMNIMEDIA-PERU.pdf"
+    },
+    {
+      "id": "cx6000-48",
+      "title": "CX 6000 · 48 puertos",
+      "group": "CX 6000",
+      "description": "Más conexiones de acceso.",
+      "features": ["48 puertos", "Serie CX 6000"],
+      "image": "network/switch-aruba-3.webp",
+      "pdf": "https://www.omnimediaperu.com/wp-content/uploads/2026/07/FICHA-TECNICA-SWITCH-HPE-ARUBA-CX-6000-OMNIMEDIA-PERU.pdf"
+    },
+    {
+      "id": "cx6100-12",
+      "title": "CX 6100 · 12 puertos",
+      "group": "CX 6100",
+      "description": "Formato para instalaciones de menor tamaño.",
+      "features": ["12 puertos", "Serie CX 6100"],
+      "image": "network/switch-aruba-4.webp",
+      "pdf": "https://www.omnimediaperu.com/wp-content/uploads/2026/07/FICHA-TECNICA-SWITCH-HPE-ARUBA-CX-6100-OMNIMEDIA-PERU.pdf"
+    },
+    {
+      "id": "cx6100-24",
+      "title": "CX 6100 · 24 puertos",
+      "group": "CX 6100",
+      "description": "Conectividad empresarial administrable.",
+      "features": ["24 puertos", "Serie CX 6100"],
+      "image": "network/switch-aruba-5.webp",
+      "pdf": "https://www.omnimediaperu.com/wp-content/uploads/2026/07/FICHA-TECNICA-SWITCH-HPE-ARUBA-CX-6100-OMNIMEDIA-PERU.pdf"
+    },
+    {
+      "id": "cx6100-48",
+      "title": "CX 6100 · 48 puertos",
+      "group": "CX 6100",
+      "description": "Alternativa para más puestos de red.",
+      "features": ["48 puertos", "Serie CX 6100"],
+      "image": "network/switch-aruba-6.webp",
+      "pdf": "https://www.omnimediaperu.com/wp-content/uploads/2026/07/FICHA-TECNICA-SWITCH-HPE-ARUBA-CX-6100-OMNIMEDIA-PERU.pdf"
+    },
+    {
+      "id": "cx6200-24",
+      "title": "CX 6200 · 24 puertos",
+      "group": "CX 6200",
+      "description": "Acceso para redes empresariales.",
+      "features": ["24 puertos", "Serie CX 6200"],
+      "image": "network/switch-aruba-7.webp",
+      "pdf": "https://www.omnimediaperu.com/wp-content/uploads/2026/07/FICHA-TECNICA-SWITCH-HPE-ARUBA-CX-6200-OMNIMEDIA-PERU.pdf"
+    },
+    {
+      "id": "cx6200-48",
+      "title": "CX 6200 · 48 puertos",
+      "group": "CX 6200",
+      "description": "Capacidad de conexión para más equipos.",
+      "features": ["48 puertos", "Serie CX 6200"],
+      "image": "network/switch-aruba-8.webp",
+      "pdf": "https://www.omnimediaperu.com/wp-content/uploads/2026/07/FICHA-TECNICA-SWITCH-HPE-ARUBA-CX-6200-OMNIMEDIA-PERU.pdf"
+    }
+  ],
+  "switch-unifi": [
+    {
+      "id": "usw-flex-mini",
+      "title": "USW Flex Mini",
+      "group": "UniFi Flex",
+      "description": "Expansión de red en formato compacto.",
+      "features": ["Switch administrable", "Integración UniFi"],
+      "image": "network/switch-unifi-1.webp",
+      "pdf": "https://www.omnimediaperu.com/wp-content/uploads/2026/07/FICHA-TECNICA-SWITCH-UBIQUITI-USW-FLEX-MINI-OMNIMEDIA-PERU.pdf"
+    },
+    {
+      "id": "usw-flex",
+      "title": "USW Flex",
+      "group": "UniFi Flex",
+      "description": "Conectividad flexible para tu instalación.",
+      "features": ["Capacidad PoE", "Administración UniFi"],
+      "image": "network/switch-unifi-2.webp",
+      "pdf": "https://www.omnimediaperu.com/wp-content/uploads/2026/07/FICHA-TECNICA-SWITCH-UBIQUITI-USW-FLEX-OMNIMEDIA-PERU.pdf"
+    },
+    {
+      "id": "usw-flex-2-5g-8",
+      "title": "USW Flex 2.5G 8",
+      "group": "UniFi Flex",
+      "description": "Conexiones multigigabit.",
+      "features": ["8 puertos 2.5G", "Gestión UniFi"],
+      "image": "network/switch-unifi-3.webp",
+      "pdf": "https://www.omnimediaperu.com/wp-content/uploads/2026/07/FICHA-TECNICA-SWITCH-UBIQUITI-USW-FLEX-2.5G-8-OMNIMEDIA-PERU.pdf"
+    },
+    {
+      "id": "usw-lite-16-poe",
+      "title": "USW Lite 16 PoE",
+      "group": "UniFi Lite",
+      "description": "Red y alimentación para dispositivos compatibles.",
+      "features": ["16 puertos", "PoE según puerto"],
+      "image": "network/switch-unifi-4.webp",
+      "pdf": "https://www.omnimediaperu.com/wp-content/uploads/2026/07/FICHA-TECNICA-SWITCH-UBIQUITI-USW-LITE-16-POE-OMNIMEDIA-PERU.pdf"
+    },
+    {
+      "id": "usw-pro-xg-10",
+      "title": "USW Pro XG 10",
+      "group": "UniFi Pro XG",
+      "description": "Switch para redes de alta velocidad.",
+      "features": ["Familia Pro XG", "Revisar presupuesto PoE"],
+      "image": "network/switch-unifi-5.webp",
+      "pdf": "https://www.omnimediaperu.com/wp-content/uploads/2026/07/FICHA-TECNICA-SWITCH-UBIQUITI-USW-PRO-XG-10-POE-OMNIMEDIA-PERU.pdf"
+    },
+    {
+      "id": "usw-pro-xg-24",
+      "title": "USW Pro XG 24",
+      "group": "UniFi Pro XG",
+      "description": "Conectividad para más puestos.",
+      "features": ["Familia Pro XG", "Revisar enlaces ascendentes"],
+      "image": "network/switch-unifi-6.webp",
+      "pdf": "https://www.omnimediaperu.com/wp-content/uploads/2026/07/FICHA-TECNICA-SWITCH-UBIQUITI-USW-PRO-XG-24-POE-OMNIMEDIA-PERU.pdf"
+    },
+    {
+      "id": "usw-pro-xg-48",
+      "title": "USW Pro XG 48",
+      "group": "UniFi Pro XG",
+      "description": "Alternativa para mayor densidad.",
+      "features": ["Familia Pro XG", "Validar configuración"],
+      "image": "network/switch-unifi-7.webp",
+      "pdf": "https://www.omnimediaperu.com/wp-content/uploads/2026/07/FICHA-TECNICA-SWITCH-UBIQUITI-USW-PRO-XG-48-POE-OMNIMEDIA-PERU.pdf"
+    },
+    {
+      "id": "usw-pro-24",
+      "title": "USW Pro 24",
+      "group": "UniFi Pro",
+      "description": "Administración para redes empresariales.",
+      "features": ["24 puertos", "Integración UniFi"],
+      "image": "network/switch-unifi-8.webp",
+      "pdf": "https://www.omnimediaperu.com/wp-content/uploads/2026/07/FICHA-TECNICA-SWITCH-UBIQUITI-USW-PRO-24-OMNIMEDIA-PERU.pdf"
+    },
+    {
+      "id": "usw-pro-48",
+      "title": "USW Pro 48",
+      "group": "UniFi Pro",
+      "description": "Conexión para instalaciones con más equipos.",
+      "features": ["48 puertos", "Integración UniFi"],
+      "image": "network/switch-unifi-9.webp",
+      "pdf": "https://www.omnimediaperu.com/wp-content/uploads/2026/07/FICHA-TECNICA-SWITCH-UBIQUITI-USW-PRO-48-OMNIMEDIA-PERU.pdf"
+    }
+  ],
+  "ups": [
+    {
+      "id": "bv500i-ms",
+      "title": "BV500I-MS",
+      "group": "BV y BVX",
+      "description": "Respaldo APC para equipos electrónicos.",
+      "features": ["Revisar tomas de salida", "Calcular autonomía según carga"],
+      "image": "network/ups-apc-1.webp",
+      "pdf": "https://www.omnimediaperu.com/wp-content/uploads/2026/07/HOJA-DE-DATOS-APC-BV500I-MS-OMNIMEDIA-PERU.pdf"
+    },
+    {
+      "id": "bvx700lui-ms",
+      "title": "BVX700LUI-MS",
+      "group": "BV y BVX",
+      "description": "Respaldo APC para equipos electrónicos.",
+      "features": ["Revisar tomas de salida", "Calcular autonomía según carga"],
+      "image": "network/ups-apc-2.webp",
+      "pdf": "https://www.omnimediaperu.com/wp-content/uploads/2026/07/FICHA-TECNICA-APC-BVX700LUI-MS-OMNIMEDIA-PERU.pdf"
+    },
+    {
+      "id": "br650-mi",
+      "title": "BR650-MI",
+      "group": "BR",
+      "description": "Respaldo APC para tu instalación.",
+      "features": ["Revisar potencia en la ficha", "Calcular autonomía según carga"],
+      "image": "network/ups-apc-3.webp",
+      "pdf": "https://www.omnimediaperu.com/wp-content/uploads/2026/07/FICHA-TECNICA-APC-BR650-MI-OMNIMEDIA-PERU.pdf"
+    },
+    {
+      "id": "br900-mi",
+      "title": "BR900-MI",
+      "group": "BR",
+      "description": "Respaldo APC para tu instalación.",
+      "features": ["Revisar potencia en la ficha", "Calcular autonomía según carga"],
+      "image": "network/ups-apc-4.webp",
+      "pdf": "https://www.omnimediaperu.com/wp-content/uploads/2026/07/FICHA-TECNICA-APC-BR900-MI-OMNIMEDIA-PERU.pdf"
+    },
+    {
+      "id": "br1300-mi",
+      "title": "BR1300-MI",
+      "group": "BR",
+      "description": "Respaldo APC para tu instalación.",
+      "features": ["Revisar potencia en la ficha", "Calcular autonomía según carga"],
+      "image": "network/ups-apc-5.webp",
+      "pdf": "https://www.omnimediaperu.com/wp-content/uploads/2026/07/FICHA-TECNICA-APC-BR1300-MI-OMNIMEDIA-PERU.pdf"
+    },
+    {
+      "id": "br1600-mi",
+      "title": "BR1600-MI",
+      "group": "BR",
+      "description": "Respaldo APC para tu instalación.",
+      "features": ["Revisar potencia en la ficha", "Calcular autonomía según carga"],
+      "image": "network/ups-apc-6.webp",
+      "pdf": "https://www.omnimediaperu.com/wp-content/uploads/2026/07/FICHA-TECNICA-APC-BR1600-MI-OMNIMEDIA-PERU.pdf"
+    },
+    {
+      "id": "srt5kxli",
+      "title": "SRT5KXLI",
+      "group": "SRT",
+      "description": "Familia APC SRT para infraestructura de TI.",
+      "features": ["Validar montaje y conexiones", "Calcular autonomía según carga"],
+      "image": "network/ups-apc-7.webp",
+      "pdf": "https://www.omnimediaperu.com/wp-content/uploads/2026/07/FICHA-TECNICA-APC-SRT5KXLI-OMNIMEDIA-PERU.pdf"
+    },
+    {
+      "id": "srt6kxli",
+      "title": "SRT6KXLI",
+      "group": "SRT",
+      "description": "Familia APC SRT para infraestructura de TI.",
+      "features": ["Validar montaje y conexiones", "Calcular autonomía según carga"],
+      "image": "network/ups-apc-8.webp",
+      "pdf": "https://www.omnimediaperu.com/wp-content/uploads/2026/07/FICHA-TECNICA-APC-SRT6KXLI-OMNIMEDIA-PERU.pdf"
+    },
+    {
+      "id": "srt10kxli",
+      "title": "SRT10KXLI",
+      "group": "SRT",
+      "description": "Familia APC SRT para infraestructura de TI.",
+      "features": ["Validar montaje y conexiones", "Calcular autonomía según carga"],
+      "image": "network/ups-apc-9.webp",
+      "pdf": "https://www.omnimediaperu.com/wp-content/uploads/2026/07/FICHA-TECNICA-APC-SRT10KXLI-OMNIMEDIA-PERU.pdf"
+    },
+    {
+      "id": "srt1000xli",
+      "title": "SRT1000XLI",
+      "group": "SRT",
+      "description": "Familia APC SRT para infraestructura de TI.",
+      "features": ["Validar montaje y conexiones", "Calcular autonomía según carga"],
+      "image": "network/ups-apc-10.webp",
+      "pdf": "https://www.omnimediaperu.com/wp-content/uploads/2026/07/FICHA-TECNICA-APC-SRT1000XLI-OMNIMEDIA-PERU.pdf"
+    },
+    {
+      "id": "srt1500xli",
+      "title": "SRT1500XLI",
+      "group": "SRT",
+      "description": "Familia APC SRT para infraestructura de TI.",
+      "features": ["Validar montaje y conexiones", "Calcular autonomía según carga"],
+      "image": "network/ups-apc-11.webp",
+      "pdf": "https://www.omnimediaperu.com/wp-content/uploads/2026/07/FICHA-TECNICA-APC-SRT1500KXLI-OMNIMEDIA-PERU.pdf"
+    },
+    {
+      "id": "srt2200xli",
+      "title": "SRT2200XLI",
+      "group": "SRT",
+      "description": "Familia APC SRT para infraestructura de TI.",
+      "features": ["Validar montaje y conexiones", "Calcular autonomía según carga"],
+      "image": "network/ups-apc-12.webp",
+      "pdf": "https://www.omnimediaperu.com/wp-content/uploads/2026/07/FICHA-TECNICA-APC-SRT2200KXLI-OMNIMEDIA-PERU.pdf"
+    },
+    {
+      "id": "srt3000xli",
+      "title": "SRT3000XLI",
+      "group": "SRT",
+      "description": "Familia APC SRT para infraestructura de TI.",
+      "features": ["Validar montaje y conexiones", "Calcular autonomía según carga"],
+      "image": "network/ups-apc-13.webp",
+      "pdf": "https://www.omnimediaperu.com/wp-content/uploads/2026/07/FICHA-TECNICA-APC-SRT3000XLI-OMNIMEDIA-PERU.pdf"
+    },
+    {
+      "id": "srv1ki",
+      "title": "SRV1KI",
+      "group": "SRV",
+      "description": "Familia APC SRV para respaldo eléctrico.",
+      "features": ["Confirmar formato de instalación", "Dimensionar la carga conectada"],
+      "image": "network/ups-apc-14.webp",
+      "pdf": "https://www.omnimediaperu.com/wp-content/uploads/2026/07/FICHA-TECNICA-APC-SRV1KI-OMNIMEDIA-PERU.pdf"
+    },
+    {
+      "id": "srv2ki",
+      "title": "SRV2KI",
+      "group": "SRV",
+      "description": "Familia APC SRV para respaldo eléctrico.",
+      "features": ["Confirmar formato de instalación", "Dimensionar la carga conectada"],
+      "image": "network/ups-apc-15.webp",
+      "pdf": "https://www.omnimediaperu.com/wp-content/uploads/2026/07/FICHA-TECNICA-APC-SRV2KI-OMNIMEDIA-PERU.pdf"
+    },
+    {
+      "id": "srv3ki-e",
+      "title": "SRV3KI-E",
+      "group": "SRV",
+      "description": "Familia APC SRV para respaldo eléctrico.",
+      "features": ["Confirmar formato de instalación", "Dimensionar la carga conectada"],
+      "image": "network/ups-apc-16.webp",
+      "pdf": "https://www.omnimediaperu.com/wp-content/uploads/2026/07/FICHA-TECNICA-APC-SRV3KI-OMNIMEDIA-PERU.pdf",
+      "note": "La ficha enlazada corresponde a SRV3KI. Confirma la referencia SRV3KI-E y su configuración al cotizar."
+    },
+    {
+      "id": "srv1kri-e",
+      "title": "SRV1KRI-E",
+      "group": "SRV",
+      "description": "Familia APC SRV para respaldo eléctrico.",
+      "features": ["Confirmar formato de instalación", "Dimensionar la carga conectada"],
+      "image": "network/ups-apc-17.webp",
+      "pdf": "https://www.omnimediaperu.com/wp-content/uploads/2026/07/FICHA-TECNICA-APC-SRV1KRI-E-OMNIMEDIA-PERU.pdf"
+    },
+    {
+      "id": "srv2kri-e",
+      "title": "SRV2KRI-E",
+      "group": "SRV",
+      "description": "Familia APC SRV para respaldo eléctrico.",
+      "features": ["Confirmar formato de instalación", "Dimensionar la carga conectada"],
+      "image": "network/ups-apc-18.webp",
+      "pdf": "https://www.omnimediaperu.com/wp-content/uploads/2026/07/FICHA-TECNICA-APC-SRV2KRI-E-OMNIMEDIA-PERU.pdf"
+    },
+    {
+      "id": "srv3kri-e",
+      "title": "SRV3KRI-E",
+      "group": "SRV",
+      "description": "Familia APC SRV para respaldo eléctrico.",
+      "features": ["Confirmar formato de instalación", "Dimensionar la carga conectada"],
+      "image": "network/ups-apc-19.webp",
+      "pdf": "https://www.omnimediaperu.com/wp-content/uploads/2026/07/FICHA-TECNICA-APC-SRV3KRI-E-OMNIMEDIA-PERU.pdf"
+    },
+    {
+      "id": "smt2200ic",
+      "title": "SMT2200IC",
+      "group": "SMT",
+      "description": "Familia APC SMT para infraestructura de TI.",
+      "features": ["Revisar funciones de monitoreo", "Calcular autonomía según carga"],
+      "image": "network/ups-apc-20.webp",
+      "pdf": "https://www.omnimediaperu.com/wp-content/uploads/2026/07/FICHA-TECNICA-APC-SMT2200IC-OMNIMEDIA-PERU.pdf"
+    },
+    {
+      "id": "smt3000ic",
+      "title": "SMT3000IC",
+      "group": "SMT",
+      "description": "Familia APC SMT para infraestructura de TI.",
+      "features": ["Revisar funciones de monitoreo", "Calcular autonomía según carga"],
+      "image": "network/ups-apc-21.webp",
+      "pdf": "https://www.omnimediaperu.com/wp-content/uploads/2026/07/FICHA-TECNICA-APC-SMT3000IC-OMNIMEDIA-PERU.pdf"
+    }
+  ],
+  "ap-aruba": [
+    {
+      "id": "ap515",
+      "title": "AP-515",
+      "group": "Puntos de acceso",
+      "description": "Wi-Fi para espacios empresariales.",
+      "features": ["Wi-Fi 6", "Familia 510"],
+      "image": "network/ap-aruba-1.webp",
+      "pdf": "https://www.omnimediaperu.com/wp-content/uploads/2026/07/FICHA-TECNICA-ACCESS-POINT-HPE-ARUBA-510-OMNIMEDIA-PERU.pdf"
+    },
+    {
+      "id": "ap535",
+      "title": "AP-535",
+      "group": "Puntos de acceso",
+      "description": "Conectividad para múltiples usuarios.",
+      "features": ["Wi-Fi 6", "Familia 530"],
+      "image": "network/ap-aruba-2.webp",
+      "pdf": "https://www.omnimediaperu.com/wp-content/uploads/2026/07/FICHA-TECNICA-ACCESS-POINT-HPE-ARUBA-530-OMNIMEDIA-PERU.pdf"
+    },
+    {
+      "id": "ap635",
+      "title": "AP-635",
+      "group": "Puntos de acceso",
+      "description": "Acceso inalámbrico tribanda.",
+      "features": ["Wi-Fi 6E", "Familia 630"],
+      "image": "network/ap-aruba-3.webp",
+      "pdf": "https://www.omnimediaperu.com/wp-content/uploads/2026/07/FICHA-TECNICA-ACCESS-POINT-HPE-ARUBA-630-OMNIMEDIA-PERU.pdf"
+    },
+    {
+      "id": "ap11d",
+      "title": "Instant On AP11D",
+      "group": "Puntos de acceso",
+      "description": "Formato para pared o escritorio.",
+      "features": ["Wi-Fi 5", "Puertos Ethernet"],
+      "image": "network/ap-aruba-4.webp",
+      "pdf": "https://www.omnimediaperu.com/wp-content/uploads/2026/07/FICHA-TECNICA-ACCESS-POINT-HPE-ARUBA-INSTANT-ON-AP11D-OMNIMEDIA-PERU.pdf"
+    },
+    {
+      "id": "ap27",
+      "title": "Instant On AP27",
+      "group": "Puntos de acceso",
+      "description": "Conectividad para exteriores.",
+      "features": ["Wi-Fi 6", "Protección IP67"],
+      "image": "network/ap-aruba-5.webp",
+      "pdf": "https://www.omnimediaperu.com/wp-content/uploads/2026/07/FICHA-TECNICA-ACCESS-POINT-HPE-ARUBA-INSTANT-ON-AP27-OMNIMEDIA-PERU.pdf"
+    }
+  ],
+  "ap-unifi": [
+    {
+      "id": "u7-lite",
+      "title": "U7 Lite",
+      "group": "Puntos de acceso",
+      "description": "Wi-Fi en formato compacto.",
+      "features": ["Wi-Fi 7", "Gestión UniFi"],
+      "image": "network/ap-unifi-2.webp",
+      "pdf": "https://www.omnimediaperu.com/wp-content/uploads/2026/07/FICHA-TECNICA-ACCESS-POINT-U7-LITE-UBIQUITI-OMNIMEDIA-PERU.pdf"
+    },
+    {
+      "id": "u7-iw",
+      "title": "U7 In-Wall",
+      "group": "Puntos de acceso",
+      "description": "Acceso inalámbrico de pared.",
+      "features": ["Wi-Fi 7", "Formato In-Wall"],
+      "image": "network/ap-unifi-3.webp",
+      "pdf": "https://www.omnimediaperu.com/wp-content/uploads/2026/07/FICHA-TECNICA-ACCESS-POINT-U7-IW-UBIQUITI-OMNIMEDIA-PERU.pdf"
+    },
+    {
+      "id": "u7-lr",
+      "title": "U7 LR",
+      "group": "Puntos de acceso",
+      "description": "Alternativa de cobertura extendida.",
+      "features": ["Wi-Fi 7", "Validar cobertura"],
+      "image": "network/ap-unifi-4.webp",
+      "pdf": "https://www.omnimediaperu.com/wp-content/uploads/2026/07/FICHA-TECNICA-ACCESS-POINT-U7-LR-UBIQUITI-OMNIMEDIA-PERU.pdf"
+    },
+    {
+      "id": "u7-pro",
+      "title": "U7 Pro",
+      "group": "Puntos de acceso",
+      "description": "Red inalámbrica tribanda.",
+      "features": ["Wi-Fi 7", "Gestión UniFi"],
+      "image": "network/ap-unifi-5.webp",
+      "pdf": "https://www.omnimediaperu.com/wp-content/uploads/2026/07/FICHA-TECNICA-ACCESS-POINT-U7-PRO-UBIQUITI-OMNIMEDIA-PERU.pdf"
+    },
+    {
+      "id": "u6-iw",
+      "title": "U6 In-Wall",
+      "group": "Puntos de acceso",
+      "description": "Wi-Fi y conexiones cableadas.",
+      "features": ["Wi-Fi 6", "Formato In-Wall"],
+      "image": "network/ap-unifi-6.webp",
+      "pdf": "https://www.omnimediaperu.com/wp-content/uploads/2026/07/FICHA-TECNICA-ACCESS-POINT-U6-IW-UBIQUITI-OMNIMEDIA-PERU.pdf"
+    },
+    {
+      "id": "u7-pro-wall",
+      "title": "U7 Pro Wall",
+      "group": "Puntos de acceso",
+      "description": "Conectividad de pared.",
+      "features": ["Wi-Fi 7", "Gestión UniFi"],
+      "image": "network/ap-unifi-7.webp",
+      "pdf": "https://www.omnimediaperu.com/wp-content/uploads/2026/07/FICHA-TECNICA-ACCESS-POINT-U7-PRO-WALL-UBIQUITI-OMNIMEDIA-PERU.pdf"
+    },
+    {
+      "id": "u6-enterprise-iw",
+      "title": "U6 Enterprise In-Wall",
+      "group": "Puntos de acceso",
+      "description": "Acceso empresarial en pared.",
+      "features": ["Wi-Fi 6E", "Gestión UniFi"],
+      "image": "network/ap-unifi-9.webp",
+      "pdf": "https://www.omnimediaperu.com/wp-content/uploads/2026/07/FICHA-TECNICA-ACCESS-POINT-U6-ENTERPRISE-IW-UBIQUITI-OMNIMEDIA-PERU-.pdf"
+    },
+    {
+      "id": "uk-ultra",
+      "title": "UK Ultra",
+      "group": "Puntos de acceso",
+      "description": "Instalación versátil.",
+      "features": ["Wi-Fi 5", "Antenas externas opcionales"],
+      "image": "network/ap-unifi-10.webp",
+      "pdf": "https://www.omnimediaperu.com/wp-content/uploads/2026/07/FICHA-TECNICA-ACCESS-POINT-UK-ULTRA-UBIQUITI-OMNIMEDIA-PERU.pdf"
+    },
+    {
+      "id": "uap-flexhd",
+      "title": "UAP FlexHD",
+      "group": "Puntos de acceso",
+      "description": "Diseño cilíndrico compacto.",
+      "features": ["Wi-Fi 5", "Gestión UniFi"],
+      "image": "network/ap-unifi-11.webp",
+      "pdf": "https://www.omnimediaperu.com/wp-content/uploads/2026/07/FICHA-TECNICA-ACCESS-POINT-UAP-FLEXHD-UBIQUITI-OMNIMEDIA-PERU.pdf"
+    },
+    {
+      "id": "u6-pro",
+      "title": "U6 Pro",
+      "group": "Puntos de acceso",
+      "description": "Acceso para espacios empresariales.",
+      "features": ["Wi-Fi 6", "Gestión UniFi"],
+      "image": "network/ap-unifi-12.webp",
+      "pdf": "https://www.omnimediaperu.com/wp-content/uploads/2026/07/FICHA-TECNICA-ACCESS-POINT-U6-PRO-UBIQUITI-OMNIMEDIA-PERU.pdf"
+    },
+    {
+      "id": "udb-pro-sector",
+      "title": "UDB Pro Sector",
+      "group": "Enlaces inalámbricos",
+      "description": "Interconexión punto a multipunto.",
+      "features": ["Enlace de 5 GHz", "Validar línea de vista"],
+      "image": "network/ap-unifi-8.webp",
+      "pdf": "https://www.omnimediaperu.com/wp-content/uploads/2026/07/FICHA-TECNICA-ACCESS-POINT-UDB-PRO-SECTOR-UBIQUITI-OMNIMEDIA-PERU.pdf"
+    },
+    {
+      "id": "ua-pocket",
+      "title": "UA-Pocket",
+      "group": "Control de acceso",
+      "description": "Credencial para acceso físico.",
+      "features": ["Llavero NFC", "Uso con UniFi Access"],
+      "image": "network/ap-unifi-1.webp",
+      "pdf": "https://www.omnimediaperu.com/wp-content/uploads/2026/07/FICHA-TECNICA-ACCESS-POINT-UA-POCKET-UBIQUITI-OMNIMEDIA-PERU.pdf"
+    }
+  ]
+}

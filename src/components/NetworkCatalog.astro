@@ -1,0 +1,90 @@
+---
+import Icon from './Icon.astro';
+import type { networkPages } from '../data/network-pages.mjs';
+import '../styles/network-pages.css';
+interface Props {
+  entry: (typeof networkPages)[number];
+}
+const { entry } = Astro.props;
+const groups = [...new Set(entry.equipment.map((item) => item.group))];
+---
+
+{entry.equipment.length > 0 && (
+  <section
+    class="container network-catalog"
+    id="equipos-red"
+    aria-labelledby="network-equipment-title"
+  >
+    <div class="network-catalog-heading" data-reveal>
+      <p class="section-kicker">Conoce las alternativas</p>
+      <h2 id="network-equipment-title">Encuentra el equipo para tu instalación.</h2>
+      <p>
+        Compara las familias y consulta la documentación desde cualquier parte de cada tarjeta. Las
+        funciones se confirman por referencia y configuración.
+      </p>
+    </div>
+    {groups.length > 1 && (
+      <nav class="network-group-links" aria-label="Familias de equipos de esta vista">
+        {groups.map((group, index) => (
+          <a href={`#familia-${index}`}>{group}</a>
+        ))}
+      </nav>
+    )}
+    {groups.map((group, index) => (
+      <section
+        class="network-group"
+        id={`familia-${index}`}
+        aria-labelledby={`family-title-${index}`}
+      >
+        <h3 class="network-group-title" id={`family-title-${index}`} data-reveal>
+          {group}
+        </h3>
+        <ul class="network-catalog-grid">
+          {entry.equipment
+            .filter((item) => item.group === group)
+            .map((item) => (
+              <li data-reveal>
+                <a
+                  class="equipment-card network-card"
+                  href={item.pdf}
+                  aria-labelledby={`model-${item.id} pdf-${item.id}`}
+                  aria-describedby={item.note ? `note-${item.id}` : undefined}
+                >
+                  <div class="equipment-image">
+                    <img
+                      src={`/images/${item.image}`}
+                      alt={item.title}
+                      width="674"
+                      height="580"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div class="equipment-title">
+                    <h4 id={`model-${item.id}`}>{item.title}</h4>
+                    <Icon size={20} />
+                  </div>
+                  <p>{item.description}</p>
+                  <ul class="network-features">
+                    {item.features.map((feature) => (
+                      <li>
+                        <Icon name="check" size={16} />
+                        <span>{feature}</span>
+                      </li>
+                    ))}
+                  </ul>
+                  {item.note && (
+                    <p class="network-model-note" id={`note-${item.id}`}>
+                      {item.note}
+                    </p>
+                  )}
+                  <span class="network-pdf-link" id={`pdf-${item.id}`}>
+                    Ver ficha técnica (PDF) <Icon size={18} />
+                  </span>
+                </a>
+              </li>
+            ))}
+        </ul>
+      </section>
+    ))}
+  </section>
+)}

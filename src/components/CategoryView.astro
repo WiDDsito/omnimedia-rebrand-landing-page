@@ -5,6 +5,7 @@ interface Props {
   entry: CategoryPage;
   related: CategoryPage[];
   section: { label: string; href: string };
+  ancestors?: { label: string; href: string }[];
   exploreLabel: string;
   exploreHref?: string;
   relatedLabel: string;
@@ -14,6 +15,7 @@ const {
   entry,
   related,
   section,
+  ancestors = [section],
   exploreLabel,
   exploreHref = '#explorar',
   relatedLabel,
@@ -26,8 +28,12 @@ const {
     <nav class="solution-breadcrumb" aria-label="Ruta de navegación">
       <a href="/">Inicio</a>
       <span aria-hidden="true">/</span>
-      <a href={section.href}>{section.label}</a>
-      <span aria-hidden="true">/</span>
+      {ancestors.map((ancestor) => (
+        <Fragment>
+          <a href={ancestor.href}>{ancestor.label}</a>
+          <span aria-hidden="true">/</span>
+        </Fragment>
+      ))}
       <span aria-current="page">{entry.title}</span>
     </nav>
     <div class="solution-hero-grid">
