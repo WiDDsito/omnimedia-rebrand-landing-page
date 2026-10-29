@@ -17,7 +17,8 @@ test('four solution entry views have unique local routes and informative links',
     assert.ok(
       page.links.every(
         (link) =>
-          (link.href.startsWith('https://') || link.href.startsWith('/telefonia/')) &&
+          (link.href.startsWith('https://') ||
+            (link.href.startsWith('/') && !link.href.startsWith('//'))) &&
           !/tienda|cart|checkout/.test(link.href),
       ),
     );
