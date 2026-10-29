@@ -6,7 +6,7 @@ import { headsetPages, localHeadsetHref } from '../src/data/headset-pages.mjs';
 import { localSolutionHref } from '../src/data/solution-links.mjs';
 import { productPages } from '../src/data/product-pages.mjs';
 
-test('Yealink and VT have local headset views while the Poly subtree stays external', () => {
+test('Yealink and VT have local views while unrelated Poly families stay external', () => {
   assert.deepEqual(
     headsetPages.map((page) => page.id),
     ['yealink', 'vt'],
@@ -29,7 +29,8 @@ test('Yealink and VT have local headset views while the Poly subtree stays exter
     assert.equal(localSolutionHref(item.url), item.url);
     item.children.forEach(checkPoly);
   };
-  checkPoly(menu.children[0]);
+  assert.equal(localSolutionHref(menu.children[0].url), menu.children[0].url);
+  menu.children[0].children.slice(1).forEach(checkPoly);
   assert.equal(localHeadsetHref(menu.url), '/productos/auriculares/');
   assert.equal(localHeadsetHref('https://example.com/'), 'https://example.com/');
 });

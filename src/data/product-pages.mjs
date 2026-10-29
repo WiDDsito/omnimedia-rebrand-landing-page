@@ -2,6 +2,7 @@ import { localPhoneHref } from './phone-catalog.mjs';
 import { localHotelHref } from './hotel-pages.mjs';
 import { localNetworkHref } from './network-pages.mjs';
 import { localHeadsetHref } from './headset-pages.mjs';
+import { voyagerOverview } from './voyager-pages.mjs';
 import navigation from './navigation.json' with { type: 'json' };
 
 const content = {
@@ -136,6 +137,12 @@ export const productPages = families.map((family) => {
     description: 'Conoce las opciones de esta familia del portafolio.',
     href: localHeadsetHref(localNetworkHref(localHotelHref(localPhoneHref(category.url)))),
   }));
+  if (family.id === 'headsets')
+    links.splice(1, 0, {
+      title: voyagerOverview.title,
+      description: 'Explora Focus 2, 4300 UC, Legend 50 y 5200.',
+      href: voyagerOverview.path,
+    });
   if (!links.length)
     links.push(
       {
