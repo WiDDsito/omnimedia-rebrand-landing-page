@@ -1,5 +1,6 @@
 import { localPhoneHref } from './phone-catalog.mjs';
 import { localHotelHref } from './hotel-pages.mjs';
+import { localNetworkHref } from './network-pages.mjs';
 import { localTelephonyHref } from './telephony-pages.mjs';
 import { pagingPages } from './paging-pages.mjs';
 import { customerCarePages } from './customer-care-pages.mjs';
@@ -7,4 +8,4 @@ const localBySource = Object.fromEntries(
   [...pagingPages, ...customerCarePages].map((page) => [page.source, page.path]),
 );
 export const localSolutionHref = (href) =>
-  localBySource[href] ?? localHotelHref(localPhoneHref(localTelephonyHref(href)));
+  localBySource[href] ?? localNetworkHref(localHotelHref(localPhoneHref(localTelephonyHref(href))));
