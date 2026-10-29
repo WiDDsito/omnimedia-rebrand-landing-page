@@ -1,0 +1,1034 @@
+{
+  "checkedAt": "2026-10-29",
+  "originalProductSources": [
+    "https://www.omnimediaperu.com/producto/telefono-avaya-ip-1608-i-seminuevo/",
+    "https://www.omnimediaperu.com/producto/telefono-samsung-ds-5007s/",
+    "https://www.omnimediaperu.com/producto/telefono-avaya-1408-nuevo/",
+    "https://www.omnimediaperu.com/producto/telefono-avaya-9608g-nuevo/",
+    "https://www.omnimediaperu.com/producto/telefono-avaya-b149g-nuevo/",
+    "https://www.omnimediaperu.com/producto/telefono-audioconferencia-avaya-b179/",
+    "https://www.omnimediaperu.com/producto/telefono-polycom-soundstation-ip500/",
+    "https://www.omnimediaperu.com/producto/telefono-yealink-t19p/",
+    "https://www.omnimediaperu.com/producto/telefono-avaya-ip-1608-i-nuevo/",
+    "https://www.omnimediaperu.com/producto/telefono-fanvil-x1-sg/",
+    "https://www.omnimediaperu.com/producto/telefono-grandstream-gxp-2140/",
+    "https://www.omnimediaperu.com/producto/telefono-avaya-1403-nuevo/",
+    "https://www.omnimediaperu.com/producto/telefono-avaya-1120e-nuevo/",
+    "https://www.omnimediaperu.com/producto/telefono-samsung-smt-i3100/",
+    "https://www.omnimediaperu.com/producto/telefono-avaya-j129/",
+    "https://www.omnimediaperu.com/producto/telefono-avaya-j139/",
+    "https://www.omnimediaperu.com/producto/telefono-avaya-j169/",
+    "https://www.omnimediaperu.com/producto/telefono-avaya-j179/",
+    "https://www.omnimediaperu.com/producto/telefono-avaya-j179-tsg/",
+    "https://www.omnimediaperu.com/producto/telefono-conferencia-avaya-b109/",
+    "https://www.omnimediaperu.com/producto/telefono-de-conferencia-avaya-b129/",
+    "https://www.omnimediaperu.com/producto/telefono-de-conferencia-avaya-b189/",
+    "https://www.omnimediaperu.com/producto/telefono-de-conferencia-avaya-b199/",
+    "https://www.omnimediaperu.com/producto/telefono-fanvil-x1/",
+    "https://www.omnimediaperu.com/producto/telefono-fanvil-x1sp/",
+    "https://www.omnimediaperu.com/producto/telefono-fanvil-x3u/",
+    "https://www.omnimediaperu.com/producto/telefono-fanvil-x3sg/",
+    "https://www.omnimediaperu.com/producto/telefono-fanvil-x3sp/",
+    "https://www.omnimediaperu.com/producto/telefono-fanvil-x3sp-lite/",
+    "https://www.omnimediaperu.com/producto/telefono-fanvil-x3sg-lite/",
+    "https://www.omnimediaperu.com/producto/telefono-fanvil-x4u/",
+    "https://www.omnimediaperu.com/producto/telefono-fanvil-x3sg-pro/",
+    "https://www.omnimediaperu.com/producto/telefono-fanvil-x4g/",
+    "https://www.omnimediaperu.com/producto/telefono-fanvil-x5u/",
+    "https://www.omnimediaperu.com/producto/telefono-fanvil-x5s/",
+    "https://www.omnimediaperu.com/producto/telefono-fanvil-x6/",
+    "https://www.omnimediaperu.com/producto/telefono-fanvil-x6u/",
+    "https://www.omnimediaperu.com/producto/telefono-fanvil-x7/",
+    "https://www.omnimediaperu.com/producto/telefono-fanvil-x7c/",
+    "https://www.omnimediaperu.com/producto/telefono-fanvil-x7a/",
+    "https://www.omnimediaperu.com/producto/telefono-fanvil-x210/",
+    "https://www.omnimediaperu.com/producto/telefono-poly-edge-b10-b20/",
+    "https://www.omnimediaperu.com/producto/telefono-poly-edge-b30/",
+    "https://www.omnimediaperu.com/producto/telefono-poly-edge-e100/",
+    "https://www.omnimediaperu.com/producto/telefono-poly-edge-e220/",
+    "https://www.omnimediaperu.com/producto/telefono-poly-edge-e300/",
+    "https://www.omnimediaperu.com/producto/telefono-poly-edge-e320/",
+    "https://www.omnimediaperu.com/producto/telefono-poly-edge-e350/",
+    "https://www.omnimediaperu.com/producto/telefono-poly-edge-e400/",
+    "https://www.omnimediaperu.com/producto/telefono-poly-edge-e450/",
+    "https://www.omnimediaperu.com/producto/telefono-poly-edge-e500/",
+    "https://www.omnimediaperu.com/producto/telefono-poly-edge-e550/",
+    "https://www.omnimediaperu.com/producto/telefono-poly-vvx-450/",
+    "https://www.omnimediaperu.com/producto/telefono-poly-vvx-350/",
+    "https://www.omnimediaperu.com/producto/telefono-poly-vvx-150/",
+    "https://www.omnimediaperu.com/producto/telefono-poly-vvx-250/",
+    "https://www.omnimediaperu.com/producto/telefono-poly-ccx-350/",
+    "https://www.omnimediaperu.com/producto/telefono-poly-trio-8300/",
+    "https://www.omnimediaperu.com/producto/telefono-poly-trio-8800/",
+    "https://www.omnimediaperu.com/producto/telefono-poly-trio-c60/",
+    "https://www.omnimediaperu.com/producto/telefono-yealink-t30p/",
+    "https://www.omnimediaperu.com/producto/telefono-yealink-t31p/",
+    "https://www.omnimediaperu.com/producto/telefono-yealink-t23g/",
+    "https://www.omnimediaperu.com/producto/telefono-yealink-t27g/",
+    "https://www.omnimediaperu.com/producto/telefono-yealink-t29g/",
+    "https://www.omnimediaperu.com/producto/telefono-yealink-t31g/",
+    "https://www.omnimediaperu.com/producto/telefono-yealink-t33g/",
+    "https://www.omnimediaperu.com/producto/telefono-yealink-t40g/",
+    "https://www.omnimediaperu.com/producto/telefono-yealink-t41s/",
+    "https://www.omnimediaperu.com/producto/telefono-yealink-t43u/",
+    "https://www.omnimediaperu.com/producto/telefono-yealink-t46u/",
+    "https://www.omnimediaperu.com/producto/telefono-yealink-t48u/",
+    "https://www.omnimediaperu.com/producto/telefono-yealink-cp920/",
+    "https://www.omnimediaperu.com/producto/telefono-yealink-cp960/",
+    "https://www.omnimediaperu.com/producto/telefono-yealink-gxp1610-gxp1615-gxp1620-gxp1625/",
+    "https://www.omnimediaperu.com/producto/telefono-grandstream-gxp1628/",
+    "https://www.omnimediaperu.com/producto/telefono-grandstream-gxp1630/",
+    "https://www.omnimediaperu.com/producto/telefono-grandstream-gxp2130/",
+    "https://www.omnimediaperu.com/producto/telefono-grandstream-gxp2135/",
+    "https://www.omnimediaperu.com/producto/telefono-grandstream-gxp2160/",
+    "https://www.omnimediaperu.com/producto/telefono-grandstream-gxp2170/",
+    "https://www.omnimediaperu.com/producto/telefono-grandstream-grp2612w-grp2612p/",
+    "https://www.omnimediaperu.com/producto/telefono-grandstream-grp2614/",
+    "https://www.omnimediaperu.com/producto/telefono-grandstream-grp2613/",
+    "https://www.omnimediaperu.com/producto/telefono-grandstream-grp2615/",
+    "https://www.omnimediaperu.com/producto/telefono-grandstream-grp2616/",
+    "https://www.omnimediaperu.com/producto/telefono-grandstream-gxv3240/",
+    "https://www.omnimediaperu.com/producto/telefono-analogico-panasonic-kx-ts500/",
+    "https://www.omnimediaperu.com/producto/telefono-grandstream-gac2500/",
+    "https://www.omnimediaperu.com/producto/telefono-analogico-panasonic-kx-ts580/",
+    "https://www.omnimediaperu.com/producto/telefono-avaya-j159/",
+    "https://www.omnimediaperu.com/producto/telefono-fanvil-v62/",
+    "https://www.omnimediaperu.com/producto/telefono-fanvil-v64/",
+    "https://www.omnimediaperu.com/producto/telefono-fanvil-v66/",
+    "https://www.omnimediaperu.com/producto/telefono-fanvil-v65/",
+    "https://www.omnimediaperu.com/producto/telefono-yealink-t57w/",
+    "https://www.omnimediaperu.com/producto/telefono-audioconferencia-yealink-cp965/",
+    "https://www.omnimediaperu.com/producto/telefono-hp-poly-ccx350/",
+    "https://www.omnimediaperu.com/producto/telefono-hp-poly-ccx400/",
+    "https://www.omnimediaperu.com/producto/telefono-consola-sip-x210i-fanvil/",
+    "https://www.omnimediaperu.com/producto/telefono-consola-sip-a308i-fanvil/",
+    "https://www.omnimediaperu.com/producto/telefono-consola-sip-a320i-fanvil/",
+    "https://www.omnimediaperu.com/producto/telefono-fanvil-x301g/",
+    "https://www.omnimediaperu.com/producto/telefono-fanvil-x303g/",
+    "https://www.omnimediaperu.com/producto/telefono-grandstream-grp2601-p-w/",
+    "https://www.omnimediaperu.com/producto/telefono-grandstream-gxv3350/",
+    "https://www.omnimediaperu.com/producto/telefono-grandstream-gxv3370/",
+    "https://www.omnimediaperu.com/producto/telefono-avaya-j189/",
+    "https://www.omnimediaperu.com/producto/telefono-avaya-1120e/",
+    "https://www.omnimediaperu.com/producto/telefono-avaya-1220/",
+    "https://www.omnimediaperu.com/producto/telefono-avaya-1408/",
+    "https://www.omnimediaperu.com/producto/telefono-avaya-9608/",
+    "https://www.omnimediaperu.com/producto/telefono-avaya-1603/",
+    "https://www.omnimediaperu.com/producto/telefono-avaya-1616/"
+  ],
+  "records": [
+    {
+      "id": "telefono-avaya-1120e",
+      "source": "https://www.omnimediaperu.com/producto/telefono-avaya-1120e/",
+      "imageSource": "https://www.omnimediaperu.com/wp-content/uploads/2023/03/telefono-avaya-1120e-omnimedia-peru.jpg",
+      "pdfs": []
+    },
+    {
+      "id": "telefono-avaya-1120e-nuevo",
+      "source": "https://www.omnimediaperu.com/producto/telefono-avaya-1120e-nuevo/",
+      "imageSource": "https://www.omnimediaperu.com/wp-content/uploads/2023/03/telefono-avaya-1120e-omnimedia-peru.jpg",
+      "pdfs": []
+    },
+    {
+      "id": "telefono-avaya-1220",
+      "source": "https://www.omnimediaperu.com/producto/telefono-avaya-1220/",
+      "imageSource": "https://www.omnimediaperu.com/wp-content/uploads/2026/10/telefono-avaya-1220-omnimedia-peru.jpg",
+      "pdfs": []
+    },
+    {
+      "id": "telefono-avaya-1403-nuevo",
+      "source": "https://www.omnimediaperu.com/producto/telefono-avaya-1403-nuevo/",
+      "imageSource": "https://www.omnimediaperu.com/wp-content/uploads/2023/03/Telefono-avaya-1403-omnimedia-peru-1.jpg",
+      "pdfs": []
+    },
+    {
+      "id": "telefono-avaya-1408",
+      "source": "https://www.omnimediaperu.com/producto/telefono-avaya-1408/",
+      "imageSource": "https://www.omnimediaperu.com/wp-content/uploads/2021/06/telefono-avaya-1408-digital-omnimedia-peru-seminuevo.jpg",
+      "pdfs": []
+    },
+    {
+      "id": "telefono-avaya-1408-nuevo",
+      "source": "https://www.omnimediaperu.com/producto/telefono-avaya-1408-nuevo/",
+      "imageSource": "https://www.omnimediaperu.com/wp-content/uploads/2021/06/telefono-avaya-1408-digital-omnimedia-peru-seminuevo.jpg",
+      "pdfs": []
+    },
+    {
+      "id": "telefono-avaya-1603",
+      "source": "https://www.omnimediaperu.com/producto/telefono-avaya-1603/",
+      "imageSource": "https://www.omnimediaperu.com/wp-content/uploads/2026/10/telefono-avaya-IP-1603-1603-SW-omnimedia-peru.jpg",
+      "pdfs": []
+    },
+    {
+      "id": "telefono-avaya-1616",
+      "source": "https://www.omnimediaperu.com/producto/telefono-avaya-1616/",
+      "imageSource": "https://www.omnimediaperu.com/wp-content/uploads/2026/10/telefono-avaya-IP-1616-omnimedia-peru.jpg",
+      "pdfs": []
+    },
+    {
+      "id": "telefono-avaya-9608",
+      "source": "https://www.omnimediaperu.com/producto/telefono-avaya-9608/",
+      "imageSource": "https://www.omnimediaperu.com/wp-content/uploads/2021/06/telefono-avaya-IP-9608-G-omnimedia-peru.jpg",
+      "pdfs": []
+    },
+    {
+      "id": "telefono-avaya-9608g-nuevo",
+      "source": "https://www.omnimediaperu.com/producto/telefono-avaya-9608g-nuevo/",
+      "imageSource": "https://www.omnimediaperu.com/wp-content/uploads/2021/06/telefono-avaya-IP-9608-G-omnimedia-peru.jpg",
+      "pdfs": []
+    },
+    {
+      "id": "telefono-conferencia-avaya-b109",
+      "source": "https://www.omnimediaperu.com/producto/telefono-conferencia-avaya-b109/",
+      "imageSource": "https://www.omnimediaperu.com/wp-content/uploads/2020/03/telefono-de-conferencia-avaya-B109-omnimedia-peru.jpg",
+      "pdfs": [
+        "https://www.omnimediaperu.com//wp-content/uploads/2020/03/HOJA-DE-DATOS-TELEFONO-DE-CONFERENCIA-AVAYA-B109.pdf"
+      ]
+    },
+    {
+      "id": "telefono-de-conferencia-avaya-b129",
+      "source": "https://www.omnimediaperu.com/producto/telefono-de-conferencia-avaya-b129/",
+      "imageSource": "https://www.omnimediaperu.com/wp-content/uploads/2023/10/telefono-de-conferencia-b129-avaya-omnimedia-peru.jpg",
+      "pdfs": [
+        "https://www.omnimediaperu.com//wp-content/uploads/2023/10/ficha-tecnica-telefono-conferencia-avaya-b129-omnimedia-peru.pdf"
+      ]
+    },
+    {
+      "id": "telefono-avaya-b149g-nuevo",
+      "source": "https://www.omnimediaperu.com/producto/telefono-avaya-b149g-nuevo/",
+      "imageSource": "https://www.omnimediaperu.com/wp-content/uploads/2020/03/telefono-de-conferencia-avaya-B149-omnimedia-peru.jpg",
+      "pdfs": []
+    },
+    {
+      "id": "telefono-audioconferencia-avaya-b179",
+      "source": "https://www.omnimediaperu.com/producto/telefono-audioconferencia-avaya-b179/",
+      "imageSource": "https://www.omnimediaperu.com/wp-content/uploads/woocommerce-placeholder.png",
+      "pdfs": []
+    },
+    {
+      "id": "telefono-de-conferencia-avaya-b189",
+      "source": "https://www.omnimediaperu.com/producto/telefono-de-conferencia-avaya-b189/",
+      "imageSource": "https://www.omnimediaperu.com/wp-content/uploads/2020/03/telefono-de-conferencia-avaya-B189-omnimedia-peru.jpg",
+      "pdfs": [
+        "https://www.omnimediaperu.com//wp-content/uploads/2020/03/HOJA-DE-DATOS-TELEFONO-DE-CONFERENCIA-AVAYA-B189.pdf"
+      ]
+    },
+    {
+      "id": "telefono-de-conferencia-avaya-b199",
+      "source": "https://www.omnimediaperu.com/producto/telefono-de-conferencia-avaya-b199/",
+      "imageSource": "https://www.omnimediaperu.com/wp-content/uploads/2023/10/telefono-de-conferencia-b199-avaya-omnimedia-peru.jpg",
+      "pdfs": [
+        "https://www.omnimediaperu.com//wp-content/uploads/2023/10/ficha-tecnica-telefono-conferencia-avaya-b199-omnimedia-peru.pdf"
+      ]
+    },
+    {
+      "id": "telefono-avaya-ip-1608-i-nuevo",
+      "source": "https://www.omnimediaperu.com/producto/telefono-avaya-ip-1608-i-nuevo/",
+      "imageSource": "https://www.omnimediaperu.com/wp-content/uploads/2022/05/telefono-avaya-1608-ip-omnimedia-peru-1.jpg",
+      "pdfs": []
+    },
+    {
+      "id": "telefono-avaya-ip-1608-i-seminuevo",
+      "source": "https://www.omnimediaperu.com/producto/telefono-avaya-ip-1608-i-seminuevo/",
+      "imageSource": "https://www.omnimediaperu.com/wp-content/uploads/2021/04/telefono-avaya-1608-ip-omnimedia-peru-seminuevo.jpg",
+      "pdfs": []
+    },
+    {
+      "id": "telefono-avaya-j129",
+      "source": "https://www.omnimediaperu.com/producto/telefono-avaya-j129/",
+      "imageSource": "https://www.omnimediaperu.com/wp-content/uploads/2020/03/telefono-avaya-J129-omnimedia-peru.jpg",
+      "pdfs": [
+        "https://www.omnimediaperu.com//wp-content/uploads/2020/03/HOJA-DE-DATOS-TELEFONO-AVAYA-J129-OMNIMEDIA-PERU.pdf"
+      ]
+    },
+    {
+      "id": "telefono-avaya-j139",
+      "source": "https://www.omnimediaperu.com/producto/telefono-avaya-j139/",
+      "imageSource": "https://www.omnimediaperu.com/wp-content/uploads/2020/03/telefono-avaya-J139-omnimedia-peru.jpg",
+      "pdfs": [
+        "https://www.omnimediaperu.com//wp-content/uploads/2020/03/HOJA-DE-DATOS-TELEFONO-AVAYA-J139-OMNIMEDIA-PERU.pdf"
+      ]
+    },
+    {
+      "id": "telefono-avaya-j159",
+      "source": "https://www.omnimediaperu.com/producto/telefono-avaya-j159/",
+      "imageSource": "https://www.omnimediaperu.com/wp-content/uploads/2020/03/telefono-avaya-J159-omnimedia-peru.jpg",
+      "pdfs": [
+        "https://www.omnimediaperu.com/wp-content/uploads/2025/11/HOJA-DE-DATOS-TELEFONO-AVAYA-J159-OMNIMEDIA-PERU-.pdf"
+      ]
+    },
+    {
+      "id": "telefono-avaya-j169",
+      "source": "https://www.omnimediaperu.com/producto/telefono-avaya-j169/",
+      "imageSource": "https://www.omnimediaperu.com/wp-content/uploads/2020/03/telefono-avaya-J169-omnimedia-peru.jpg",
+      "pdfs": [
+        "https://www.omnimediaperu.com//wp-content/uploads/2020/03/HOJA-DE-DATOS-TELEFONO-AVAYA-J169-OMNIMEDIA-PERU.pdf"
+      ]
+    },
+    {
+      "id": "telefono-avaya-j179",
+      "source": "https://www.omnimediaperu.com/producto/telefono-avaya-j179/",
+      "imageSource": "https://www.omnimediaperu.com/wp-content/uploads/2020/03/telefono-avaya-J179-omnimedia-peru.jpg",
+      "pdfs": [
+        "https://www.omnimediaperu.com//wp-content/uploads/2020/03/HOJA-DE-DATOS-TELEFONO-AVAYA-J179-TSG-OMNIMEDIA-PERU.pdf"
+      ]
+    },
+    {
+      "id": "telefono-avaya-j179-tsg",
+      "source": "https://www.omnimediaperu.com/producto/telefono-avaya-j179-tsg/",
+      "imageSource": "https://www.omnimediaperu.com/wp-content/uploads/2020/03/telefono-avaya-J179-TSG-omnimedia-peru.jpg",
+      "pdfs": [
+        "https://www.omnimediaperu.com//wp-content/uploads/2020/03/HOJA-DE-DATOS-TELEFONO-AVAYA-J179-TSG-OMNIMEDIA-PERU.pdf",
+        "https://www.omnimediaperu.com//wp-content/uploads/2020/03/HOJA-DE-DATOS-TELEFONO-AVAYA-J169-OMNIMEDIA-PERU.pdf"
+      ]
+    },
+    {
+      "id": "telefono-avaya-j189",
+      "source": "https://www.omnimediaperu.com/producto/telefono-avaya-j189/",
+      "imageSource": "https://www.omnimediaperu.com/wp-content/uploads/2026/10/telefono-avaya-j189-omnimedia-peru.jpg",
+      "pdfs": []
+    },
+    {
+      "id": "telefono-consola-sip-a308i-fanvil",
+      "source": "https://www.omnimediaperu.com/producto/telefono-consola-sip-a308i-fanvil/",
+      "imageSource": "https://www.omnimediaperu.com/wp-content/uploads/2026/07/telefono-consola-SIP-A308i-fanvil-equipos-de-perifoneo-omnimedia-peru.jpg",
+      "pdfs": []
+    },
+    {
+      "id": "telefono-consola-sip-a320i-fanvil",
+      "source": "https://www.omnimediaperu.com/producto/telefono-consola-sip-a320i-fanvil/",
+      "imageSource": "https://www.omnimediaperu.com/wp-content/uploads/2026/07/telefono-consola-SIP-A320i-fanvil-equipos-de-perifoneo-omnimedia-peru.jpg",
+      "pdfs": []
+    },
+    {
+      "id": "telefono-fanvil-v62",
+      "source": "https://www.omnimediaperu.com/producto/telefono-fanvil-v62/",
+      "imageSource": "https://www.omnimediaperu.com/wp-content/uploads/2026/06/telefono-sip-FANVIL-V62-omnimedia-peru.jpg",
+      "pdfs": [
+        "https://www.omnimediaperu.com/wp-content/uploads/2026/06/FICHA-TECNICA-TELEFONO-FANVIL-V62-V62W-V62PRO.pdf"
+      ]
+    },
+    {
+      "id": "telefono-fanvil-v62-pro",
+      "source": "https://www.omnimediaperu.com/telefonia/telefonos-analogicos-digitales-ip/telefonos-sip-fanvil/",
+      "imageSource": "https://www.omnimediaperu.com/wp-content/uploads/2026/06/telefono-sip-FANVIL-V62-omnimedia-peru.jpg",
+      "pdfs": [
+        "https://www.omnimediaperu.com/wp-content/uploads/2026/06/FICHA-TECNICA-TELEFONO-FANVIL-V62-V62W-V62PRO.pdf"
+      ]
+    },
+    {
+      "id": "telefono-fanvil-v64",
+      "source": "https://www.omnimediaperu.com/producto/telefono-fanvil-v64/",
+      "imageSource": "https://www.omnimediaperu.com/wp-content/uploads/2026/06/telefono-sip-FANVIL-V62-omnimedia-peru.jpg",
+      "pdfs": [
+        "https://www.omnimediaperu.com/wp-content/uploads/2026/06/HOJA-DE-DATOS-TELEFONO-FANVIL-V64-OMNIMEDIA-PERU.pdf"
+      ]
+    },
+    {
+      "id": "telefono-fanvil-v65",
+      "source": "https://www.omnimediaperu.com/producto/telefono-fanvil-v65/",
+      "imageSource": "https://www.omnimediaperu.com/wp-content/uploads/2026/06/telefono-sip-FANVIL-V65-omnimedia-peru.jpg",
+      "pdfs": [
+        "https://www.omnimediaperu.com/wp-content/uploads/2026/06/HOJA-DE-DATOS-TELEFONO-FANVIL-V65-OMNIMEDIA-PERU.pdf"
+      ]
+    },
+    {
+      "id": "telefono-fanvil-v66",
+      "source": "https://www.omnimediaperu.com/producto/telefono-fanvil-v66/",
+      "imageSource": "https://www.omnimediaperu.com/wp-content/uploads/2026/06/telefono-sip-FANVIL-V66-omnimedia-peru.jpg",
+      "pdfs": [
+        "https://www.omnimediaperu.com/wp-content/uploads/2026/06/HOJA-DE-DATOS-TELEFONO-FANVIL-V66-V66PRO-OMNIMEDIA-PERU.pdf"
+      ]
+    },
+    {
+      "id": "telefono-fanvil-v66-pro",
+      "source": "https://www.omnimediaperu.com/telefonia/telefonos-analogicos-digitales-ip/telefonos-sip-fanvil/",
+      "imageSource": "https://www.omnimediaperu.com/wp-content/uploads/2026/06/telefono-sip-FANVIL-V66-omnimedia-peru.jpg",
+      "pdfs": [
+        "https://www.omnimediaperu.com/wp-content/uploads/2026/06/HOJA-DE-DATOS-TELEFONO-FANVIL-V66-V66PRO-OMNIMEDIA-PERU.pdf"
+      ]
+    },
+    {
+      "id": "telefono-fanvil-x1",
+      "source": "https://www.omnimediaperu.com/producto/telefono-fanvil-x1/",
+      "imageSource": "https://www.omnimediaperu.com/wp-content/uploads/2020/04/telefono-fanvil-x1-omnimedia-peru.jpg",
+      "pdfs": []
+    },
+    {
+      "id": "telefono-fanvil-x1-sg",
+      "source": "https://www.omnimediaperu.com/producto/telefono-fanvil-x1-sg/",
+      "imageSource": "https://www.omnimediaperu.com/wp-content/uploads/2021/10/telefono-fanvil-x1s-x1SP-omnimedia-peru.jpg",
+      "pdfs": []
+    },
+    {
+      "id": "telefono-fanvil-x1sp",
+      "source": "https://www.omnimediaperu.com/producto/telefono-fanvil-x1sp/",
+      "imageSource": "https://www.omnimediaperu.com/wp-content/uploads/2021/10/telefono-fanvil-x1s-x1SP-omnimedia-peru.jpg",
+      "pdfs": []
+    },
+    {
+      "id": "telefono-fanvil-x210",
+      "source": "https://www.omnimediaperu.com/producto/telefono-fanvil-x210/",
+      "imageSource": "https://www.omnimediaperu.com/wp-content/uploads/2021/10/telefono-fanvil-x210-omnimedia-peru-1.jpg",
+      "pdfs": [
+        "https://www.omnimediaperu.com/wp-content/uploads/2021/10/hoja-de-datos-telefono-x210-Fanvil-omnimedia-peru.pdf"
+      ]
+    },
+    {
+      "id": "telefono-consola-sip-x210i-fanvil",
+      "source": "https://www.omnimediaperu.com/producto/telefono-consola-sip-x210i-fanvil/",
+      "imageSource": "https://www.omnimediaperu.com/wp-content/uploads/2026/07/telefono-consola-SIP-A210i-fanvil-equipos-de-perifoneo-omnimedia-peru.jpg",
+      "pdfs": []
+    },
+    {
+      "id": "telefono-fanvil-x301g",
+      "source": "https://www.omnimediaperu.com/producto/telefono-fanvil-x301g/",
+      "imageSource": "https://www.omnimediaperu.com/wp-content/uploads/2025/11/telefono-sip-x301g-fanvil-omnimedia-peru.jpg",
+      "pdfs": [
+        "https://www.omnimediaperu.com/wp-content/uploads/2025/11/FICHA-TECNICA-TELEFONO-X301G-FANVIL.pdf"
+      ]
+    },
+    {
+      "id": "telefono-fanvil-x303g",
+      "source": "https://www.omnimediaperu.com/producto/telefono-fanvil-x303g/",
+      "imageSource": "https://www.omnimediaperu.com/wp-content/uploads/2025/11/telefono-sip-x303g-fanvil-omnimedia-peru.jpg",
+      "pdfs": [
+        "https://www.omnimediaperu.com/wp-content/uploads/2025/11/FICHA-TECNICA-TELEFONO-X303G-FANVIL.pdf"
+      ]
+    },
+    {
+      "id": "telefono-fanvil-x3sg",
+      "source": "https://www.omnimediaperu.com/producto/telefono-fanvil-x3sg/",
+      "imageSource": "https://www.omnimediaperu.com/wp-content/uploads/2021/10/telefono-fanvil-x3U-omnimedia-peru.jpg",
+      "pdfs": []
+    },
+    {
+      "id": "telefono-fanvil-x3sg-lite",
+      "source": "https://www.omnimediaperu.com/producto/telefono-fanvil-x3sg-lite/",
+      "imageSource": "https://www.omnimediaperu.com/wp-content/uploads/2022/05/fanvil-x3s-lite-x3sp-lite-x3sg-lite-omnimedia.jpg",
+      "pdfs": []
+    },
+    {
+      "id": "telefono-fanvil-x3sg-pro",
+      "source": "https://www.omnimediaperu.com/producto/telefono-fanvil-x3sg-pro/",
+      "imageSource": "https://www.omnimediaperu.com/wp-content/uploads/2022/05/fanvil-x3s-pro-x3sp-pro-x3sg-pro-omnimedia.jpg",
+      "pdfs": []
+    },
+    {
+      "id": "telefono-fanvil-x3sp",
+      "source": "https://www.omnimediaperu.com/producto/telefono-fanvil-x3sp/",
+      "imageSource": "https://www.omnimediaperu.com/wp-content/uploads/2022/05/fanvil-x3s-pro-x3sp-pro-x3sg-pro-omnimedia.jpg",
+      "pdfs": []
+    },
+    {
+      "id": "telefono-fanvil-x3sp-lite",
+      "source": "https://www.omnimediaperu.com/producto/telefono-fanvil-x3sp-lite/",
+      "imageSource": "https://www.omnimediaperu.com/wp-content/uploads/2022/05/fanvil-x3s-lite-x3sp-lite-x3sg-lite-omnimedia.jpg",
+      "pdfs": []
+    },
+    {
+      "id": "telefono-fanvil-x3u",
+      "source": "https://www.omnimediaperu.com/producto/telefono-fanvil-x3u/",
+      "imageSource": "https://www.omnimediaperu.com/wp-content/uploads/2021/10/telefono-fanvil-x3U-omnimedia-peru.jpg",
+      "pdfs": [
+        "https://www.omnimediaperu.com/wp-content/uploads/2021/10/hoja-de-datos-telefono-x3U-Fanvil-omnimedia-peru.pdf"
+      ]
+    },
+    {
+      "id": "telefono-fanvil-x4g",
+      "source": "https://www.omnimediaperu.com/producto/telefono-fanvil-x4g/",
+      "imageSource": "https://www.omnimediaperu.com/wp-content/uploads/2021/10/telefono-fanvil-x4U-omnimedia-peru.jpg",
+      "pdfs": []
+    },
+    {
+      "id": "telefono-fanvil-x4u",
+      "source": "https://www.omnimediaperu.com/producto/telefono-fanvil-x4u/",
+      "imageSource": "https://www.omnimediaperu.com/wp-content/uploads/2021/10/telefono-fanvil-x4U-omnimedia-peru.jpg",
+      "pdfs": [
+        "https://www.omnimediaperu.com/wp-content/uploads/2021/10/hoja-de-datos-telefono-x4U-Fanvil-omnimedia-peru.pdf"
+      ]
+    },
+    {
+      "id": "telefono-fanvil-x5s",
+      "source": "https://www.omnimediaperu.com/producto/telefono-fanvil-x5s/",
+      "imageSource": "https://www.omnimediaperu.com/wp-content/uploads/2020/04/telefono-fanvil-X5S-omnimedia-peru.jpg",
+      "pdfs": []
+    },
+    {
+      "id": "telefono-fanvil-x5u",
+      "source": "https://www.omnimediaperu.com/producto/telefono-fanvil-x5u/",
+      "imageSource": "https://www.omnimediaperu.com/wp-content/uploads/2022/05/telefono-fanvil-x5u-omnimedia-peru.jpg",
+      "pdfs": []
+    },
+    {
+      "id": "telefono-fanvil-x6",
+      "source": "https://www.omnimediaperu.com/producto/telefono-fanvil-x6/",
+      "imageSource": "https://www.omnimediaperu.com/wp-content/uploads/2020/04/telefono-fanvil-X6-omnimedia-peru.jpg",
+      "pdfs": [
+        "https://www.omnimediaperu.com/wp-content/uploads/2022/05/HOJA-DE-DATOS-TELEFONO-FANVIL-X6U-.pdf"
+      ]
+    },
+    {
+      "id": "telefono-fanvil-x6u",
+      "source": "https://www.omnimediaperu.com/producto/telefono-fanvil-x6u/",
+      "imageSource": "https://www.omnimediaperu.com/wp-content/uploads/2022/05/telefono-fanvil-x6u-omnimedia-peru.jpg",
+      "pdfs": [
+        "https://www.omnimediaperu.com/wp-content/uploads/2022/05/HOJA-DE-DATOS-TELEFONO-FANVIL-X6U-.pdf"
+      ]
+    },
+    {
+      "id": "telefono-fanvil-x7",
+      "source": "https://www.omnimediaperu.com/producto/telefono-fanvil-x7/",
+      "imageSource": "https://www.omnimediaperu.com/wp-content/uploads/2022/05/telefono-fanvil-x7-omnimedia-peru.jpg",
+      "pdfs": [
+        "https://www.omnimediaperu.com/wp-content/uploads/2022/05/hoja-de-datos-telefono-x7c-Fanvil-omnimedia-peru.pdf"
+      ]
+    },
+    {
+      "id": "telefono-fanvil-x7a",
+      "source": "https://www.omnimediaperu.com/producto/telefono-fanvil-x7a/",
+      "imageSource": "https://www.omnimediaperu.com/wp-content/uploads/2022/05/telefono-fanvil-x7A-omnimedia-peru.jpg",
+      "pdfs": [
+        "https://www.omnimediaperu.com/wp-content/uploads/2022/05/hoja-de-datos-telefono-x7A-Fanvil-omnimedia-peru-1.pdf"
+      ]
+    },
+    {
+      "id": "telefono-fanvil-x7c",
+      "source": "https://www.omnimediaperu.com/producto/telefono-fanvil-x7c/",
+      "imageSource": "https://www.omnimediaperu.com/wp-content/uploads/2022/05/telefono-fanvil-x7C-omnimedia-peru.jpg",
+      "pdfs": [
+        "https://www.omnimediaperu.com/wp-content/uploads/2022/05/hoja-de-datos-telefono-x7c-Fanvil-omnimedia-peru.pdf"
+      ]
+    },
+    {
+      "id": "telefono-grandstream-gac2500",
+      "source": "https://www.omnimediaperu.com/producto/telefono-grandstream-gac2500/",
+      "imageSource": "https://www.omnimediaperu.com/wp-content/uploads/2020/03/TELEFONO-GRANDSTREAM-GAC2500-OMNIMEDIA-PERU.jpg",
+      "pdfs": [
+        "https://www.omnimediaperu.com/wp-content/uploads/2020/03/HOJA-DE-DATOS-TELEFONO-GRANDSTREAM-GAC2500-OMNIMEDIA-PERU.pdf",
+        "https://www.omnimediaperu.com/wp-content/uploads/2020/03/HOJA-DE-DATOS-MODULO-DE-EXPANSION-GRANDSTREAM-GBX20-OMNIMEDIA-PERU.pdf",
+        "https://www.omnimediaperu.com/wp-content/uploads/2020/03/HOJA-DE-DATOS-MODULO-DE-EXPANSION-GRANDSTREAM-GXP2200-EXT-OMNIMEDIA-PERU.pdf"
+      ]
+    },
+    {
+      "id": "telefono-grandstream-grp2601-p-w",
+      "source": "https://www.omnimediaperu.com/producto/telefono-grandstream-grp2601-p-w/",
+      "imageSource": "https://www.omnimediaperu.com/wp-content/uploads/2025/02/telefono-grandstream-GRP2601-omnimedia-peru-.jpg",
+      "pdfs": []
+    },
+    {
+      "id": "telefono-grandstream-grp2601p",
+      "source": "https://www.omnimediaperu.com/producto/telefono-grandstream-grp2601-p-w/",
+      "imageSource": "https://www.omnimediaperu.com/wp-content/uploads/2025/02/telefono-grandstream-GRP2601-omnimedia-peru-.jpg",
+      "pdfs": []
+    },
+    {
+      "id": "telefono-grandstream-grp2601w",
+      "source": "https://www.omnimediaperu.com/producto/telefono-grandstream-grp2601-p-w/",
+      "imageSource": "https://www.omnimediaperu.com/wp-content/uploads/2025/02/telefono-grandstream-GRP2601-omnimedia-peru-.jpg",
+      "pdfs": []
+    },
+    {
+      "id": "telefono-grandstream-grp2612p",
+      "source": "https://www.omnimediaperu.com/producto/telefono-grandstream-grp2612w-grp2612p/",
+      "imageSource": "https://www.omnimediaperu.com/wp-content/uploads/2020/03/TELEFONOS-GRANDSTREAM-GRP2612P-GRP2612W-OMNIMEDIA-PERU.jpg",
+      "pdfs": [
+        "https://www.omnimediaperu.com/wp-content/uploads/2020/03/HOJA-DE-DATOS-TELEFONO-GRANDSTREAM-GRP2612P-GRP2612W-OMNIMEDIA-PERU.pdf"
+      ]
+    },
+    {
+      "id": "telefono-grandstream-grp2612w-grp2612p",
+      "source": "https://www.omnimediaperu.com/producto/telefono-grandstream-grp2612w-grp2612p/",
+      "imageSource": "https://www.omnimediaperu.com/wp-content/uploads/2020/03/TELEFONOS-GRANDSTREAM-GRP2612P-GRP2612W-OMNIMEDIA-PERU.jpg",
+      "pdfs": [
+        "https://www.omnimediaperu.com/wp-content/uploads/2020/03/HOJA-DE-DATOS-TELEFONO-GRANDSTREAM-GRP2612P-GRP2612W-OMNIMEDIA-PERU.pdf"
+      ]
+    },
+    {
+      "id": "telefono-grandstream-grp2613",
+      "source": "https://www.omnimediaperu.com/producto/telefono-grandstream-grp2613/",
+      "imageSource": "https://www.omnimediaperu.com/wp-content/uploads/2020/03/TELEFONOS-GRANDSTREAM-GRP2613-OMNIMEDIA-PERU.jpg",
+      "pdfs": [
+        "https://www.omnimediaperu.com/wp-content/uploads/2020/03/HOJA-DE-DATOS-TELEFONO-GRANDSTREAM-GRP2613-OMNIMEDIA-PERU.pdf"
+      ]
+    },
+    {
+      "id": "telefono-grandstream-grp2614",
+      "source": "https://www.omnimediaperu.com/producto/telefono-grandstream-grp2614/",
+      "imageSource": "https://www.omnimediaperu.com/wp-content/uploads/2020/03/TELEFONOS-GRANDSTREAM-GRP2614-OMNIMEDIA-PERU.jpg",
+      "pdfs": [
+        "https://www.omnimediaperu.com/wp-content/uploads/2020/03/HOJA-DE-DATOS-TELEFONO-GRANDSTREAM-GRP2614-OMNIMEDIA-PERU.pdf"
+      ]
+    },
+    {
+      "id": "telefono-grandstream-grp2615",
+      "source": "https://www.omnimediaperu.com/producto/telefono-grandstream-grp2615/",
+      "imageSource": "https://www.omnimediaperu.com/wp-content/uploads/2020/03/TELEFONOS-GRANDSTREAM-GRP2615-OMNIMEDIA-PERU.jpg",
+      "pdfs": [
+        "https://www.omnimediaperu.com/wp-content/uploads/2020/03/HOJA-DE-DATOS-TELEFONO-GRANDSTREAM-GRP2615-OMNIMEDIA-PERU.pdf"
+      ]
+    },
+    {
+      "id": "telefono-grandstream-grp2616",
+      "source": "https://www.omnimediaperu.com/producto/telefono-grandstream-grp2616/",
+      "imageSource": "https://www.omnimediaperu.com/wp-content/uploads/2020/03/TELEFONOS-GRANDSTREAM-GRP2616-OMNIMEDIA-PERU.jpg",
+      "pdfs": [
+        "https://www.omnimediaperu.com/wp-content/uploads/2020/03/HOJA-DE-DATOS-TELEFONO-GRANDSTREAMGRP2616-OMNIMEDIA-PERU.pdf"
+      ]
+    },
+    {
+      "id": "telefono-grandstream-gxp-2140",
+      "source": "https://www.omnimediaperu.com/producto/telefono-grandstream-gxp-2140/",
+      "imageSource": "https://www.omnimediaperu.com/wp-content/uploads/2020/03/TELEFONOS-GRANDSTREAM-GXP2140-OMNIMEDIA-PERU.jpg",
+      "pdfs": [
+        "https://www.omnimediaperu.com/wp-content/uploads/2020/03/HOJA-DE-DATOS-TELEFONO-GRANDSTREAM-GXP2140-OMNIMEDIA-PERU.pdf"
+      ]
+    },
+    {
+      "id": "telefono-yealink-gxp1610-gxp1615-gxp1620-gxp1625",
+      "source": "https://www.omnimediaperu.com/producto/telefono-yealink-gxp1610-gxp1615-gxp1620-gxp1625/",
+      "imageSource": "https://www.omnimediaperu.com/wp-content/uploads/2020/03/TELEFONOS-GRANDSTREAM-GXP1610-GXP1615-GXP1620-GXP1625-OMNIMEDIA-PERU.jpg",
+      "pdfs": [
+        "https://www.omnimediaperu.com/wp-content/uploads/2020/03/HOJA-DE-DATOS-TELEFONO-GRANDSTREAM-GXP1610-GXP1615-OMNIMEDIA-PERU.pdf",
+        "https://www.omnimediaperu.com/wp-content/uploads/2020/03/HOJA-DE-DATOS-TELEFONO-GRANDSTREAM-GXP1620-GXP1625-OMNIMEDIA-PERU.pdf"
+      ]
+    },
+    {
+      "id": "telefono-grandstream-gxp1615",
+      "source": "https://www.omnimediaperu.com/producto/telefono-yealink-gxp1610-gxp1615-gxp1620-gxp1625/",
+      "imageSource": "https://www.omnimediaperu.com/wp-content/uploads/2020/03/TELEFONOS-GRANDSTREAM-GXP1610-GXP1615-GXP1620-GXP1625-OMNIMEDIA-PERU.jpg",
+      "pdfs": [
+        "https://www.omnimediaperu.com/wp-content/uploads/2020/03/HOJA-DE-DATOS-TELEFONO-GRANDSTREAM-GXP1610-GXP1615-OMNIMEDIA-PERU.pdf",
+        "https://www.omnimediaperu.com/wp-content/uploads/2020/03/HOJA-DE-DATOS-TELEFONO-GRANDSTREAM-GXP1620-GXP1625-OMNIMEDIA-PERU.pdf"
+      ]
+    },
+    {
+      "id": "telefono-grandstream-gxp1620",
+      "source": "https://www.omnimediaperu.com/producto/telefono-yealink-gxp1610-gxp1615-gxp1620-gxp1625/",
+      "imageSource": "https://www.omnimediaperu.com/wp-content/uploads/2020/03/TELEFONOS-GRANDSTREAM-GXP1610-GXP1615-GXP1620-GXP1625-OMNIMEDIA-PERU.jpg",
+      "pdfs": [
+        "https://www.omnimediaperu.com/wp-content/uploads/2020/03/HOJA-DE-DATOS-TELEFONO-GRANDSTREAM-GXP1610-GXP1615-OMNIMEDIA-PERU.pdf",
+        "https://www.omnimediaperu.com/wp-content/uploads/2020/03/HOJA-DE-DATOS-TELEFONO-GRANDSTREAM-GXP1620-GXP1625-OMNIMEDIA-PERU.pdf"
+      ]
+    },
+    {
+      "id": "telefono-grandstream-gxp1625",
+      "source": "https://www.omnimediaperu.com/producto/telefono-yealink-gxp1610-gxp1615-gxp1620-gxp1625/",
+      "imageSource": "https://www.omnimediaperu.com/wp-content/uploads/2020/03/TELEFONOS-GRANDSTREAM-GXP1610-GXP1615-GXP1620-GXP1625-OMNIMEDIA-PERU.jpg",
+      "pdfs": [
+        "https://www.omnimediaperu.com/wp-content/uploads/2020/03/HOJA-DE-DATOS-TELEFONO-GRANDSTREAM-GXP1610-GXP1615-OMNIMEDIA-PERU.pdf",
+        "https://www.omnimediaperu.com/wp-content/uploads/2020/03/HOJA-DE-DATOS-TELEFONO-GRANDSTREAM-GXP1620-GXP1625-OMNIMEDIA-PERU.pdf"
+      ]
+    },
+    {
+      "id": "telefono-grandstream-gxp1628",
+      "source": "https://www.omnimediaperu.com/producto/telefono-grandstream-gxp1628/",
+      "imageSource": "https://www.omnimediaperu.com/wp-content/uploads/2020/03/TELEFONOS-GRANDSTREAM-GXP1628-OMNIMEDIA-PERU.jpg",
+      "pdfs": [
+        "https://www.omnimediaperu.com/wp-content/uploads/2020/03/HOJA-DE-DATOS-TELEFONO-GRANDSTREAM-GXP1628-OMNIMEDIA-PERU.pdf"
+      ]
+    },
+    {
+      "id": "telefono-grandstream-gxp1630",
+      "source": "https://www.omnimediaperu.com/producto/telefono-grandstream-gxp1630/",
+      "imageSource": "https://www.omnimediaperu.com/wp-content/uploads/2020/03/TELEFONOS-GRANDSTREAM-GXP1628-OMNIMEDIA-PERU.jpg",
+      "pdfs": [
+        "https://www.omnimediaperu.com/wp-content/uploads/2020/03/HOJA-DE-DATOS-TELEFONO-GRANDSTREAM-GXP1630-OMNIMEDIA-PERU.pdf"
+      ]
+    },
+    {
+      "id": "telefono-grandstream-gxp2130",
+      "source": "https://www.omnimediaperu.com/producto/telefono-grandstream-gxp2130/",
+      "imageSource": "https://www.omnimediaperu.com/wp-content/uploads/2020/03/TELEFONOS-GRANDSTREAM-GXP2130-OMNIMEDIA-PERU.jpg",
+      "pdfs": [
+        "hhttps://www.omnimediaperu.com/wp-content/uploads/2020/03/HOJA-DE-DATOS-TELEFONO-GRANDSTREAM-GXP2130-OMNIMEDIA-PERU.pdf"
+      ]
+    },
+    {
+      "id": "telefono-grandstream-gxp2135",
+      "source": "https://www.omnimediaperu.com/producto/telefono-grandstream-gxp2135/",
+      "imageSource": "https://www.omnimediaperu.com/wp-content/uploads/2020/03/TELEFONOS-GRANDSTREAM-GXP2135-OMNIMEDIA-PERU.jpg",
+      "pdfs": [
+        "https://www.omnimediaperu.com/wp-content/uploads/2020/03/HOJA-DE-DATOS-TELEFONO-GRANDSTREAM-GXP2135-OMNIMEDIA-PERU.pdf"
+      ]
+    },
+    {
+      "id": "telefono-grandstream-gxp2160",
+      "source": "https://www.omnimediaperu.com/producto/telefono-grandstream-gxp2160/",
+      "imageSource": "https://www.omnimediaperu.com/wp-content/uploads/2020/03/TELEFONOS-GRANDSTREAM-GXP2160-OMNIMEDIA-PERU.jpg",
+      "pdfs": [
+        "https://www.omnimediaperu.com/wp-content/uploads/2020/03/HOJA-DE-DATOS-TELEFONO-GRANDSTREAM-GXP2160-OMNIMEDIA-PERU.pdf"
+      ]
+    },
+    {
+      "id": "telefono-grandstream-gxp2170",
+      "source": "https://www.omnimediaperu.com/producto/telefono-grandstream-gxp2170/",
+      "imageSource": "https://www.omnimediaperu.com/wp-content/uploads/2020/03/TELEFONOS-GRANDSTREAM-GXP2170-OMNIMEDIA-PERU.jpg",
+      "pdfs": [
+        "https://www.omnimediaperu.com/wp-content/uploads/2020/03/HOJA-DE-DATOS-TELEFONO-GRANDSTREAM-GXP2170-OMNIMEDIA-PERU.pdf"
+      ]
+    },
+    {
+      "id": "telefono-grandstream-gxv3240",
+      "source": "https://www.omnimediaperu.com/producto/telefono-grandstream-gxv3240/",
+      "imageSource": "https://www.omnimediaperu.com/wp-content/uploads/2020/03/TELEFONOS-GRANDSTREAM-GXV3240-OMNIMEDIA-PERU.jpg",
+      "pdfs": []
+    },
+    {
+      "id": "telefono-grandstream-gxv3350",
+      "source": "https://www.omnimediaperu.com/producto/telefono-grandstream-gxv3350/",
+      "imageSource": "https://www.omnimediaperu.com/wp-content/uploads/2020/03/TELEFONOS-GRANDSTREAM-GXV3350-OMNIMEDIA-PERU.jpg",
+      "pdfs": [
+        "https://www.omnimediaperu.com/wp-content/uploads/2020/03/HOJA-DE-DATOS-TELEFONO-GRANDSTREAM-GXV3350-OMNIMEDIA-PERU.pdf"
+      ]
+    },
+    {
+      "id": "telefono-grandstream-gxv3370",
+      "source": "https://www.omnimediaperu.com/producto/telefono-grandstream-gxv3370/",
+      "imageSource": "https://www.omnimediaperu.com/wp-content/uploads/2025/02/telefono-grandstream-gxv-3370-omnimedia-peru.jpg",
+      "pdfs": [
+        "https://www.omnimediaperu.com/wp-content/uploads/2025/02/hoja-de-datos-telefono-grandstream-GXV3370-OMNIMEDIA-PERU.pdf"
+      ]
+    },
+    {
+      "id": "telefono-panasonic-kx-tg3451",
+      "source": "https://www.omnimediaperu.com/telefonia/telefonos-analogicos-digitales-ip/telefonos-analogicos-digitales-ip-panasonic/",
+      "imageSource": "https://www.omnimediaperu.com/wp-content/uploads/2020/03/telefonos-panasonic-inalambrico-KX-TG3451-KX-TG3452-omnimedia-peru.jpg",
+      "pdfs": []
+    },
+    {
+      "id": "telefono-panasonic-kx-tg3452",
+      "source": "https://www.omnimediaperu.com/telefonia/telefonos-analogicos-digitales-ip/telefonos-analogicos-digitales-ip-panasonic/",
+      "imageSource": "https://www.omnimediaperu.com/wp-content/uploads/2020/03/telefonos-panasonic-inalambrico-KX-TG3451-KX-TG3452-omnimedia-peru.jpg",
+      "pdfs": []
+    },
+    {
+      "id": "telefono-panasonic-kx-kg3711",
+      "source": "https://www.omnimediaperu.com/telefonia/telefonos-analogicos-digitales-ip/telefonos-analogicos-digitales-ip-panasonic/",
+      "imageSource": "https://www.omnimediaperu.com/wp-content/uploads/2020/03/telefonos-panasonic-inalambrico-KX-TG3711-omnimedia-peru.jpg",
+      "pdfs": [
+        "https://www.omnimediaperu.com//wp-content/uploads/2020/03/HOJA-DE-DATOS-TELEFONO-INALAMBRICO-PANASONIC-KX-TG3711-y-KX-TG3721-OMNIMEDIA-PERU.pdf"
+      ]
+    },
+    {
+      "id": "telefono-panasonic-kx-tg3721",
+      "source": "https://www.omnimediaperu.com/telefonia/telefonos-analogicos-digitales-ip/telefonos-analogicos-digitales-ip-panasonic/",
+      "imageSource": "https://www.omnimediaperu.com/wp-content/uploads/2020/03/telefonos-panasonic-inalambrico-KX-TG3721-omnimedia-peru.jpg",
+      "pdfs": [
+        "https://www.omnimediaperu.com//wp-content/uploads/2020/03/HOJA-DE-DATOS-TELEFONO-INALAMBRICO-PANASONIC-KX-TG3711-y-KX-TG3721-OMNIMEDIA-PERU.pdf"
+      ]
+    },
+    {
+      "id": "telefono-analogico-panasonic-kx-ts500",
+      "source": "https://www.omnimediaperu.com/producto/telefono-analogico-panasonic-kx-ts500/",
+      "imageSource": "https://www.omnimediaperu.com/wp-content/uploads/2020/03/telefono-panasonic-analogico-KX-TS500-omnimedia-peru.jpg",
+      "pdfs": [
+        "https://www.omnimediaperu.com//wp-content/uploads/2020/03/HOJA-DE-DATOS-TELEFONO-PANASONIC-KX-TS500-OMNIMEDIA-PERU.pdf"
+      ]
+    },
+    {
+      "id": "telefono-analogico-panasonic-kx-ts580",
+      "source": "https://www.omnimediaperu.com/producto/telefono-analogico-panasonic-kx-ts580/",
+      "imageSource": "https://www.omnimediaperu.com/wp-content/uploads/2020/03/telefono-panasonic-analogico-KX-TS580-omnimedia-peru.jpg",
+      "pdfs": [
+        "https://www.omnimediaperu.com//wp-content/uploads/2020/03/HOJA-DE-DATOS-TELEFONO-PANASONIC-KX-TS580-OMNIMEDIA-PERU.pdf"
+      ]
+    },
+    {
+      "id": "telefono-poly-ccx-350",
+      "source": "https://www.omnimediaperu.com/producto/telefono-poly-ccx-350/",
+      "imageSource": "https://www.omnimediaperu.com/wp-content/uploads/2022/11/telefono-poly-CCX-350-omnimedia-peru.jpg",
+      "pdfs": [
+        "https://www.omnimediaperu.com/wp-content/uploads/2022/11/hoja-de-datos-telefono-poly-ccx-350-omnimedia-peru.pdf"
+      ]
+    },
+    {
+      "id": "telefono-hp-poly-ccx350",
+      "source": "https://www.omnimediaperu.com/producto/telefono-hp-poly-ccx350/",
+      "imageSource": "https://www.omnimediaperu.com/wp-content/uploads/2022/11/telefono-poly-CCX-350-omnimedia-peru.jpg",
+      "pdfs": [
+        "https://www.omnimediaperu.com/wp-content/uploads/2022/11/hoja-de-datos-telefono-poly-ccx-350-omnimedia-peru.pdf"
+      ]
+    },
+    {
+      "id": "telefono-hp-poly-ccx400",
+      "source": "https://www.omnimediaperu.com/producto/telefono-hp-poly-ccx400/",
+      "imageSource": "https://www.omnimediaperu.com/wp-content/uploads/2025/11/telefono-poly-hp-ccx400-microsoft-teams-omnimedia-peru.jpg",
+      "pdfs": []
+    },
+    {
+      "id": "telefono-poly-ccx400-teams",
+      "source": "https://www.omnimediaperu.com/telefonia/telefonos-analogicos-digitales-ip/telefonos-sip-poly/",
+      "imageSource": "https://www.omnimediaperu.com/wp-content/uploads/2025/11/telefono-poly-hp-ccx400-microsoft-teams-omnimedia-peru.jpg",
+      "pdfs": []
+    },
+    {
+      "id": "telefono-poly-edge-b10-b20",
+      "source": "https://www.omnimediaperu.com/producto/telefono-poly-edge-b10-b20/",
+      "imageSource": "https://www.omnimediaperu.com/wp-content/uploads/2022/11/telefono-poly-EDGE-B10-B20-omnimedia-peru.jpg",
+      "pdfs": [
+        "https://www.omnimediaperu.com/wp-content/uploads/2022/11/hoja-de-datos-telefono-poly-edge-B10-B20-B30-omnimedia-peru.pdf"
+      ]
+    },
+    {
+      "id": "telefono-poly-edge-b20",
+      "source": "https://www.omnimediaperu.com/producto/telefono-poly-edge-b10-b20/",
+      "imageSource": "https://www.omnimediaperu.com/wp-content/uploads/2022/11/telefono-poly-EDGE-B10-B20-omnimedia-peru.jpg",
+      "pdfs": [
+        "https://www.omnimediaperu.com/wp-content/uploads/2022/11/hoja-de-datos-telefono-poly-edge-B10-B20-B30-omnimedia-peru.pdf"
+      ]
+    },
+    {
+      "id": "telefono-poly-edge-b30",
+      "source": "https://www.omnimediaperu.com/producto/telefono-poly-edge-b30/",
+      "imageSource": "https://www.omnimediaperu.com/wp-content/uploads/2022/11/telefono-poly-EDGE-B30-omnimedia-peru.jpg",
+      "pdfs": [
+        "https://www.omnimediaperu.com/wp-content/uploads/2022/11/hoja-de-datos-telefono-poly-edge-B10-B20-B30-omnimedia-peru.pdf"
+      ]
+    },
+    {
+      "id": "telefono-poly-edge-e100",
+      "source": "https://www.omnimediaperu.com/producto/telefono-poly-edge-e100/",
+      "imageSource": "https://www.omnimediaperu.com/wp-content/uploads/2022/11/telefono-poly-EDGE-e100-omnimedia-peru.png.jpg",
+      "pdfs": []
+    },
+    {
+      "id": "telefono-poly-edge-e220",
+      "source": "https://www.omnimediaperu.com/producto/telefono-poly-edge-e220/",
+      "imageSource": "https://www.omnimediaperu.com/wp-content/uploads/2022/11/telefono-poly-EDGE-e200-omnimedia-peru.png.jpg",
+      "pdfs": []
+    },
+    {
+      "id": "telefono-poly-edge-e300",
+      "source": "https://www.omnimediaperu.com/producto/telefono-poly-edge-e300/",
+      "imageSource": "https://www.omnimediaperu.com/wp-content/uploads/2022/11/telefono-poly-EDGE-e300-e320-e350-omnimedia-peru.jpg",
+      "pdfs": [
+        "https://www.omnimediaperu.com/wp-content/uploads/2022/11/hoja-de-datos-telefono-poly-edge-e320-e350-omnimedia-peru.pdf"
+      ]
+    },
+    {
+      "id": "telefono-poly-edge-e320",
+      "source": "https://www.omnimediaperu.com/producto/telefono-poly-edge-e320/",
+      "imageSource": "https://www.omnimediaperu.com/wp-content/uploads/2022/11/telefono-poly-EDGE-e300-e320-e350-omnimedia-peru.jpg",
+      "pdfs": []
+    },
+    {
+      "id": "telefono-poly-edge-e350",
+      "source": "https://www.omnimediaperu.com/producto/telefono-poly-edge-e350/",
+      "imageSource": "https://www.omnimediaperu.com/wp-content/uploads/2022/11/telefono-poly-EDGE-e300-e320-e350-omnimedia-peru.jpg",
+      "pdfs": []
+    },
+    {
+      "id": "telefono-poly-edge-e400",
+      "source": "https://www.omnimediaperu.com/producto/telefono-poly-edge-e400/",
+      "imageSource": "https://www.omnimediaperu.com/wp-content/uploads/2022/11/telefono-poly-EDGE-E400-E450-omnimedia-peru.jpg",
+      "pdfs": [
+        "https://www.omnimediaperu.com/wp-content/uploads/2022/11/hoja-de-datos-telefono-poly-edge-e400-omnimedia-peru.pdf"
+      ]
+    },
+    {
+      "id": "telefono-poly-edge-e450",
+      "source": "https://www.omnimediaperu.com/producto/telefono-poly-edge-e450/",
+      "imageSource": "https://www.omnimediaperu.com/wp-content/uploads/2022/11/telefono-poly-EDGE-E400-E450-omnimedia-peru.jpg",
+      "pdfs": []
+    },
+    {
+      "id": "telefono-poly-edge-e500",
+      "source": "https://www.omnimediaperu.com/producto/telefono-poly-edge-e500/",
+      "imageSource": "https://www.omnimediaperu.com/wp-content/uploads/2022/11/telefono-poly-EDGE-E500-E550-omnimedia-peru.jpg",
+      "pdfs": [
+        "https://www.omnimediaperu.com/wp-content/uploads/2022/11/hoja-de-datos-telefono-poly-edge-e500-e550-omnimedia-peru.pdf"
+      ]
+    },
+    {
+      "id": "telefono-poly-edge-e550",
+      "source": "https://www.omnimediaperu.com/producto/telefono-poly-edge-e550/",
+      "imageSource": "https://www.omnimediaperu.com/wp-content/uploads/2022/11/telefono-poly-EDGE-E500-E550-omnimedia-peru.jpg",
+      "pdfs": []
+    },
+    {
+      "id": "telefono-polycom-soundstation-ip500",
+      "source": "https://www.omnimediaperu.com/producto/telefono-polycom-soundstation-ip500/",
+      "imageSource": "https://www.omnimediaperu.com/wp-content/uploads/2021/08/telefono-de-conferencia-polycom-soundstation-ip-500-omnimedia-peru-1.jpg",
+      "pdfs": []
+    },
+    {
+      "id": "telefono-poly-trio-8300",
+      "source": "https://www.omnimediaperu.com/producto/telefono-poly-trio-8300/",
+      "imageSource": "https://www.omnimediaperu.com/wp-content/uploads/2020/03/TELEFONO-POLYCOM-TRIO-8300-OMNIMEDIA-PERU.jpg",
+      "pdfs": [
+        "https://www.omnimediaperu.com/wp-content/uploads/2025/11/FICHA-DE-DATOS-HP-POLY-TRIO-8300-OMNIMEDIA-PERU.pdf"
+      ]
+    },
+    {
+      "id": "telefono-poly-trio-8800",
+      "source": "https://www.omnimediaperu.com/producto/telefono-poly-trio-8800/",
+      "imageSource": "https://www.omnimediaperu.com/wp-content/uploads/2020/03/TELEFONO-POLYCOM-TRIO-8800-OMNIMEDIA-PERU.jpg",
+      "pdfs": []
+    },
+    {
+      "id": "telefono-poly-trio-c60",
+      "source": "https://www.omnimediaperu.com/producto/telefono-poly-trio-c60/",
+      "imageSource": "https://www.omnimediaperu.com/wp-content/uploads/2020/03/TELEFONO-POLYCOM-TRIO-8800-OMNIMEDIA-PERU.jpg",
+      "pdfs": [
+        "https://www.omnimediaperu.com/wp-content/uploads/2025/11/FICHA-DE-DATOS-HP-POLY-TRIO-C60-OMNIMEDIA-PERU.pdf"
+      ]
+    },
+    {
+      "id": "telefono-poly-vvx-150",
+      "source": "https://www.omnimediaperu.com/producto/telefono-poly-vvx-150/",
+      "imageSource": "https://www.omnimediaperu.com/wp-content/uploads/2020/03/TELEFONO-POLY-VVX-350-OMNIMEDIA-PERU.jpg",
+      "pdfs": []
+    },
+    {
+      "id": "telefono-poly-vvx-250",
+      "source": "https://www.omnimediaperu.com/producto/telefono-poly-vvx-250/",
+      "imageSource": "https://www.omnimediaperu.com/wp-content/uploads/2020/03/TELEFONO-POLY-VVX-350-OMNIMEDIA-PERU.jpg",
+      "pdfs": []
+    },
+    {
+      "id": "telefono-poly-vvx-350",
+      "source": "https://www.omnimediaperu.com/producto/telefono-poly-vvx-350/",
+      "imageSource": "https://www.omnimediaperu.com/wp-content/uploads/2020/03/TELEFONO-POLY-VVX-350-OMNIMEDIA-PERU.jpg",
+      "pdfs": []
+    },
+    {
+      "id": "telefono-poly-vvx-450",
+      "source": "https://www.omnimediaperu.com/producto/telefono-poly-vvx-450/",
+      "imageSource": "https://www.omnimediaperu.com/wp-content/uploads/2020/03/TELEFONO-POLY-VVX-450-OMNIMEDIA-PERU.jpg",
+      "pdfs": []
+    },
+    {
+      "id": "telefono-samsung-ds-5007s",
+      "source": "https://www.omnimediaperu.com/producto/telefono-samsung-ds-5007s/",
+      "imageSource": "https://www.omnimediaperu.com/wp-content/uploads/woocommerce-placeholder.png",
+      "pdfs": []
+    },
+    {
+      "id": "telefono-samsung-smt-i3100",
+      "source": "https://www.omnimediaperu.com/producto/telefono-samsung-smt-i3100/",
+      "imageSource": "https://www.omnimediaperu.com/wp-content/uploads/2023/03/telefono-samsung-SMT-I3100-omnimedia-peru-1.jpg",
+      "pdfs": []
+    },
+    {
+      "id": "telefono-yealink-cp920",
+      "source": "https://www.omnimediaperu.com/producto/telefono-yealink-cp920/",
+      "imageSource": "https://www.omnimediaperu.com/wp-content/uploads/2020/03/TELEFONO-YEALINK-TELYLKCP920-OMNIMEDIA-PERU.jpg",
+      "pdfs": []
+    },
+    {
+      "id": "telefono-yealink-cp960",
+      "source": "https://www.omnimediaperu.com/producto/telefono-yealink-cp960/",
+      "imageSource": "https://www.omnimediaperu.com/wp-content/uploads/2020/03/TELEFONO-YEALINK-TELYLKCP960-OMNIMEDIA-PERU.jpg",
+      "pdfs": []
+    },
+    {
+      "id": "telefono-audioconferencia-yealink-cp965",
+      "source": "https://www.omnimediaperu.com/producto/telefono-audioconferencia-yealink-cp965/",
+      "imageSource": "https://www.omnimediaperu.com/wp-content/uploads/2025/02/telefono-de-audioconferencia-CP965-yealink-omnimedia-peru.jpg",
+      "pdfs": [
+        "https://www.omnimediaperu.com/wp-content/uploads/2025/02/ficha-tecnica-telefono-audioconferencia-yealink-cp965-omnimedia-peru.pdf"
+      ]
+    },
+    {
+      "id": "telefono-yealink-t19p",
+      "source": "https://www.omnimediaperu.com/producto/telefono-yealink-t19p/",
+      "imageSource": "https://www.omnimediaperu.com/wp-content/uploads/2021/10/Telefono-yealink-T19P-omnimedia-peru.jpg",
+      "pdfs": []
+    },
+    {
+      "id": "telefono-yealink-t23g",
+      "source": "https://www.omnimediaperu.com/producto/telefono-yealink-t23g/",
+      "imageSource": "https://www.omnimediaperu.com/wp-content/uploads/2020/03/TELEFONO-YEALINK-TELYLKSIP-T23G-OMNIMEDIA-PERU.jpg",
+      "pdfs": []
+    },
+    {
+      "id": "telefono-yealink-t27g",
+      "source": "https://www.omnimediaperu.com/producto/telefono-yealink-t27g/",
+      "imageSource": "https://www.omnimediaperu.com/wp-content/uploads/2020/03/TELEFONO-YEALINK-TELYLKSIP-T27G-OMNIMEDIA-PERU.jpg",
+      "pdfs": []
+    },
+    {
+      "id": "telefono-yealink-t29g",
+      "source": "https://www.omnimediaperu.com/producto/telefono-yealink-t29g/",
+      "imageSource": "https://www.omnimediaperu.com/wp-content/uploads/2020/03/TELEFONO-YEALINK-TELYLKSIP-T29G-OMNIMEDIA-PERU.jpg",
+      "pdfs": []
+    },
+    {
+      "id": "telefono-yealink-t30p",
+      "source": "https://www.omnimediaperu.com/producto/telefono-yealink-t30p/",
+      "imageSource": "https://www.omnimediaperu.com/wp-content/uploads/2021/10/telefono-sip-yealink-t30p-omnimedia-peru.jpg",
+      "pdfs": [
+        "https://www.omnimediaperu.com/wp-content/uploads/2021/10/Hoja-de-datos-telefono-sip-yealink-T30P-omnimedia-peru.pdf"
+      ]
+    },
+    {
+      "id": "telefono-yealink-t31g",
+      "source": "https://www.omnimediaperu.com/producto/telefono-yealink-t31g/",
+      "imageSource": "https://www.omnimediaperu.com/wp-content/uploads/2021/10/telefono-sip-yealink-t31p-omnimedia-peru-1.jpg",
+      "pdfs": [
+        "https://www.omnimediaperu.com/wp-content/uploads/2021/10/Hoja-de-datos-telefono-sip-yealink-T31G-omnimedia-peru.pdf"
+      ]
+    },
+    {
+      "id": "telefono-yealink-t31p",
+      "source": "https://www.omnimediaperu.com/producto/telefono-yealink-t31p/",
+      "imageSource": "https://www.omnimediaperu.com/wp-content/uploads/2021/10/telefono-sip-yealink-t31p-omnimedia-peru.jpg",
+      "pdfs": [
+        "https://www.omnimediaperu.com/wp-content/uploads/2021/10/Hoja-de-datos-telefono-sip-yealink-T31P-omnimedia-peru.pdf"
+      ]
+    },
+    {
+      "id": "telefono-yealink-t33g",
+      "source": "https://www.omnimediaperu.com/producto/telefono-yealink-t33g/",
+      "imageSource": "https://www.omnimediaperu.com/wp-content/uploads/2021/10/telefono-sip-yealink-t33G-omnimedia-peru_.jpg",
+      "pdfs": [
+        "https://www.omnimediaperu.com/wp-content/uploads/2021/10/Hoja-de-datos-telefono-sip-yealink-T33G-omnimedia-peru.pdf"
+      ]
+    },
+    {
+      "id": "telefono-yealink-t40g",
+      "source": "https://www.omnimediaperu.com/producto/telefono-yealink-t40g/",
+      "imageSource": "https://www.omnimediaperu.com/wp-content/uploads/2020/03/TELEFONO-YEALINK-TELYLKSIP-T40G-OMNIMEDIA-PERU.jpg",
+      "pdfs": []
+    },
+    {
+      "id": "telefono-yealink-t41s",
+      "source": "https://www.omnimediaperu.com/producto/telefono-yealink-t41s/",
+      "imageSource": "https://www.omnimediaperu.com/wp-content/uploads/2020/03/TELEFONO-YEALINK-TELYLKSIP-T41S-OMNIMEDIA-PERU.jpg",
+      "pdfs": []
+    },
+    {
+      "id": "telefono-yealink-t43u",
+      "source": "https://www.omnimediaperu.com/producto/telefono-yealink-t43u/",
+      "imageSource": "https://www.omnimediaperu.com/wp-content/uploads/2020/03/TELEFONO-YEALINK-TELYLKSIP-T43U-OMNIMEDIA-PERU.jpg",
+      "pdfs": [
+        "https://www.omnimediaperu.com/wp-content/uploads/2020/03/HOJA-DE-DATOS-TELEFONO-YEALINK-SIP-T43U-OMNIMEDIA-PERU.pdf"
+      ]
+    },
+    {
+      "id": "telefono-yealink-t46u",
+      "source": "https://www.omnimediaperu.com/producto/telefono-yealink-t46u/",
+      "imageSource": "https://www.omnimediaperu.com/wp-content/uploads/2020/03/TELEFONO-YEALINK-TELYLKSIP-T46S-OMNIMEDIA-PERU.jpg",
+      "pdfs": [
+        "https://www.omnimediaperu.com/wp-content/uploads/2021/10/hoja-de-datos-telefono-yealink-T46U-omnimedia-peru.pdf"
+      ]
+    },
+    {
+      "id": "telefono-yealink-t48u",
+      "source": "https://www.omnimediaperu.com/producto/telefono-yealink-t48u/",
+      "imageSource": "https://www.omnimediaperu.com/wp-content/uploads/2021/10/telefono-sip-yealink-T48U-omnimedia-peru_.jpg",
+      "pdfs": [
+        "https://www.omnimediaperu.com/wp-content/uploads/2021/10/hoja-de-datos-telefono-yealink-T48U-omnimedia-peru.pdf"
+      ]
+    },
+    {
+      "id": "telefono-yealink-t57w",
+      "source": "https://www.omnimediaperu.com/producto/telefono-yealink-t57w/",
+      "imageSource": "https://www.omnimediaperu.com/wp-content/uploads/2026/07/telefono-sip-yealink-t57w-omnimedia-peru.jpg",
+      "pdfs": [
+        "https://www.omnimediaperu.com/wp-content/uploads/2026/07/ficha-tecnica-telefono-sip-yealink-T57W-omnimedia-peru.pdf"
+      ]
+    }
+  ]
+}

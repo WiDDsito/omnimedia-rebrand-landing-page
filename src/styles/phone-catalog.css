@@ -1,0 +1,247 @@
+.phone-intro-panel {
+  background: white;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  padding: 40px;
+  color: var(--muted);
+}
+.phone-intro-panel > svg {
+  color: var(--brand);
+}
+.phone-intro-panel strong {
+  display: block;
+  font-family: var(--font-heading);
+  font-size: 76px;
+  line-height: 1;
+  color: var(--ink);
+  margin-top: 24px;
+}
+.phone-intro-panel > span {
+  display: block;
+  margin-top: 12px;
+  font-size: 18px;
+}
+.phone-intro-panel p {
+  margin-top: 24px;
+}
+.phone-catalog {
+  padding-block: 80px;
+  scroll-margin-top: 110px;
+}
+.phone-catalog h2,
+.phone-assistance h2,
+.phone-specifications h2,
+.phone-documentation h2 {
+  font-size: clamp(32px, 3.6vw, 52px);
+  margin-top: 16px;
+}
+.phone-brand-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-block: 32px;
+}
+.phone-brand-links a {
+  padding: 10px 18px;
+  border: 1px solid var(--line);
+  border-radius: 24px;
+  font-size: 14px;
+}
+.phone-brand-links a:hover,
+.phone-brand-links a[aria-current] {
+  color: var(--brand);
+  border-color: var(--brand);
+  background: #fbf2f2;
+}
+.phone-filters {
+  display: grid;
+  grid-template-columns: minmax(0, 2fr) minmax(0, 1fr) auto;
+  gap: 20px;
+  align-items: end;
+  padding: 24px;
+  background: var(--surface);
+  border-radius: 16px;
+}
+.phone-filters[hidden],
+[data-phone-card][hidden],
+.phone-empty[hidden] {
+  display: none;
+}
+.phone-filters label {
+  display: grid;
+  gap: 8px;
+  font-size: 14px;
+}
+.phone-filters input,
+.phone-filters select {
+  width: 100%;
+  min-width: 0;
+  min-height: 48px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: white;
+  color: var(--ink);
+  padding: 10px 12px;
+  font: inherit;
+}
+.phone-filters button {
+  min-height: 48px;
+  padding: 8px;
+}
+.phone-result-count {
+  color: var(--muted);
+  font-size: 14px;
+  margin-block: 24px;
+}
+.phone-empty {
+  background: var(--surface);
+  padding: 32px;
+  border-radius: 16px;
+}
+.phone-empty a {
+  text-decoration: underline;
+}
+.phone-grid {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 24px;
+}
+.phone-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 24px;
+  background: white;
+  transition:
+    border-color 200ms ease,
+    transform 200ms ease;
+}
+.phone-card:hover {
+  border-color: var(--brand);
+  transform: translateY(-4px);
+}
+.phone-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: contain;
+  margin-bottom: 24px;
+}
+.phone-card-brand {
+  color: var(--brand);
+  font-size: 13px;
+}
+.phone-card h3 {
+  font-size: 23px;
+  margin-top: 12px;
+  overflow-wrap: anywhere;
+}
+.phone-card p {
+  color: var(--muted);
+  font-size: 14px;
+  margin-block: 16px 24px;
+}
+.phone-card-action {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: auto;
+  font-size: 14px;
+}
+.phone-card-action svg {
+  flex-shrink: 0;
+}
+.phone-assistance {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 80px;
+  padding-block: 40px 100px;
+}
+.phone-assistance p,
+.phone-specifications p {
+  color: var(--muted);
+  margin-top: 20px;
+}
+.phone-assistance .button {
+  margin-top: 28px;
+}
+.phone-specifications {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.2fr);
+  gap: 80px;
+  padding-block: 80px;
+  scroll-margin-top: 110px;
+}
+.phone-source-note {
+  border-left: 2px solid var(--brand);
+  padding-left: 16px;
+  font-size: 14px;
+}
+.phone-feature-list {
+  list-style: none;
+  padding: 0;
+}
+.phone-feature-list li {
+  display: flex;
+  align-items: start;
+  gap: 16px;
+  padding: 20px 0;
+  border-bottom: 1px solid var(--line);
+  overflow-wrap: anywhere;
+}
+.phone-feature-list li svg {
+  flex-shrink: 0;
+  color: var(--brand);
+  margin-top: 4px;
+}
+.phone-documentation {
+  background: var(--surface);
+  padding-block: 72px;
+}
+.phone-documentation .solution-large-links {
+  margin-top: 36px;
+}
+.solution-related > .text-link {
+  margin-top: 32px;
+}
+@media (max-width: 1100px) {
+  .phone-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+@media (max-width: 800px) {
+  .phone-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .phone-filters {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .phone-assistance,
+  .phone-specifications {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 32px;
+  }
+}
+@media (max-width: 480px) {
+  .phone-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .phone-card img {
+    height: 220px;
+  }
+  .phone-intro-panel {
+    padding: 28px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .phone-card {
+    transition: none;
+  }
+  .phone-card:hover {
+    transform: none;
+  }
+}

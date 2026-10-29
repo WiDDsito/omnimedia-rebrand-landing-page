@@ -1,5 +1,6 @@
 ---
 import Icon from './Icon.astro';
+import { localSolutionHref } from '../data/solution-links.mjs';
 import type { NavigationItem } from '../data/navigation';
 interface Props {
   items: NavigationItem[];
@@ -18,16 +19,21 @@ const { items, context = '' } = Astro.props;
             <Icon name="plus" size={14} />
           </summary>
           <div class="branch-content">
-            <a class="branch-overview" href={item.url}>
+            <a class="branch-overview" href={localSolutionHref(item.url)}>
               Ver {item.label} <span aria-hidden="true">↗</span>
             </a>
             <Astro.self items={item.children} context={item.label} />
           </div>
         </details>
       ) : (
-        <a href={item.url} aria-label={context ? `${context}: ${item.label}` : undefined}>
+        <a
+          href={localSolutionHref(item.url)}
+          aria-label={context ? `${context}: ${item.label}` : undefined}
+        >
           {item.label}
-          {item.url.includes('lineassiptrunk.com') && <span aria-label="Sitio externo"> ↗</span>}
+          {localSolutionHref(item.url).startsWith('https://www.lineassiptrunk.com') && (
+            <span aria-label="Sitio externo"> ↗</span>
+          )}
         </a>
       )}
     </li>

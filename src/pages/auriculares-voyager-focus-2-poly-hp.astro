@@ -1,0 +1,7 @@
+---
+import VoyagerView from '../components/VoyagerView.astro';
+import { voyagerModels } from '../data/voyager-pages.mjs';
+const entry = voyagerModels.find((model) => model.id === 'focus-2')!;
+---
+
+<VoyagerView entry={entry} />

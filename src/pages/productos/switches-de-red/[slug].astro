@@ -1,0 +1,15 @@
+---
+import NetworkView from '../../../components/NetworkView.astro';
+import { networkPages } from '../../../data/network-pages.mjs';
+export function getStaticPaths() {
+  return networkPages
+    .filter((entry) => entry.parentId === 'switches')
+    .map((entry) => ({
+      params: { slug: entry.path.split('/').filter(Boolean).at(-1) },
+      props: { entry },
+    }));
+}
+const { entry } = Astro.props;
+---
+
+<NetworkView entry={entry} />

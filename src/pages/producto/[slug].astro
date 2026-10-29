@@ -1,0 +1,10 @@
+---
+import PhoneDetail from '../../components/PhoneDetail.astro';
+import { phones } from '../../data/phone-catalog.mjs';
+export function getStaticPaths() {
+  return phones.map((phone) => ({ params: { slug: phone.slug }, props: { phone } }));
+}
+const { phone } = Astro.props;
+---
+
+<PhoneDetail phone={phone} />

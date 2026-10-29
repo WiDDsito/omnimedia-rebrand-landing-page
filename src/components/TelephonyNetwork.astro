@@ -1,0 +1,115 @@
+---
+import Icon from './Icon.astro';
+interface Props {
+  variant: string;
+}
+const { variant } = Astro.props;
+const virtual = variant === 'virtual';
+const endpoints = virtual
+  ? ['Oficina', 'Otra sede', 'Trabajo remoto']
+  : ['Tu central IP', 'SIP Trunk', 'Red telefónica'];
+---
+
+<div
+  class="telephony-network"
+  role="img"
+  aria-label={
+    virtual
+      ? 'Esquema: la central en la nube conecta oficina, otra sede y trabajo remoto.'
+      : 'Esquema: SIP Trunk conecta tu central IP con la red telefónica.'
+  }
+>
+  <span class="network-label" aria-hidden="true">
+    {virtual ? 'Telefonía en la nube' : 'Conectividad de voz'}
+  </span>
+  <div class="network-center" aria-hidden="true">
+    <Icon name={virtual ? 'globe' : 'phone'} size={40} />
+    <strong>{virtual ? 'Central virtual' : 'Llamadas por Internet'}</strong>
+    <span>{virtual ? 'Un equipo. Distintos lugares.' : 'Tu infraestructura, conectada.'}</span>
+  </div>
+  <div class="network-endpoints" aria-hidden="true">
+    {endpoints.map((label) => (
+      <div>
+        <Icon name={label === 'SIP Trunk' ? 'globe' : 'phone'} size={20} />
+        <span>{label}</span>
+      </div>
+    ))}
+  </div>
+</div>
+<style>
+  .telephony-network {
+    padding: 32px 24px;
+    min-height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: radial-gradient(ellipse at top, #fff, #f1eeee);
+  }
+  .network-label {
+    color: var(--muted);
+    font-size: 12px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  .network-center {
+    display: grid;
+    justify-items: center;
+    gap: 12px;
+    padding: 28px 12px 32px;
+  }
+  .network-center :global(svg) {
+    color: var(--brand);
+  }
+  .network-center strong {
+    font-family: var(--font-heading);
+    font-size: clamp(22px, 2.3vw, 30px);
+    text-align: center;
+    line-height: 1.2;
+  }
+  .network-center > span {
+    color: var(--muted);
+    font-size: 13px;
+    text-align: center;
+  }
+  .network-endpoints {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    border-top: 1px solid #cdbaba;
+    gap: 12px;
+    padding-top: 24px;
+  }
+  .network-endpoints > div {
+    position: relative;
+    display: grid;
+    justify-items: center;
+    align-content: start;
+    gap: 10px;
+    padding: 16px 4px;
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    background: white;
+    text-align: center;
+    font-size: 12px;
+    color: var(--ink);
+  }
+  .network-endpoints > div::before {
+    content: '';
+    position: absolute;
+    top: -25px;
+    height: 24px;
+    width: 1px;
+    background: #cdbaba;
+  }
+  .network-endpoints :global(svg) {
+    color: var(--brand);
+  }
+  @media (max-width: 400px) {
+    .telephony-network {
+      padding-inline: 16px;
+    }
+    .network-endpoints {
+      gap: 8px;
+    }
+  }
+</style>
