@@ -1,0 +1,12 @@
+---
+import CustomerCarePage from '../../../components/CustomerCarePage.astro';
+import { customerCarePages } from '../../../data/customer-care-pages.mjs';
+export function getStaticPaths() {
+  return customerCarePages
+    .filter((entry) => entry.id !== 'whatsapp')
+    .map((entry) => ({ params: { slug: entry.slug }, props: { entry } }));
+}
+const { entry } = Astro.props;
+---
+
+<CustomerCarePage entry={entry} />

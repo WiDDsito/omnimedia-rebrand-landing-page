@@ -1,0 +1,36 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from './Header.astro';
+import Footer from './Footer.astro';
+import CategoryView from './CategoryView.astro';
+import CustomerCareVisual from './CustomerCareVisual.astro';
+import { customerCarePages } from '../data/customer-care-pages.mjs';
+import '../styles/solution-pages.css';
+interface Props {
+  entry: (typeof customerCarePages)[number];
+}
+const { entry } = Astro.props;
+const related = entry.relatedIds.map((id) => customerCarePages.find((page) => page.id === id)!);
+---
+
+<BaseLayout title={`${entry.title} | OmniMedia Perú`} description={entry.description}>
+  <Header />
+  <main id="contenido">
+    <CategoryView
+      entry={entry}
+      related={related}
+      section={{ label: 'Atención al cliente', href: '/soluciones/atencion-al-cliente/' }}
+      exploreLabel="Explorar la solución"
+      relatedLabel="Más soluciones de atención"
+      exploreDescription="Explora las opciones y conversa con nuestro equipo para evaluar tu proyecto."
+    >
+      <CustomerCareVisual
+        slot="visual"
+        title={entry.visualTitle}
+        steps={entry.steps}
+        icon={entry.icon}
+      />
+    </CategoryView>
+  </main>
+  <Footer />
+</BaseLayout>

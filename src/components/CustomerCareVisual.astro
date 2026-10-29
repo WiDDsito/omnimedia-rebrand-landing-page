@@ -1,0 +1,85 @@
+---
+import Icon from './Icon.astro';
+interface Props {
+  title: string;
+  steps: string[];
+  icon: string;
+}
+const { title, steps, icon } = Astro.props;
+---
+
+<div class="care-visual" role="img" aria-label={`${title}: ${steps.join(', luego ')}.`}>
+  <div aria-hidden="true">
+    <span class="care-visual-icon">
+      <Icon name={icon} size={32} />
+    </span>
+    <strong>{title}</strong>
+    <ol>
+      {steps.map((step, index) => (
+        <li>
+          <span>{String(index + 1).padStart(2, '0')}</span>
+          <p>{step}</p>
+          <Icon size={18} />
+        </li>
+      ))}
+    </ol>
+  </div>
+</div>
+<style>
+  .care-visual {
+    padding: 32px;
+    min-height: 350px;
+    background: #efeeee;
+  }
+  .care-visual-icon {
+    display: grid;
+    place-items: center;
+    width: 60px;
+    height: 60px;
+    border: 1px solid #dbcaca;
+    border-radius: 16px;
+    color: var(--brand);
+    background: #f9f2f2;
+  }
+  .care-visual strong {
+    display: block;
+    font-family: var(--font-heading);
+    font-size: clamp(22px, 2.3vw, 30px);
+    line-height: 1.25;
+    margin-top: 20px;
+  }
+  .care-visual ol {
+    list-style: none;
+    padding: 0;
+    margin-top: 24px;
+    display: grid;
+    gap: 10px;
+  }
+  .care-visual li {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 16px;
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    background: white;
+    font-size: 14px;
+  }
+  .care-visual li > span {
+    font-size: 12px;
+    color: var(--brand);
+  }
+  .care-visual li :global(svg) {
+    margin-left: auto;
+    color: var(--brand);
+    flex-shrink: 0;
+  }
+  @media (max-width: 400px) {
+    .care-visual {
+      padding: 24px;
+    }
+    .care-visual li {
+      gap: 12px;
+    }
+  }
+</style>

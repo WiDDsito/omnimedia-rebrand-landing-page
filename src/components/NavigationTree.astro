@@ -1,6 +1,6 @@
 ---
 import Icon from './Icon.astro';
-import { localTelephonyHref } from '../data/telephony-pages.mjs';
+import { localSolutionHref } from '../data/solution-links.mjs';
 import type { NavigationItem } from '../data/navigation';
 interface Props {
   items: NavigationItem[];
@@ -19,7 +19,7 @@ const { items, context = '' } = Astro.props;
             <Icon name="plus" size={14} />
           </summary>
           <div class="branch-content">
-            <a class="branch-overview" href={localTelephonyHref(item.url)}>
+            <a class="branch-overview" href={localSolutionHref(item.url)}>
               Ver {item.label} <span aria-hidden="true">↗</span>
             </a>
             <Astro.self items={item.children} context={item.label} />
@@ -27,11 +27,11 @@ const { items, context = '' } = Astro.props;
         </details>
       ) : (
         <a
-          href={localTelephonyHref(item.url)}
+          href={localSolutionHref(item.url)}
           aria-label={context ? `${context}: ${item.label}` : undefined}
         >
           {item.label}
-          {localTelephonyHref(item.url).startsWith('https://www.lineassiptrunk.com') && (
+          {localSolutionHref(item.url).startsWith('https://www.lineassiptrunk.com') && (
             <span aria-label="Sitio externo"> ↗</span>
           )}
         </a>
