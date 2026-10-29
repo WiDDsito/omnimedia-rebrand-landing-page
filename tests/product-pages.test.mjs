@@ -1,3 +1,4 @@
+import { localPhoneHref } from '../src/data/phone-catalog.mjs';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { access, readFile } from 'node:fs/promises';
@@ -22,11 +23,11 @@ test('each product menu family has a local informative view and retains its cate
     assert.ok(page.links.length >= 2);
     for (const child of family.children)
       assert.ok(
-        page.links.some((link) => link.href === child.url),
+        page.links.some((link) => link.href === localPhoneHref(child.url)),
         `Missing ${child.label}`,
       );
     for (const link of page.links) {
-      assert.match(link.href, /^https:\/\//);
+      assert.ok(link.href.startsWith('https://') || link.href.startsWith('/telefonia/'));
       assert.ok(!/tienda|cart|checkout|add-to-cart/i.test(link.href));
     }
     await access(new URL(`../public/images/${page.image}`, import.meta.url));
