@@ -1,0 +1,125 @@
+.headset-catalog {
+  padding-block: 0 88px;
+  scroll-margin-top: 112px;
+}
+.headset-catalog-heading {
+  max-width: 760px;
+}
+.headset-catalog-heading h2 {
+  font-size: clamp(34px, 3.6vw, 52px);
+  margin-block: 16px 24px;
+}
+.headset-catalog-heading > p:last-child {
+  color: var(--muted);
+  max-width: 640px;
+}
+.headset-group-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-block: 32px 48px;
+}
+.headset-group-links a {
+  border: 1px solid var(--line);
+  border-radius: 28px;
+  padding: 12px 20px;
+  font-size: 14px;
+  min-height: 44px;
+}
+.headset-group-links a:hover {
+  border-color: var(--brand);
+  color: var(--brand);
+}
+.headset-group {
+  scroll-margin-top: 112px;
+}
+.headset-group + .headset-group {
+  margin-top: 56px;
+}
+.headset-group > h3 {
+  font-size: clamp(26px, 2.6vw, 36px);
+  padding-top: 24px;
+  margin-bottom: 28px;
+  border-top: 1px solid var(--line);
+}
+.headset-catalog .product-catalog-grid {
+  list-style: none;
+  padding: 0;
+}
+.headset-catalog .product-catalog-grid > li {
+  min-width: 0;
+}
+.headset-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 24px;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  background: var(--paper);
+  transition:
+    transform 0.35s ease,
+    border-color 0.35s ease;
+}
+.headset-card:hover {
+  transform: translateY(-6px);
+  border-color: var(--brand);
+}
+.headset-card .equipment-title h4 {
+  font-size: clamp(24px, 2.2vw, 30px);
+  overflow-wrap: anywhere;
+}
+.headset-card .equipment-title svg,
+.headset-features svg {
+  color: var(--brand);
+  flex-shrink: 0;
+}
+.headset-card > p {
+  font-size: 15px;
+  margin-top: 16px;
+}
+.headset-features {
+  list-style: none;
+  padding: 0;
+  margin-block: 24px;
+  display: grid;
+  gap: 12px;
+  font-size: 14px;
+  color: var(--muted);
+}
+.headset-features li {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+}
+.headset-card > .headset-note {
+  font-size: 13px;
+  margin-block: 0 24px;
+}
+.headset-action {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-top: auto;
+  padding-top: 20px;
+  border-top: 1px solid var(--line);
+  font-size: 14px;
+  font-weight: 600;
+}
+@media (max-width: 600px) {
+  .headset-catalog {
+    padding-bottom: 48px;
+  }
+  .headset-group-links {
+    margin-bottom: 32px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .headset-card {
+    transition: none;
+  }
+  .headset-card:hover {
+    transform: none;
+  }
+}

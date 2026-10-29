@@ -1,6 +1,7 @@
 import { localPhoneHref } from '../src/data/phone-catalog.mjs';
 import { localHotelHref } from '../src/data/hotel-pages.mjs';
 import { localNetworkHref } from '../src/data/network-pages.mjs';
+import { localHeadsetHref } from '../src/data/headset-pages.mjs';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { access, readFile } from 'node:fs/promises';
@@ -26,7 +27,9 @@ test('each product menu family has a local informative view and retains its cate
     for (const child of family.children)
       assert.ok(
         page.links.some(
-          (link) => link.href === localNetworkHref(localHotelHref(localPhoneHref(child.url))),
+          (link) =>
+            link.href ===
+            localHeadsetHref(localNetworkHref(localHotelHref(localPhoneHref(child.url)))),
         ),
         `Missing ${child.label}`,
       );
