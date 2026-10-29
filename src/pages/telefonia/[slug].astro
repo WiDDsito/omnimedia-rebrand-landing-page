@@ -1,0 +1,42 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import CategoryView from '../../components/CategoryView.astro';
+import TelephonyNetwork from '../../components/TelephonyNetwork.astro';
+import { telephonyPages } from '../../data/telephony-pages.mjs';
+import '../../styles/solution-pages.css';
+export function getStaticPaths() {
+  return telephonyPages.map((entry) => ({ params: { slug: entry.slug }, props: { entry } }));
+}
+const { entry } = Astro.props;
+---
+
+<BaseLayout title={`${entry.title} | OmniMedia Perú`} description={entry.description}>
+  <Header />
+  <main id="contenido">
+    <CategoryView
+      entry={entry}
+      related={telephonyPages.filter((page) => page.id !== entry.id)}
+      section={{ label: 'Telefonía empresarial', href: '/soluciones/telefonia-empresarial/' }}
+      exploreLabel={entry.id === 'centrales' ? 'Explorar marcas' : 'Explorar la solución'}
+      relatedLabel="Más soluciones de telefonía"
+      exploreDescription="Explora los enlaces y conversa con nuestro equipo para evaluar tu proyecto."
+    >
+      <Fragment slot="visual">
+        {entry.id === 'centrales' ? (
+          <img
+            src={`/images/${entry.image}`}
+            width="674"
+            height="580"
+            alt={entry.imageAlt}
+            fetchpriority="high"
+          />
+        ) : (
+          <TelephonyNetwork variant={entry.id} />
+        )}
+      </Fragment>
+    </CategoryView>
+  </main>
+  <Footer />
+</BaseLayout>

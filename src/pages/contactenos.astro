@@ -4,6 +4,7 @@ import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import PageIntro from '../components/PageIntro.astro';
 import Icon from '../components/Icon.astro';
+import SocialIcon from '../components/SocialIcon.astro';
 import { company } from '../data/company.mjs';
 import '../styles/solution-pages.css';
 import '../styles/company-pages.css';
@@ -81,8 +82,8 @@ import '../styles/company-pages.css';
             aria-label={`${social.name} de OmniMedia Perú (se abre en otra pestaña)`}
             data-reveal
           >
-            <span class="social-monogram" aria-hidden="true">
-              {social.monogram}
+            <span class="social-icon" aria-hidden="true">
+              <SocialIcon name={social.icon} size={24} />
             </span>
             <h3>{social.name}</h3>
             <p>{social.handle}</p>
