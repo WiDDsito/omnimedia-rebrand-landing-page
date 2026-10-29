@@ -1,8 +1,9 @@
+import { localTelephonyHref } from './telephony-pages.mjs';
 const origin = 'https://www.omnimediaperu.com';
 const link = (title, description, path) => ({
   title,
   description,
-  href: path.startsWith('https://') ? path : origin + path,
+  href: localTelephonyHref(path.startsWith('https://') ? path : origin + path),
 });
 const video = '/productos/equipos-y-camaras-de-videoconferencia-poly-yealink-logitech/';
 const yealink = video + 'barras-y-sistemas-de-videoconferencia-yealink/';

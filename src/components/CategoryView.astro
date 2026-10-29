@@ -50,13 +50,15 @@ const {
         </div>
       </div>
       <figure class="solution-hero-visual">
-        <img
-          src={`/images/${entry.image}`}
-          width="674"
-          height="580"
-          alt={entry.imageAlt}
-          fetchpriority="high"
-        />
+        <slot name="visual">
+          <img
+            src={`/images/${entry.image}`}
+            width="674"
+            height="580"
+            alt={entry.imageAlt}
+            fetchpriority="high"
+          />
+        </slot>
         <figcaption>
           <Icon name={entry.icon} size={18} />
           <span>{entry.imageNote}</span>

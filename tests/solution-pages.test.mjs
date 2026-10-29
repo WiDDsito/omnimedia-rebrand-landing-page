@@ -16,13 +16,15 @@ test('four solution entry views have unique local routes and informative links',
     assert.ok(page.links.length >= 4);
     assert.ok(
       page.links.every(
-        (link) => link.href.startsWith('https://') && !/tienda|cart|checkout/.test(link.href),
+        (link) =>
+          (link.href.startsWith('https://') || link.href.startsWith('/telefonia/')) &&
+          !/tienda|cart|checkout/.test(link.href),
       ),
     );
   }
   assert.ok(
     solutionPages
       .find((p) => p.id === 'telefonia')
-      .links.some((link) => link.href === 'https://www.lineassiptrunk.com/'),
+      .links.some((link) => link.href === '/telefonia/lineas-sip-trunk/'),
   );
 });
