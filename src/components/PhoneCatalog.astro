@@ -1,0 +1,163 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from './Header.astro';
+import Footer from './Footer.astro';
+import Icon from './Icon.astro';
+import PageIntro from './PageIntro.astro';
+import { phones, phoneBrands, phoneCatalogPath } from '../data/phone-catalog.mjs';
+import '../styles/solution-pages.css';
+import '../styles/phone-catalog.css';
+interface Props {
+  brandId?: string;
+}
+const { brandId } = Astro.props;
+const brand = phoneBrands.find((item) => item.id === brandId);
+const entries = brand ? phones.filter((phone) => phone.brand === brand.id) : phones;
+const title = brand ? `Teléfonos ${brand.title}` : 'Teléfonos IP y analógicos';
+---
+
+<BaseLayout
+  title={`${title} | OmniMedia Perú`}
+  description={`Explora ${title.toLowerCase()}, sus características y documentación. Consulta por la configuración de tu instalación.`}
+>
+  <Header />
+  <main id="contenido">
+    <PageIntro
+      label={title}
+      icon="phone"
+      title={brand ? `Encuentra tu equipo ${brand.title}.` : 'Una llamada. El equipo adecuado.'}
+      description="Explora los modelos del catálogo y compara sus características publicadas. Te acompañamos a evaluar la compatibilidad y configuración que necesita tu empresa."
+    >
+      <Fragment slot="actions">
+        <a class="button" href="#telefonos">
+          Explorar teléfonos <Icon size={18} />
+        </a>
+        <a class="text-link" href="/contactenos/">
+          Solicitar asesoría <Icon size={18} />
+        </a>
+      </Fragment>
+      <aside slot="visual" class="solution-hero-visual phone-intro-panel">
+        <Icon name="phone" size={32} />
+        <strong>{entries.length}</strong>
+        <span>fichas de equipos para explorar</span>
+        <p>IP, SIP, digitales y analógicos. Selección según tu central y puesto de trabajo.</p>
+      </aside>
+    </PageIntro>
+    <section
+      class="container phone-catalog"
+      id="telefonos"
+      aria-labelledby="phone-catalog-title"
+      data-phone-catalog
+    >
+      <div data-reveal>
+        <p class="section-kicker">Elige tu próximo equipo</p>
+        <h2 id="phone-catalog-title">
+          {brand ? `El catálogo ${brand.title}.` : 'Un teléfono para cada puesto.'}
+        </h2>
+      </div>
+      <nav class="phone-brand-links" aria-label="Marcas de teléfonos">
+        <a href={phoneCatalogPath} aria-current={!brand ? 'page' : undefined}>
+          Todas las marcas
+        </a>
+        {phoneBrands.map((item) => (
+          <a href={item.path} aria-current={brand?.id === item.id ? 'page' : undefined}>
+            {item.title}
+          </a>
+        ))}
+      </nav>
+      <form
+        class="phone-filters"
+        role="search"
+        aria-label="Buscar teléfonos"
+        data-phone-filters
+        hidden
+      >
+        <label>
+          Buscar por modelo
+          <input
+            type="search"
+            name="modelo"
+            placeholder="Ej. Avaya J129 o KX-TS580"
+            autocomplete="off"
+          />
+        </label>
+        <label>
+          Marca
+          <select name="marca">
+            <option value="">Todas las marcas</option>
+            {(brand ? [brand] : phoneBrands).map((item) => (
+              <option value={item.id} selected={brand?.id === item.id}>
+                {item.title}
+              </option>
+            ))}
+          </select>
+        </label>
+        <button type="reset" class="text-link">
+          Limpiar filtros
+        </button>
+      </form>
+      <p
+        class="phone-result-count"
+        role="status"
+        aria-live="polite"
+        aria-atomic="true"
+        data-phone-count
+      >
+        {entries.length} equipos encontrados
+      </p>
+      <p class="phone-empty" data-phone-empty hidden>
+        No encontramos ese equipo. Prueba con otra marca o modelo, o{' '}
+        <a href="/contactenos/">consulta con nuestro equipo</a>.
+      </p>
+      <ul class="phone-grid">
+        {entries.map((phone) => (
+          <li
+            data-phone-card
+            data-brand={phone.brand}
+            data-search={`${phone.title} ${phone.model} ${phone.brand}`}
+          >
+            <a class="phone-card" href={phone.path}>
+              <img
+                src={`/images/${phone.image}`}
+                width="640"
+                height="560"
+                alt={phone.title}
+                loading="lazy"
+                decoding="async"
+              />
+              <span class="phone-card-brand">
+                {phoneBrands.find((item) => item.id === phone.brand)?.title}
+              </span>
+              <h3>{phone.model}</h3>
+              <p>
+                {phone.sharedFeatures
+                  ? 'Variante de una familia publicada'
+                  : 'Características y documentación del equipo'}
+              </p>
+              <span class="phone-card-action">
+                Conocer el equipo <Icon size={18} />
+              </span>
+            </a>
+          </li>
+        ))}
+      </ul>
+    </section>
+    <section class="container phone-assistance">
+      <div>
+        <p class="section-kicker">Conversemos sobre tu instalación</p>
+        <h2>Elige con tu equipo en mente.</h2>
+      </div>
+      <div>
+        <p>
+          Comparte tu central, el número de puestos y las funciones que necesitas. La
+          disponibilidad, condición y compatibilidad se confirman al cotizar.
+        </p>
+        <a class="button" href="/contactenos/">
+          Conversar con OmniMedia <Icon size={18} />
+        </a>
+      </div>
+    </section>
+  </main>
+  <Footer />
+</BaseLayout>
+<script src="../scripts/phone-catalog.ts"></script>
