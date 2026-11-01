@@ -113,6 +113,28 @@ const steps = [
     border-color: #232323;
     color: white;
   }
+  .process-bento li::after {
+    content: '';
+    position: absolute;
+    inset: auto 24px 0;
+    height: 2px;
+    background: var(--brand);
+    transform: scaleX(var(--step-progress, 0));
+    transform-origin: left;
+    pointer-events: none;
+  }
+  .process-bento li:last-child::after {
+    background: #efb4b4;
+  }
+  @media (min-width: 901px) and (min-height: 750px) and (prefers-reduced-motion: no-preference) {
+    .enhanced-services {
+      align-items: start;
+    }
+    .services-intro {
+      position: sticky;
+      top: 136px;
+    }
+  }
   .bento-top {
     display: flex;
     align-items: center;
