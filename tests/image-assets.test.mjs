@@ -1,7 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { readFile, readdir, access } from 'node:fs/promises';
-import path from 'node:path';
 const root = new URL('../', import.meta.url);
 async function files(dir) {
   return (
@@ -28,7 +27,7 @@ test('source image references use existing WebP files', async () => {
         ? new URL(`public${ref}`, root)
         : ref.startsWith('.')
           ? new URL(ref, file)
-          : new URL(`public/images/${path.basename(ref)}`, root);
+          : new URL(`public/images/${ref}`, root);
       await access(target);
       count++;
     }

@@ -1,0 +1,38 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import Header from '../../../components/Header.astro';
+import Footer from '../../../components/Footer.astro';
+import CategoryView from '../../../components/CategoryView.astro';
+import HotelSeries from '../../../components/HotelSeries.astro';
+import { hotelPages, hotelCatalogPath } from '../../../data/hotel-pages.mjs';
+import '../../../styles/solution-pages.css';
+export function getStaticPaths() {
+  return hotelPages.map((entry) => ({
+    params: { slug: entry.path.replace('/telefonia/telefonos-hoteleros/', '').replace(/\/$/, '') },
+    props: { entry },
+  }));
+}
+const { entry } = Astro.props;
+const section = { label: 'Telefonía hotelera', href: hotelCatalogPath };
+const cetis = hotelPages.find((page) => page.id === 'cetis')!;
+const ancestors = entry.parentId ? [section, { label: 'Cetis', href: cetis.path }] : [section];
+---
+
+<BaseLayout title={`${entry.title} | OmniMedia Perú`} description={entry.description}>
+  <Header />
+  <main id="contenido">
+    <CategoryView
+      entry={entry}
+      related={hotelPages.filter((page) => page.id !== entry.id)}
+      section={section}
+      ancestors={ancestors}
+      exploreLabel={entry.series.length ? 'Explorar series y equipos' : 'Explorar familias Cetis'}
+      exploreHref={entry.series.length ? '#series' : '#explorar'}
+      relatedLabel="Otras familias de telefonía hotelera"
+      exploreDescription="Compara las familias del portafolio o conversa con nuestro equipo sobre tu instalación."
+    >
+      <HotelSeries slot="details" entry={entry} />
+    </CategoryView>
+  </main>
+  <Footer />
+</BaseLayout>

@@ -1,0 +1,41 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from './Header.astro';
+import Footer from './Footer.astro';
+import CategoryView from './CategoryView.astro';
+import VoyagerContent from './VoyagerContent.astro';
+import { voyagerPages, voyagerModels, voyagerOverview } from '../data/voyager-pages.mjs';
+import '../styles/solution-pages.css';
+interface Props {
+  entry: (typeof voyagerPages)[number];
+}
+const { entry } = Astro.props;
+const isOverview = entry.id === 'voyager';
+const section = { label: 'Auriculares', href: '/productos/auriculares/' };
+const ancestors = isOverview
+  ? [section]
+  : [section, { label: 'Poly · Voyager', href: voyagerOverview.path }];
+---
+
+<BaseLayout title={`${entry.title} | OmniMedia Perú`} description={entry.description}>
+  <Header />
+  <main id="contenido">
+    <CategoryView
+      entry={entry}
+      related={voyagerModels.filter((model) => model.id !== entry.id)}
+      section={section}
+      ancestors={ancestors}
+      exploreLabel={isOverview ? 'Explorar Voyager' : 'Ver características'}
+      exploreHref={isOverview ? '#voyager-equipos' : '#caracteristicas'}
+      relatedLabel="Más familias Voyager"
+      exploreDescription={
+        isOverview
+          ? 'Accede a la información de cada familia y compara sus formatos.'
+          : 'Consulta la documentación oficial o comparte la referencia con nuestro equipo.'
+      }
+    >
+      <VoyagerContent slot="details" entry={entry} />
+    </CategoryView>
+  </main>
+  <Footer />
+</BaseLayout>

@@ -1,6 +1,5 @@
 ---
 import Icon from './Icon.astro';
-import { origin } from '../data/content';
 import { servicePaths } from '../data/service-pages.mjs';
 const steps = [
   ['Entendemos tu operación', 'Conversamos sobre tus necesidades, equipos actuales y objetivos.'],
@@ -66,7 +65,7 @@ const steps = [
         Somos una empresa integradora especializada en telefonía y telecomunicaciones. Acompañamos a
         organizaciones en la elección e implementación de sus comunicaciones empresariales.
       </p>
-      <a class="text-link" href={origin + '/conocenos/'}>
+      <a class="text-link" href="/conocenos/">
         Conoce nuestra empresa <Icon size={18} />
       </a>
     </div>
