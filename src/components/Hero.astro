@@ -3,8 +3,6 @@ import Icon from './Icon.astro';
 import BrandCarousel from './BrandCarousel.astro';
 import VoiceVisual from './VoiceVisual.astro';
 import { campaigns } from '../data/campaigns';
-import { Image } from 'astro:assets';
-import room from '../assets/meeting-room.webp';
 ---
 
 <section class="commercial-hero" id="inicio" aria-labelledby="hero-title">
@@ -21,6 +19,7 @@ import room from '../assets/meeting-room.webp';
       role="region"
       aria-label="Soluciones y equipos destacados"
       aria-roledescription="carrusel"
+      tabindex="0"
     >
       {campaigns.map((campaign, index) => (
         <article
@@ -28,6 +27,8 @@ import room from '../assets/meeting-room.webp';
           id={`campaign-${campaign.id}`}
           aria-labelledby={`title-${campaign.id}`}
           data-campaign
+          role="group"
+          aria-roledescription="diapositiva"
         >
           <div class="campaign-copy">
             <div class="campaign-tags">
@@ -52,33 +53,23 @@ import room from '../assets/meeting-room.webp';
             class:list={[
               'campaign-visual',
               {
-                'campaign-room': campaign.id === 'virtual',
                 'campaign-voice': campaign.id === 'audios',
+                'campaign-video': campaign.id === 'video',
               },
             ]}
           >
-            {campaign.id === 'virtual' ? (
-              <Image
-                src={room}
-                alt="Imagen conceptual de una sala de reuniones empresarial"
-                widths={[480, 800, 1200]}
-                sizes="(max-width: 800px) 90vw, 46vw"
-                width={1200}
-                format="webp"
-                quality={82}
-                loading="eager"
-                fetchpriority="high"
-              />
-            ) : campaign.id === 'audios' ? (
+            {campaign.id === 'audios' ? (
               <VoiceVisual />
             ) : (
               <img
                 src={`/images/${campaign.image}`}
-                width="600"
-                height="480"
+                width={campaign.id === 'video' ? 1672 : 2172}
+                height={campaign.id === 'video' ? 941 : 724}
                 alt={campaign.alt}
-                loading="lazy"
+                loading={index === 0 ? 'eager' : 'lazy'}
+                fetchpriority={index === 0 ? 'high' : 'auto'}
                 decoding="async"
+                draggable="false"
               />
             )}
             <div class="campaign-caption">
@@ -103,8 +94,11 @@ import room from '../assets/meeting-room.webp';
         ))}
       </div>
       <div class="campaign-pagination">
-        <span data-campaign-position aria-live="polite" aria-atomic="true">
-          01 / 08
+        <button type="button" class="campaign-playback" data-campaign-playback aria-pressed="false">
+          <span data-campaign-playback-label>Pausar</span>
+        </button>
+        <span data-campaign-position aria-live="off" aria-atomic="true">
+          01 / {String(campaigns.length).padStart(2, '0')}
         </span>
         <button type="button" data-campaign-prev aria-label="Vista anterior">
           <Icon size={18} />
@@ -121,6 +115,7 @@ import room from '../assets/meeting-room.webp';
           opacity: 1 !important;
           pointer-events: auto !important;
           grid-area: auto !important;
+          transform: none !important;
           margin-bottom: 40px;
         }
       </style>

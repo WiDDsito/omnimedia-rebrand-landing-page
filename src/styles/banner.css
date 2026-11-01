@@ -19,34 +19,50 @@
 }
 .campaign-stage {
   display: grid;
-  margin-top: 40px;
+  margin-top: 36px;
+  overflow: hidden;
+  border-radius: 16px;
+  background: #ececed;
+  isolation: isolate;
+  touch-action: pan-y pinch-zoom;
+}
+.campaign-stage:focus-visible {
+  outline: 3px solid var(--brand);
+  outline-offset: 5px;
 }
 .campaign {
   grid-area: 1 / 1;
+  position: relative;
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
-  gap: 48px;
   align-items: center;
+  min-height: 460px;
+  min-width: 0;
   visibility: hidden;
   opacity: 0;
   pointer-events: none;
+  transform: translateX(var(--campaign-shift, 40px));
   transition:
-    opacity 0.28s,
-    visibility 0.28s;
-  min-width: 0;
+    opacity 0.5s ease,
+    transform 0.65s cubic-bezier(0.22, 1, 0.36, 1),
+    visibility 0.65s;
 }
 .campaign.is-active {
   visibility: visible;
   opacity: 1;
+  transform: translateX(0);
   pointer-events: auto;
+  z-index: 1;
 }
 .campaign-copy {
-  padding-block: 24px;
+  position: relative;
+  z-index: 2;
+  padding: 40px;
+  width: 46%;
 }
 .campaign-tags {
   display: flex;
   flex-wrap: wrap;
-  gap: 6px 16px;
+  gap: 6px 14px;
   margin-bottom: 20px;
   color: var(--muted);
   font-size: 12px;
@@ -58,18 +74,19 @@
   height: 3px;
   background: var(--brand);
   border-radius: 50%;
-  margin: 0 12px 3px 0;
+  margin: 0 10px 3px 0;
 }
 .campaign-copy h2 {
-  font-size: clamp(32px, 3.5vw, 48px);
+  font-size: clamp(30px, 3vw, 44px);
   font-weight: 700;
-  line-height: 1.08;
+  line-height: 1.1;
   max-width: 550px;
+  text-wrap: balance;
 }
 .campaign-copy > p {
-  font-size: 17px;
+  font-size: 16px;
   line-height: 1.65;
-  color: var(--muted);
+  color: #4b4b4b;
   max-width: 500px;
   margin-top: 20px;
 }
@@ -91,51 +108,70 @@
   gap: 10px;
 }
 .campaign-visual {
-  height: 360px;
-  position: relative;
+  position: absolute;
+  inset: 0;
   min-width: 0;
-  background: #ececec;
-  border-radius: 16px;
-  overflow: hidden;
   display: grid;
-  place-items: center;
+  align-items: center;
+  overflow: hidden;
+}
+.campaign-stage[data-enhanced] .campaign-visual {
+  cursor: grab;
+}
+.campaign-stage[data-dragging] .campaign-visual {
+  cursor: grabbing;
+}
+.campaign-visual::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, #f3f3f4 0%, #f3f3f4f2 24%, #f3f3f4a6 39%, #f3f3f400 58%);
+  pointer-events: none;
 }
 .campaign-visual > img {
   width: 100%;
   height: 100%;
-  object-fit: contain;
-  padding: 32px 32px 78px;
-  mix-blend-mode: multiply;
-}
-.campaign-room > img {
   object-fit: cover;
-  padding: 0;
-  mix-blend-mode: normal;
+  object-position: center;
+}
+.campaign-video > img {
+  position: absolute;
+  inset: 0 0 0 auto;
+  width: 62%;
+  object-fit: cover;
 }
 .campaign-caption {
   position: absolute;
-  inset: auto 16px 16px;
-  background: #fffffff2;
+  z-index: 1;
+  inset: auto 20px 20px auto;
+  max-width: 48%;
+  background: #fffffff0;
   border: 1px solid #fff;
-  padding: 14px 16px;
+  padding: 12px 16px;
   border-radius: 8px;
   display: flex;
   gap: 12px;
   align-items: center;
-  font-size: 13px;
+  font-size: 12px;
   line-height: 1.4;
 }
 .campaign-caption svg {
   color: var(--brand);
+  flex-shrink: 0;
+}
+.campaign-voice {
+  background: #ececed;
+}
+.campaign-voice .voice-visual {
+  width: 56%;
+  margin-left: auto;
 }
 .campaign-toolbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 28px;
-  padding-top: 28px;
-  margin-top: 28px;
-  border-top: 1px solid #d5d5d5;
+  gap: 24px;
+  padding-top: 24px;
 }
 .campaign-toolbar[hidden] {
   display: none;
@@ -152,7 +188,7 @@
   padding: 10px 12px;
   border-radius: 24px;
   font-size: 13px;
-  min-height: 40px;
+  min-height: 44px;
   transition:
     background 0.2s,
     border-color 0.2s,
@@ -170,18 +206,20 @@
 .campaign-pagination {
   flex-shrink: 0;
   display: grid;
-  grid-template-columns: 40px 40px;
+  grid-template-columns: auto 44px 44px;
   gap: 8px;
+  align-items: center;
 }
 .campaign-pagination > span {
-  grid-column: 1 / -1;
+  grid-column: 2 / -1;
+  grid-row: 1;
   font-size: 12px;
   text-align: center;
   color: var(--muted);
 }
 .campaign-pagination button {
-  width: 40px;
-  height: 40px;
+  width: 44px;
+  min-height: 44px;
   display: grid;
   place-items: center;
   border-radius: 50%;
@@ -189,9 +227,19 @@
   background: transparent;
   color: var(--ink);
 }
+.campaign-pagination .campaign-playback {
+  grid-row: 1 / 3;
+  width: auto;
+  padding: 0 12px;
+  border-radius: 24px;
+  font-size: 12px;
+}
 .campaign-pagination button:hover {
   background: white;
   border-color: var(--ink);
+}
+.campaign-pagination [data-campaign-prev] {
+  grid-column: 2;
 }
 .campaign-pagination [data-campaign-prev] svg {
   transform: rotate(180deg);
@@ -243,18 +291,17 @@
   font-weight: 500;
   color: var(--ink);
 }
+
 @media (max-width: 1100px) {
-  .campaign {
-    gap: 28px;
+  .campaign-copy {
+    padding: 32px;
+    width: 48%;
   }
   .campaign-copy h2 {
-    font-size: 36px;
+    font-size: 34px;
   }
   .campaign-toolbar {
     align-items: flex-end;
-  }
-  .campaign-visual {
-    height: 380px;
   }
 }
 @media (max-width: 800px) {
@@ -262,42 +309,66 @@
     padding-top: 32px;
   }
   .banner-heading h1 {
-    max-width: 700px;
-    font-size: clamp(42px, 7.8vw, 64px);
+    font-size: clamp(38px, 7.8vw, 64px);
   }
   .banner-heading > span {
     font-size: 16px;
     max-width: 550px;
+    line-height: 1.6;
   }
   .campaign-stage {
     margin-top: 24px;
   }
   .campaign {
     grid-template-columns: minmax(0, 1fr);
-    gap: 16px;
-    align-content: start;
+    grid-template-rows: 260px 1fr;
+    align-items: start;
   }
   .campaign-copy {
-    padding: 8px 0;
-    min-height: 290px;
+    grid-row: 2;
+    padding: 28px;
+    width: 100%;
   }
   .campaign-copy h2 {
-    max-width: 650px;
+    font-size: 34px;
   }
   .campaign-copy > p {
     max-width: 600px;
-    font-size: 16px;
   }
   .campaign-visual {
-    height: 300px;
+    grid-row: 1;
+    position: relative;
+    height: 260px;
+  }
+  .campaign-visual::after {
+    display: none;
+  }
+  .campaign-visual > img {
+    object-position: right center;
+  }
+  .campaign-video > img {
+    position: static;
+    width: 100%;
+    object-fit: contain;
+  }
+  .campaign-caption {
+    inset: auto 12px 12px auto;
+    max-width: calc(100% - 24px);
+    padding: 10px 12px;
+  }
+  .campaign-voice .voice-visual {
+    width: 100%;
   }
   .campaign-toolbar {
-    margin-top: 24px;
-    padding-top: 20px;
+    display: grid;
     gap: 16px;
   }
-  .campaign-selector {
-    gap: 4px;
+  .campaign-pagination {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .campaign-pagination > span {
+    margin-right: auto;
   }
 }
 @media (max-width: 540px) {
@@ -314,25 +385,27 @@
   .banner-heading > span {
     font-size: 15px;
     margin-top: 16px;
-    line-height: 1.6;
+  }
+  .campaign {
+    grid-template-rows: 210px 1fr;
+  }
+  .campaign-visual {
+    height: 210px;
   }
   .campaign-copy {
-    min-height: 332px;
+    padding: 24px 20px;
   }
   .campaign-copy h2 {
-    font-size: 32px;
-    max-width: 420px;
+    font-size: 30px;
+  }
+  .campaign-copy > p {
+    margin-top: 16px;
+    font-size: 15px;
   }
   .campaign-tags {
     margin-bottom: 16px;
     font-size: 11px;
     gap: 4px 10px;
-  }
-  .campaign-tags > span + span::before {
-    margin-right: 8px;
-  }
-  .campaign-copy > p {
-    margin-top: 16px;
   }
   .campaign-actions {
     gap: 16px;
@@ -345,18 +418,6 @@
   .campaign-actions .text-link {
     font-size: 13px;
   }
-  .campaign-visual {
-    height: 240px;
-  }
-  .campaign-caption {
-    inset: auto 12px 12px;
-    padding: 12px;
-    font-size: 12px;
-  }
-  .campaign-toolbar {
-    display: grid;
-    grid-template-columns: 1fr;
-  }
   .campaign-selector {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -366,30 +427,16 @@
     text-align: left;
     font-size: 12px;
     padding: 8px 12px;
-    min-height: 40px;
-  }
-  .campaign-pagination {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-  }
-  .campaign-pagination > span {
-    font-size: 12px;
-    margin-right: auto;
-    text-align: left;
-  }
-  .campaign-pagination > span::first-letter {
-    font-size: 12px;
   }
   .voice-visual {
-    padding: 20px 20px 80px;
+    padding: 20px 20px 60px;
   }
   .voice-call {
     padding: 8px;
     font-size: 12px;
   }
   .voice-wave {
-    height: 80px;
+    height: 70px;
     margin-block: 0;
     gap: 4px;
   }
@@ -404,5 +451,6 @@
 @media (prefers-reduced-motion: reduce) {
   .campaign {
     transition: none;
+    transform: none;
   }
 }

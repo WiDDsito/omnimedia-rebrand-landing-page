@@ -23,13 +23,18 @@ import { productPaths } from '../data/product-pages.mjs';
       {equipment.map((e) => (
         <a class="equipment-card" href={productPaths[e.id]}>
           <div class="equipment-image">
-            <img
-              src={'/images/' + e.image}
-              alt={e.title + ' del portafolio de OmniMedia Perú'}
-              width="674"
-              height="580"
-              loading="lazy"
-            />
+            <div class="equipment-artwork">
+              <img
+                src={
+                  '/images/' + (e.id === 'phones' ? 'omnimedia-telefonos-tarjeta.webp' : e.image)
+                }
+                alt={e.title + ' del portafolio de OmniMedia Perú'}
+                width={e.id === 'phones' ? 1352 : 674}
+                height={e.id === 'phones' ? 1163 : 580}
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
           </div>
           <div class="equipment-title">
             <h3>{e.title}</h3>
@@ -47,3 +52,10 @@ import { productPaths } from '../data/product-pages.mjs';
     </div>
   </div>
 </section>
+
+<style>
+  .equipment-artwork {
+    width: 100%;
+    height: 100%;
+  }
+</style>
