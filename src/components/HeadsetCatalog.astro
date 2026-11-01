@@ -1,0 +1,91 @@
+---
+import Icon from './Icon.astro';
+import type { headsetPages } from '../data/headset-pages.mjs';
+import '../styles/product-catalog.css';
+import '../styles/headset-pages.css';
+interface Props {
+  entry: (typeof headsetPages)[number];
+}
+const { entry } = Astro.props;
+const groups = [...new Set(entry.equipment.map((item) => item.group))];
+---
+
+<section
+  class="container product-catalog headset-catalog"
+  id="auriculares"
+  aria-labelledby="headset-catalog-title"
+>
+  <div class="headset-catalog-heading" data-reveal>
+    <p class="section-kicker">Audio para cada forma de trabajar</p>
+    <h2 id="headset-catalog-title">
+      Explora el portafolio {entry.id === 'yealink' ? 'Yealink' : 'VT'}.
+    </h2>
+    <p>
+      Compara los formatos y consulta la ficha disponible. Las conexiones y funciones se confirman
+      para cada versión.
+    </p>
+  </div>
+  <nav class="headset-group-links" aria-label="Tipos de equipos de audio">
+    {groups.map((group, index) => (
+      <a href={`#audio-${index}`}>{group}</a>
+    ))}
+  </nav>
+  {groups.map((group, index) => (
+    <section class="headset-group" id={`audio-${index}`} aria-labelledby={`audio-title-${index}`}>
+      <h3 id={`audio-title-${index}`} data-reveal>
+        {group}
+      </h3>
+      <ul class="product-catalog-grid">
+        {entry.equipment
+          .filter((item) => item.group === group)
+          .map((item) => (
+            <li data-reveal>
+              <a
+                class="equipment-card headset-card"
+                href={item.pdf ?? '/contactenos/'}
+                aria-labelledby={`model-${item.id} action-${item.id}`}
+                aria-describedby={item.note ? `note-${item.id}` : undefined}
+              >
+                <div class="equipment-image">
+                  <img
+                    src={`/images/${item.image}`}
+                    width="674"
+                    height="580"
+                    alt={item.imageAlt}
+                    loading="lazy"
+                  />
+                </div>
+                <div class="equipment-title">
+                  <h4 id={`model-${item.id}`}>{item.title}</h4>
+                  <Icon size={20} />
+                </div>
+                <p>{item.description}</p>
+                <ul class="headset-features">
+                  {item.features.map((feature) => (
+                    <li>
+                      <Icon name="check" size={16} />
+                      <span>{feature}</span>
+                    </li>
+                  ))}
+                </ul>
+                {item.note && (
+                  <p class="headset-note" id={`note-${item.id}`}>
+                    {item.note}
+                  </p>
+                )}
+                {!item.pdf && (
+                  <p class="headset-note">
+                    Consulta la documentación de este modelo con nuestro equipo.
+                  </p>
+                )}
+                <span class="headset-action" id={`action-${item.id}`}>
+                  {item.pdf ? 'Ver ficha técnica (PDF)' : 'Consultar este modelo'}
+                  <Icon size={18} />
+                </span>
+              </a>
+            </li>
+          ))}
+      </ul>
+    </section>
+  ))}
+</section>

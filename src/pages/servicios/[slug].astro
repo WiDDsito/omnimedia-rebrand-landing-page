@@ -1,0 +1,30 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import CategoryView from '../../components/CategoryView.astro';
+import { servicePages } from '../../data/service-pages.mjs';
+import '../../styles/solution-pages.css';
+export function getStaticPaths() {
+  return servicePages.map((service) => ({
+    params: { slug: service.slug },
+    props: { service },
+  }));
+}
+const { service } = Astro.props;
+---
+
+<BaseLayout title={`${service.title} | OmniMedia Perú`} description={service.description}>
+  <Header />
+  <main id="contenido">
+    <CategoryView
+      entry={service}
+      related={servicePages.filter((item) => item.id !== service.id)}
+      section={{ label: 'Servicios', href: '/servicios/' }}
+      exploreLabel="Explorar el servicio"
+      relatedLabel="Otros servicios"
+      exploreDescription={service.linksDescription}
+    />
+  </main>
+  <Footer />
+</BaseLayout>

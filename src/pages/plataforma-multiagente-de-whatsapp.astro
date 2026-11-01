@@ -1,0 +1,7 @@
+---
+import CustomerCarePage from '../components/CustomerCarePage.astro';
+import { customerCarePages } from '../data/customer-care-pages.mjs';
+const entry = customerCarePages.find((page) => page.id === 'whatsapp')!;
+---
+
+<CustomerCarePage entry={entry} />
