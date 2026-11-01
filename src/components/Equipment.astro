@@ -1,6 +1,6 @@
 ---
 import Icon from './Icon.astro';
-import { equipment, origin } from '../data/content';
+import { equipment } from '../data/content';
 import { productPaths } from '../data/product-pages.mjs';
 ---
 
@@ -42,7 +42,7 @@ import { productPaths } from '../data/product-pages.mjs';
     <div class="equipment-more">
       <span>¿Buscas algo más específico?</span>
       <a href={productPaths.hotels}>Telefonía hotelera</a>
-      <a href={origin + '/telefonia/centrales-telefonicas/'}>Centrales telefónicas</a>
+      <a href="/telefonia/centrales-telefonicas/">Centrales telefónicas</a>
       <a href={productPaths.refurbished}>Equipos remanufacturados</a>
     </div>
   </div>

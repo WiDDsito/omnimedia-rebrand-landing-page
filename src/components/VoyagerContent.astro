@@ -1,0 +1,102 @@
+---
+import Icon from './Icon.astro';
+import { voyagerModels, type voyagerPages } from '../data/voyager-pages.mjs';
+import '../styles/headset-pages.css';
+import '../styles/voyager-pages.css';
+interface Props {
+  entry: (typeof voyagerPages)[number];
+}
+const { entry } = Astro.props;
+const isOverview = entry.id === 'voyager';
+const cards = isOverview
+  ? voyagerModels.map((model) => ({
+      title: model.title,
+      description: model.description,
+      image: model.image,
+      features: model.features.slice(0, 2),
+      href: model.path,
+    }))
+  : entry.variants.map((variant) => ({ ...variant, href: '/contactenos/' }));
+---
+
+{!isOverview && (
+  <section
+    class="container voyager-specifications"
+    id="caracteristicas"
+    aria-labelledby="voyager-specs-title"
+  >
+    <div data-reveal>
+      <p class="section-kicker">Conoce el equipo</p>
+      <h2 id="voyager-specs-title">Características para comparar.</h2>
+      <p>
+        Confirma la referencia y los accesorios incluidos con nuestro equipo antes de definir tu
+        configuración.
+      </p>
+    </div>
+    <ul class="voyager-features">
+      {entry.features.map((feature) => (
+        <li data-reveal>
+          <Icon name="check" size={18} />
+          <span>{feature}</span>
+        </li>
+      ))}
+    </ul>
+  </section>
+)}
+<section
+  class="container voyager-catalog"
+  id="voyager-equipos"
+  aria-labelledby="voyager-catalog-title"
+>
+  <div class="headset-catalog-heading" data-reveal>
+    <p class="section-kicker">{isOverview ? 'Compara las familias' : 'Formatos y configuración'}</p>
+    <h2 id="voyager-catalog-title">
+      {isOverview ? 'Encuentra tu Voyager.' : 'Elige la opción para tu puesto.'}
+    </h2>
+    <p>
+      {isOverview
+        ? 'Explora cada vista para conocer sus características, opciones y referencias técnicas.'
+        : 'Adaptador USB, base, estuche y versión de plataforma se confirman según el código de producto.'}
+    </p>
+  </div>
+  <ul class:list={['voyager-grid', { 'voyager-grid-single': cards.length === 1 }]}>
+    {cards.map((card, index) => (
+      <li data-reveal>
+        <a
+          class="equipment-card headset-card"
+          href={card.href}
+          aria-labelledby={`voyager-card-${index} voyager-action-${index}`}
+        >
+          <div class="equipment-image">
+            <img
+              src={`/images/${card.image}`}
+              alt={card.title}
+              width="674"
+              height="580"
+              loading="lazy"
+            />
+          </div>
+          <div class="voyager-card-copy">
+            <div class="equipment-title">
+              <h3 id={`voyager-card-${index}`}>{card.title}</h3>
+              <Icon size={20} />
+            </div>
+            <p>{card.description}</p>
+            <ul class="headset-features">
+              {card.features.map((feature) => (
+                <li>
+                  <Icon name="check" size={16} />
+                  <span>{feature}</span>
+                </li>
+              ))}
+            </ul>
+            <span class="headset-action" id={`voyager-action-${index}`}>
+              {isOverview ? 'Explorar este modelo' : 'Consultar esta configuración'}
+              <Icon size={18} />
+            </span>
+          </div>
+        </a>
+      </li>
+    ))}
+  </ul>
+</section>

@@ -1,0 +1,13 @@
+---
+import PhoneCatalog from '../../../components/PhoneCatalog.astro';
+import { phoneBrands } from '../../../data/phone-catalog.mjs';
+export function getStaticPaths() {
+  return phoneBrands.map((brand) => ({
+    params: { slug: brand.path.split('/').filter(Boolean).at(-1) },
+    props: { brandId: brand.id },
+  }));
+}
+const { brandId } = Astro.props;
+---
+
+<PhoneCatalog brandId={brandId} />
