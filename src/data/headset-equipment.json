@@ -1,0 +1,292 @@
+{
+  "yealink": [
+    {
+      "id": "uh34",
+      "title": "UH34",
+      "group": "USB",
+      "description": "Audio para el trabajo diario.",
+      "features": ["Conexión USB", "Diseño ligero"],
+      "pdf": "https://www.omnimediaperu.com/wp-content/uploads/2026/03/hoja-de-datos-auricular-yealink-uh34-omnimedia-peru.pdf",
+      "image": "headsets/yealink-1.webp",
+      "note": "",
+      "imageAlt": "UH34"
+    },
+    {
+      "id": "uh36",
+      "title": "UH36",
+      "group": "USB",
+      "description": "Conectividad para llamadas y reuniones.",
+      "features": ["USB y conector de 3,5 mm", "Formatos Mono y Dual"],
+      "pdf": "https://www.omnimediaperu.com/wp-content/uploads/2026/03/hoja-de-datos-auricular-yealink-uh36-omnimedia-peru.pdf",
+      "image": "headsets/yealink-2.webp",
+      "note": "",
+      "imageAlt": "UH36"
+    },
+    {
+      "id": "uh37",
+      "title": "UH37",
+      "group": "USB",
+      "description": "Comunicaciones desde tu escritorio.",
+      "features": ["Auricular profesional", "Uso en llamadas y reuniones"],
+      "pdf": "https://www.omnimediaperu.com/wp-content/uploads/2026/03/hoja-de-datos-auricular-yealink-uh37-omnimedia-peru.pdf",
+      "image": "headsets/yealink-3.webp",
+      "note": "",
+      "imageAlt": "UH37"
+    },
+    {
+      "id": "bh70",
+      "title": "BH70",
+      "group": "Bluetooth",
+      "description": "Movilidad en tu jornada.",
+      "features": ["Conexión Bluetooth", "Uso en oficina y trabajo híbrido"],
+      "pdf": "https://www.omnimediaperu.com/wp-content/uploads/2026/03/hoja-de-datos-auricular-yealink-bh70-omnimedia-peru.pdf",
+      "image": "headsets/yealink-4.webp",
+      "note": "",
+      "imageAlt": "BH70"
+    },
+    {
+      "id": "bh71",
+      "title": "BH71",
+      "group": "Bluetooth",
+      "description": "Llamadas en movimiento.",
+      "features": ["Conexión Bluetooth", "Formato compacto"],
+      "pdf": "https://www.omnimediaperu.com/wp-content/uploads/2026/03/hoja-de-datos-auricular-yealink-bh71-omnimedia-peru.pdf",
+      "image": "headsets/yealink-5.webp",
+      "note": "",
+      "imageAlt": "BH71"
+    },
+    {
+      "id": "bh74",
+      "title": "BH74",
+      "group": "Bluetooth",
+      "description": "Audio inalámbrico para trabajar.",
+      "features": ["Conexión Bluetooth", "Uso con dispositivos compatibles"],
+      "pdf": "https://www.omnimediaperu.com/wp-content/uploads/2026/03/hoja-de-daatos-auricular-yealink-bh74-omnimedia-peru.pdf",
+      "image": "headsets/yealink-6.webp",
+      "note": "",
+      "imageAlt": "BH74"
+    },
+    {
+      "id": "bh76",
+      "title": "BH76",
+      "group": "Bluetooth",
+      "description": "Concentración y comunicación.",
+      "features": ["Auricular inalámbrico", "Consultar la versión requerida"],
+      "pdf": "https://www.omnimediaperu.com/wp-content/uploads/2026/03/hoja-de-datos-auricular-yealink-bh76-omnimedia-peru.pdf",
+      "image": "headsets/yealink-7.webp",
+      "note": "",
+      "imageAlt": "BH76"
+    },
+    {
+      "id": "bh76-plus",
+      "title": "BH76 Plus",
+      "group": "Bluetooth",
+      "description": "Una variante con documentación propia.",
+      "features": ["Ficha específica Plus", "Confirmar configuración"],
+      "pdf": "https://www.omnimediaperu.com/wp-content/uploads/2026/03/hola-de-datos-auricular-yealink-bh76-plus-omnimedia-peru.pdf",
+      "image": "headsets/yealink-7.webp",
+      "note": "Imagen referencial de la familia BH76. Consulta las características de BH76 Plus en su ficha.",
+      "imageAlt": "Imagen referencial de la familia BH76"
+    },
+    {
+      "id": "sp96",
+      "title": "SP96",
+      "group": "Altavoces",
+      "description": "Audio compartido para reuniones.",
+      "features": ["Seis micrófonos", "Pantalla LCD"],
+      "pdf": "https://www.omnimediaperu.com/wp-content/uploads/2026/03/hoja-de-datos-altavoz-yealink-sp96-omnimedia-peru.pdf",
+      "image": "headsets/yealink-8.webp",
+      "note": "",
+      "imageAlt": "SP96"
+    }
+  ],
+  "vt": [
+    {
+      "id": "vtx100-mono",
+      "title": "VTX100 monoaural",
+      "group": "Monaurales",
+      "description": "Un oído libre durante las llamadas.",
+      "features": ["USB o QD según versión", "Micrófono con cancelación de ruido"],
+      "pdf": "https://www.omnimediaperu.com/wp-content/uploads/2023/02/ficha-tecnica-auricular-VT-serie-VT-X100-omnimedia-peru.pdf",
+      "image": "headsets/vt-1.webp",
+      "note": "",
+      "imageAlt": "VTX100 monoaural"
+    },
+    {
+      "id": "vt6300-mono",
+      "title": "VT6300 monoaural",
+      "group": "Monaurales",
+      "description": "Formato ligero para llamadas.",
+      "features": ["Conexión USB", "Un auricular"],
+      "pdf": "https://www.omnimediaperu.com/wp-content/uploads/2023/02/ficha-tecnica-auricular-VT-serie-VT-6300-omnimedia-peru.pdf",
+      "image": "headsets/vt-5.webp",
+      "note": "",
+      "imageAlt": "VT6300 monoaural"
+    },
+    {
+      "id": "vtx100-biaural",
+      "title": "VTX100 biaural",
+      "group": "Biaurales",
+      "description": "Audio en ambos oídos.",
+      "features": ["USB o QD según versión", "Micrófono con cancelación de ruido"],
+      "pdf": "https://www.omnimediaperu.com/wp-content/uploads/2023/02/ficha-tecnica-auricular-VT-serie-VT-X100-omnimedia-peru.pdf",
+      "image": "headsets/vt-2.webp",
+      "note": "",
+      "imageAlt": "VTX100 biaural"
+    },
+    {
+      "id": "vtx200-biaural",
+      "title": "VTX200 biaural",
+      "group": "Biaurales",
+      "description": "Alternativa para atención telefónica.",
+      "features": ["Conexión USB", "Audio de banda ancha"],
+      "pdf": "https://www.omnimediaperu.com/wp-content/uploads/2023/02/ficha-tecnica-auricular-VT-serie-VT-X200-omnimedia-peru.pdf",
+      "image": "headsets/vt-3.webp",
+      "note": "Imagen referencial de la familia VTX200. Confirma el formato biaural al consultar.",
+      "imageAlt": "Imagen referencial de la familia VTX200"
+    },
+    {
+      "id": "vt5009",
+      "title": "VT5009 biaural",
+      "group": "Biaurales",
+      "description": "Comunicación para centros de contacto.",
+      "features": ["Conexión USB", "Micrófono con cancelación de ruido"],
+      "pdf": "https://www.omnimediaperu.com/wp-content/uploads/2023/02/ficha-tecnica-auricular-VT-serie-VT-5009-omnimedia-peru.pdf",
+      "image": "headsets/vt-4.webp",
+      "note": "",
+      "imageAlt": "VT5009 biaural"
+    },
+    {
+      "id": "vt6300-biaural",
+      "title": "VT6300 biaural",
+      "group": "Biaurales",
+      "description": "Formato para escuchar con ambos oídos.",
+      "features": ["Conexión USB", "Dos auriculares"],
+      "pdf": "https://www.omnimediaperu.com/wp-content/uploads/2023/02/ficha-tecnica-auricular-VT-serie-VT-6300-omnimedia-peru.pdf",
+      "image": "headsets/vt-6.webp",
+      "note": "",
+      "imageAlt": "VT6300 biaural"
+    },
+    {
+      "id": "vt6909",
+      "title": "VT6909 biaural",
+      "group": "Biaurales",
+      "description": "Controles para gestionar conversaciones.",
+      "features": ["Conexión USB", "Control de llamada y volumen"],
+      "pdf": "https://www.omnimediaperu.com/wp-content/uploads/2023/02/ficha-tecnica-auricular-VT-serie-VT-6909-omnimedia-peru.pdf",
+      "image": "headsets/vt-7.webp",
+      "note": "",
+      "imageAlt": "VT6909 biaural"
+    },
+    {
+      "id": "vt8000",
+      "title": "VT8000 biaural",
+      "group": "Biaurales",
+      "description": "Audio para atención y trabajo remoto.",
+      "features": ["Conexión USB", "Control de micrófono y volumen"],
+      "pdf": "https://www.omnimediaperu.com/wp-content/uploads/2023/02/ficha-tecnica-auricular-VT-serie-VT-8000-omnimedia-peru.pdf",
+      "image": "headsets/vt-8.webp",
+      "note": "",
+      "imageAlt": "VT8000 biaural"
+    },
+    {
+      "id": "vt8200",
+      "title": "VT8200 biaural",
+      "group": "Biaurales",
+      "description": "Gestión de llamadas desde el equipo.",
+      "features": ["Micrófono unidireccional", "Controles de llamada"],
+      "pdf": "https://www.omnimediaperu.com/wp-content/uploads/2026/01/ficha-tecnica-auricular-inalambrico-VT-VT8200-omnimedia-peru.pdf",
+      "image": "headsets/vt-9.webp",
+      "note": "",
+      "imageAlt": "VT8200 biaural"
+    },
+    {
+      "id": "vtx300bt",
+      "title": "VTX300BT",
+      "group": "Bluetooth",
+      "description": "Conversaciones con movilidad.",
+      "features": ["Conexión Bluetooth", "Luz de ocupado"],
+      "pdf": null,
+      "image": "headsets/vt-10.webp",
+      "note": "",
+      "imageAlt": "VTX300BT"
+    },
+    {
+      "id": "vt9200bt",
+      "title": "VT9200BT biaural",
+      "group": "Bluetooth",
+      "description": "Audio inalámbrico para trabajar.",
+      "features": ["Conexión Bluetooth", "Luz de ocupado"],
+      "pdf": "https://www.omnimediaperu.com/wp-content/uploads/2023/02/ficha-tecnica-auricular-VT-serie-VT-9200-BT-omnimedia-peru.pdf",
+      "image": "headsets/vt-11.webp",
+      "note": "",
+      "imageAlt": "VT9200BT biaural"
+    },
+    {
+      "id": "vt9602bt",
+      "title": "VT9602BT biaural",
+      "group": "Bluetooth",
+      "description": "Llamadas en entornos de oficina.",
+      "features": ["Conexión Bluetooth", "Audio HD"],
+      "pdf": null,
+      "image": "headsets/vt-12.webp",
+      "note": "",
+      "imageAlt": "VT9602BT biaural"
+    },
+    {
+      "id": "vt9603bt-mono",
+      "title": "VT9603BT monoaural",
+      "group": "Bluetooth",
+      "description": "Movilidad con un oído libre.",
+      "features": ["Formato monoaural", "Conexión Bluetooth"],
+      "pdf": "https://www.omnimediaperu.com/wp-content/uploads/2023/02/ficha-tecnica-auricular-VT-serie-VT-9603-BT-monoaural-omnimedia-peru.pdf",
+      "image": "headsets/vt-13.webp",
+      "note": "",
+      "imageAlt": "VT9603BT monoaural"
+    },
+    {
+      "id": "vt9603bt-biaural",
+      "title": "VT9603BT biaural",
+      "group": "Bluetooth",
+      "description": "Movilidad con audio en ambos oídos.",
+      "features": ["Formato biaural", "Conexión Bluetooth"],
+      "pdf": "https://www.omnimediaperu.com/wp-content/uploads/2023/02/ficha-tecnica-auricular-VT-serie-VT-9603-BT-omnimedia-peru.pdf",
+      "image": "headsets/vt-14.webp",
+      "note": "",
+      "imageAlt": "VT9603BT biaural"
+    },
+    {
+      "id": "vt9605bt",
+      "title": "VT9605BT biaural",
+      "group": "Bluetooth",
+      "description": "Comunicación inalámbrica profesional.",
+      "features": ["Formato biaural", "Conexión Bluetooth"],
+      "pdf": "https://www.omnimediaperu.com/wp-content/uploads/2023/02/ficha-tecnica-auricular-VT-serie-VT-9605-BT-BIAURAL-omnimedia-peru.pdf",
+      "image": "headsets/vt-15.webp",
+      "note": "",
+      "imageAlt": "VT9605BT biaural"
+    },
+    {
+      "id": "cs61",
+      "title": "VT CS61",
+      "group": "Altavoces",
+      "description": "Audio portátil para reuniones.",
+      "features": ["Bluetooth y USB-A/C", "Formato de altavoz"],
+      "pdf": null,
+      "image": "headsets/vt-17.webp",
+      "note": "",
+      "imageAlt": "VT CS61"
+    },
+    {
+      "id": "bt100u",
+      "title": "BT100U USB Dongle",
+      "group": "Accesorios",
+      "description": "Conectividad para tu computadora.",
+      "features": ["Adaptador USB Bluetooth", "Confirmar compatibilidad"],
+      "pdf": null,
+      "image": "headsets/vt-16.webp",
+      "note": "",
+      "imageAlt": "BT100U USB Dongle"
+    }
+  ]
+}

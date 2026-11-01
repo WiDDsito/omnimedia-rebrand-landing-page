@@ -3,8 +3,10 @@ import Icon from './Icon.astro';
 import NavigationTree from './NavigationTree.astro';
 import SolutionMenu from './SolutionMenu.astro';
 import { navigation } from '../data/navigation';
+import { localSolutionHref } from '../data/solution-links.mjs';
 import { productPaths } from '../data/product-pages.mjs';
 import { servicePaths } from '../data/service-pages.mjs';
+import { company } from '../data/company.mjs';
 const isHome = Astro.url.pathname === '/';
 const startLink = isHome ? '#inicio' : '/';
 const quoteLink = isHome ? '#cotizar' : '/#cotizar';
@@ -16,6 +18,10 @@ const overviewPaths: Record<string, string> = {
 const familyPaths: Record<string, Record<string, string>> = {
   products: productPaths,
   services: servicePaths,
+};
+const directPaths: Record<string, string> = {
+  [company.aboutSource]: '/conocenos/',
+  [company.contactSource]: '/contactenos/',
 };
 ---
 
@@ -75,7 +81,14 @@ const familyPaths: Record<string, Record<string, string>> = {
                           </span>
                         </a>
                         <p>{family.description}</p>
-                        <a class="solution-menu-overview" href={family.url}>
+                        <a
+                          class="solution-menu-overview"
+                          href={
+                            family.id === 'network'
+                              ? productPaths.network
+                              : localSolutionHref(family.url)
+                          }
+                        >
                           {item.id === 'services'
                             ? 'Ver servicio original'
                             : 'Ver categoría completa'}{' '}
@@ -90,7 +103,7 @@ const familyPaths: Record<string, Record<string, string>> = {
             </div>
           </details>
         ) : (
-          <a class="nav-direct" href={item.url}>
+          <a class="nav-direct" href={directPaths[item.url] ?? item.url}>
             {item.label}
           </a>
         ),

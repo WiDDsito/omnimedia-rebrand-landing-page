@@ -1,0 +1,144 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import PageIntro from '../components/PageIntro.astro';
+import Icon from '../components/Icon.astro';
+import { Image } from 'astro:assets';
+import room from '../assets/meeting-room.webp';
+import '../styles/solution-pages.css';
+import '../styles/company-pages.css';
+const pillars = [
+  [
+    'Entendemos tu proyecto',
+    'Conversamos sobre tu operación, los equipos existentes y lo que quieres mejorar.',
+  ],
+  [
+    'Integramos tecnología',
+    'Evaluamos las alternativas y definimos el alcance de la implementación.',
+  ],
+  [
+    'Acompañamos a tu equipo',
+    'Acordamos la configuración, el mantenimiento y las condiciones de soporte.',
+  ],
+];
+const areas = [
+  {
+    title: 'Soluciones',
+    description: 'Telefonía, videoconferencia, atención al cliente y perifoneo.',
+    href: '/#soluciones',
+    icon: 'chat',
+  },
+  {
+    title: 'Productos',
+    description: 'Equipos para conectar a tu equipo y tus espacios.',
+    href: '/productos/',
+    icon: 'grid',
+  },
+  {
+    title: 'Servicios',
+    description: 'Soporte técnico y mensajes para tu atención telefónica.',
+    href: '/servicios/',
+    icon: 'speaker',
+  },
+];
+---
+
+<BaseLayout
+  title="Conócenos | OmniMedia Perú"
+  description="Conoce a OmniMedia Perú, empresa integradora de telefonía y telecomunicaciones para organizaciones."
+>
+  <Header />
+  <main id="contenido">
+    <PageIntro
+      label="Conócenos"
+      icon="globe"
+      title="Tecnología cercana a tu empresa."
+      description="Somos OmniMedia Perú S.A.C., una empresa integradora de telefonía y telecomunicaciones que acompaña a organizaciones en sus proyectos de comunicación."
+    >
+      <Fragment slot="actions">
+        <a class="button" href="/contactenos/">
+          Conversemos <Icon size={18} />
+        </a>
+        <a class="text-link" href="#nuestra-empresa">
+          Conoce nuestra empresa <Icon size={18} />
+        </a>
+      </Fragment>
+      <figure slot="visual" class="solution-hero-visual">
+        <Image
+          src={room}
+          alt="Imagen referencial de una sala de reuniones empresarial"
+          width={640}
+          format="webp"
+          fetchpriority="high"
+        />
+        <figcaption>
+          <Icon name="globe" size={18} />
+          <span>Conectamos personas. Integramos soluciones.</span>
+        </figcaption>
+      </figure>
+    </PageIntro>
+    <section
+      class="container solution-overview"
+      id="nuestra-empresa"
+      aria-labelledby="company-title"
+    >
+      <div data-reveal>
+        <p class="section-kicker">Nuestra empresa</p>
+        <h2 id="company-title">Personas detrás de cada conexión.</h2>
+      </div>
+      <div class="solution-overview-copy" data-reveal>
+        <p>
+          De la telefonía analógica a las plataformas IP y los servicios en la nube, trabajamos con
+          tecnologías que ayudan a las empresas a comunicarse.
+        </p>
+        <p>
+          Nuestro trabajo reúne asesoría, integración de equipos y acompañamiento técnico. Primero
+          entendemos la instalación y el uso que necesita cada organización; después definimos el
+          alcance del proyecto.
+        </p>
+      </div>
+    </section>
+    <section class="container solution-principles" aria-label="Cómo trabajamos">
+      {pillars.map(([title, description]) => (
+        <div data-reveal>
+          <h3>{title}</h3>
+          <p>{description}</p>
+        </div>
+      ))}
+    </section>
+    <section class="company-areas" aria-labelledby="areas-title">
+      <div class="container">
+        <div data-reveal>
+          <p class="section-kicker">Lo que hacemos</p>
+          <h2 id="areas-title">Una visión integral de tus comunicaciones.</h2>
+        </div>
+        <div class="company-area-grid">
+          {areas.map((area) => (
+            <a class="company-area-card" href={area.href} data-reveal>
+              <Icon name={area.icon} size={28} />
+              <h3>{area.title}</h3>
+              <p>{area.description}</p>
+              <span>
+                Explorar <Icon size={18} />
+              </span>
+            </a>
+          ))}
+        </div>
+      </div>
+    </section>
+    <section class="container solution-conversation" aria-labelledby="conversation-title">
+      <div data-reveal>
+        <p class="section-kicker">Hablemos de tu empresa</p>
+        <h2 id="conversation-title">Empecemos por conocernos.</h2>
+      </div>
+      <div data-reveal>
+        <p>Encuentra nuestros canales de atención y cuéntanos qué necesitas conectar.</p>
+        <a class="button" href="/contactenos/">
+          Ver canales de contacto <Icon size={18} />
+        </a>
+      </div>
+    </section>
+  </main>
+  <Footer />
+</BaseLayout>
