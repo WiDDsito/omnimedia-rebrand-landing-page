@@ -1,10 +1,10 @@
 /* Interaction motion lives on inner content, leaving the scroll timeline and layout untouched. */
 @media (prefers-reduced-motion: no-preference) {
   .campaign-stage {
-    --campaign-shift: 24px;
+    --campaign-shift: 48px;
   }
   .campaign-stage[data-direction='backward'] {
-    --campaign-shift: -24px;
+    --campaign-shift: -48px;
   }
   .campaign-stage[data-enhanced] .campaign-copy > * {
     transition:
@@ -36,7 +36,6 @@
   }
   .campaign-stage[data-enhanced] .campaign.is-active .campaign-visual {
     opacity: 1;
-    animation: campaign-visual-in 0.6s cubic-bezier(0.22, 1, 0.36, 1) both;
   }
   .campaign-stage[data-enhanced] .campaign-caption {
     transition:
