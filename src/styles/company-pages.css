@@ -140,7 +140,7 @@
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 20px;
 }
-.social-monogram {
+.social-icon {
   display: grid;
   place-items: center;
   width: 44px;
@@ -148,7 +148,7 @@
   background: #f7eded;
   color: var(--brand);
   border-radius: 50%;
-  font-weight: 700;
+  flex-shrink: 0;
 }
 .company-location .button {
   margin-top: 28px;

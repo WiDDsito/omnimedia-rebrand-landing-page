@@ -5,7 +5,9 @@ interface Props {
   entry: CategoryPage;
   related: CategoryPage[];
   section: { label: string; href: string };
+  ancestors?: { label: string; href: string }[];
   exploreLabel: string;
+  exploreHref?: string;
   relatedLabel: string;
   exploreDescription?: string;
 }
@@ -13,7 +15,9 @@ const {
   entry,
   related,
   section,
+  ancestors = [section],
   exploreLabel,
+  exploreHref = '#explorar',
   relatedLabel,
   exploreDescription = 'Encuentra información de cada categoría y cuéntanos qué necesita tu empresa.',
 } = Astro.props;
@@ -24,8 +28,12 @@ const {
     <nav class="solution-breadcrumb" aria-label="Ruta de navegación">
       <a href="/">Inicio</a>
       <span aria-hidden="true">/</span>
-      <a href={section.href}>{section.label}</a>
-      <span aria-hidden="true">/</span>
+      {ancestors.map((ancestor) => (
+        <Fragment>
+          <a href={ancestor.href}>{ancestor.label}</a>
+          <span aria-hidden="true">/</span>
+        </Fragment>
+      ))}
       <span aria-current="page">{entry.title}</span>
     </nav>
     <div class="solution-hero-grid">
@@ -39,7 +47,7 @@ const {
         </h1>
         <p class="solution-lead">{entry.description}</p>
         <div class="solution-hero-actions">
-          <a class="button" href="#explorar">
+          <a class="button" href={exploreHref}>
             {exploreLabel}
             <Icon size={18} />
           </a>
@@ -50,13 +58,15 @@ const {
         </div>
       </div>
       <figure class="solution-hero-visual">
-        <img
-          src={`/images/${entry.image}`}
-          width="674"
-          height="580"
-          alt={entry.imageAlt}
-          fetchpriority="high"
-        />
+        <slot name="visual">
+          <img
+            src={`/images/${entry.image}`}
+            width="674"
+            height="580"
+            alt={entry.imageAlt}
+            fetchpriority="high"
+          />
+        </slot>
         <figcaption>
           <Icon name={entry.icon} size={18} />
           <span>{entry.imageNote}</span>
@@ -86,6 +96,7 @@ const {
     </div>
   ))}
 </section>
+<slot name="details" />
 <section class="solution-explore" id="explorar" aria-labelledby="explore-title">
   <div class="container solution-explore-grid">
     <div class="solution-explore-intro" data-reveal>

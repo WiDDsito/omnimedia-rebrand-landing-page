@@ -1,0 +1,39 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from './Header.astro';
+import Footer from './Footer.astro';
+import CategoryView from './CategoryView.astro';
+import NetworkCatalog from './NetworkCatalog.astro';
+import { networkPages, networkCatalogPath } from '../data/network-pages.mjs';
+import '../styles/solution-pages.css';
+interface Props {
+  entry: (typeof networkPages)[number];
+}
+const { entry } = Astro.props;
+const section = { label: 'Networking', href: networkCatalogPath };
+const parent = networkPages.find((page) => page.id === entry.parentId);
+const ancestors = parent ? [section, { label: parent.title, href: parent.path }] : [section];
+const related = networkPages.filter(
+  (page) =>
+    page.id !== entry.id && (page.parentId === entry.parentId || page.id === entry.parentId),
+);
+---
+
+<BaseLayout title={`${entry.title} | OmniMedia Perú`} description={entry.description}>
+  <Header />
+  <main id="contenido">
+    <CategoryView
+      entry={entry}
+      related={related}
+      section={section}
+      ancestors={ancestors}
+      exploreLabel={entry.equipment.length ? 'Explorar equipos' : 'Explorar marcas'}
+      exploreHref={entry.equipment.length ? '#equipos-red' : '#explorar'}
+      relatedLabel="Más categorías de Networking"
+      exploreDescription="Explora las familias del portafolio y consulta qué necesita tu instalación."
+    >
+      <NetworkCatalog slot="details" entry={entry} />
+    </CategoryView>
+  </main>
+  <Footer />
+</BaseLayout>
